@@ -1,0 +1,59 @@
+*{
+    color: white;
+    margin: 0;
+}
+
+header{
+  background: red;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+h1, main, footer{
+  padding: 15px;
+}
+
+h2{
+  margin: 0 10px 30px;
+  font-size: 1.9rem;
+}
+
+nav{
+  background: orange;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+nav ul{
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+}
+
+main{
+  background: green;
+}
+
+article{
+  padding: 30px 10px;
+  background: blue;
+}
+
+article:first-child{
+  margin-bottom: 5px;
+}
+
+article li{
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+footer{
+  background: darkviolet;
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-align: center;
+}
