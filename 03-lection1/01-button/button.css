@@ -64,6 +64,13 @@
   opacity: 0.5;
 }
 
+.disabled:hover{
+  cursor: not-allowed;
+}
+
+.cursor_pointer{
+  cursor: pointer;
+}
 
 /*стилизация кнопок согласно назначения*/
 /*кнопки default*/
@@ -93,3 +100,60 @@
   border: 1px solid #212429;
 }
 /*---------------*/
+
+
+/*стили состояния*/
+.transition_opacity_background{
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+
+.transition_border{
+  transition: border 200ms ease-in-out;
+}
+
+/*стилизация состояний главной кнопки*/
+.button_primary-hover{
+  background-color: #4263EB;
+}
+
+.button_primary-hover:hover{
+  background-color: #2342C0;
+}
+
+.button_primary-hover:active{
+  background-color: #4263EB;
+}
+/*----------------стилизация состояний главной кнопки------------*/
+/*стилизация состояний второстепенной кнопки*/
+.button_secondary-hover{
+    background-color: var(--purple);
+}
+
+.button_secondary-hover:hover{
+    background-color: #5028C6;
+}
+
+.button_secondary-hover:active{
+    background-color: var(--purple);
+}
+/*------стилизация состояний второстепенной кнопки----------*/
+/*стилизация состояний алтернативной кнопки*/
+.button_alternate-hover{
+    border: 1px solid var(--grey-3);
+    background-color: white;
+}
+
+.button_alternate-hover:hover{
+   border: 1px solid #212429;
+}
+
+.button_alternate-hover:active{
+    border: 1px solid var(--grey-3);
+    background-color: white;
+}
+/*----------стилизация состояний алтернативной кнопки---------*/
+
+.main__row_selected{
+  background-color: lightgrey;
+  border-radius: 8px;
+}
