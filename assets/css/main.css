@@ -1,3 +1,4 @@
+@import 'normolize.css';
 @import '../fonts/fonts.css';
 
 :root {
@@ -5,7 +6,9 @@
     --black: #212429;
     --pink: #F784AD;
     --purple: #7048E8;
+    --deeperPurple: #5028C6;
     --blue: #374FC7;
+    --deeperBlue: #2342C0;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
@@ -16,7 +19,9 @@
     --success: var(--blue);
 
     --primary: var(--blue);
+    --hover-primary: var(--deeperBlue);
     --secondary: var(--purple);
+    --hover-secondary: var(--deeperPurple);
 }
 
 * {

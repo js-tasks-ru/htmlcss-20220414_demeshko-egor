@@ -5,8 +5,11 @@
 
 header{
   background: red;
-  font-size: 1.9rem;
   text-align: center;
+}
+
+header h1{
+  font-size: 1.9rem;
 }
 
 h1, main, footer{
