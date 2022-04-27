@@ -1,5 +1,5 @@
 .button{
-  padding:15px 66px;
+  padding:15px 15px 14px;
   border-radius: 8px;
   border: none;
   font-family: 'Roboto', sans-serif;
@@ -13,10 +13,8 @@
 }
 
 .button:disabled{
-   background-color: var(--blue);
    opacity: 0.5;
    pointer-events: none;
-   color: var(--white);
 }
 
 /*стилизация primary button*/
