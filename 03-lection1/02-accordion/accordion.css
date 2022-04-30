@@ -7,54 +7,29 @@
     max-width: 730px;
 }
 
-
 .accordion__item{
+  padding: 24px 32px;
   background-color: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
-}
-
-.accordion__item_margin-8{
   margin-bottom: 8px;
 }
 
-.accordion__item_margin-8:last-child {
+.accordion__item:last-child {
     margin-bottom: 0;
 }
-/*-----------------*/
 
-
-/*стилизация блока details*/
-.details{
-   padding: 24px 32px;
-}
-
-.details[open]{
+.accordion__item[open]{
    padding: 24px 47px 32px 32px;
 }
 
-
-.details__item{
-/*    margin-bottom: 16px;*/
-}
-
-.details__item:last-child{
- margin-top: 16px;
-}
-/*----------------*/
-
-
-.summary{
+.accordion__content{
    max-width: 158px;
    color: var(--black);
+   display: block;
 }
 
-.summary_display{
-  display: block;  /*согласно рекомендации MDN чтобы убрать стрелочки*/
-}
-
-.paragraph{
-  margin: 0;
-  max-width: 649px;
+.accordion__text{
+  margin: 16px 0 0 0;
   color: var(--grey-4);
 }
