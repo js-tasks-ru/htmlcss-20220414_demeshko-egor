@@ -24,7 +24,6 @@
 }
 
 .accordion__content{
-   max-width: 158px;
    color: var(--black);
    display: block;
 }
