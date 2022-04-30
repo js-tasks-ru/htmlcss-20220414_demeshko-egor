@@ -1,1 +1,60 @@
 /* Стилизация аккордеона */
+.accordion{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 730px;
+}
+
+
+.accordion__item{
+  background-color: var(--white);
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+}
+
+.accordion__item_margin-8{
+  margin-bottom: 8px;
+}
+
+.accordion__item_margin-8:last-child {
+    margin-bottom: 0;
+}
+/*-----------------*/
+
+
+/*стилизация блока details*/
+.details{
+   padding: 24px 32px;
+}
+
+.details[open]{
+   padding: 24px 47px 32px 32px;
+}
+
+
+.details__item{
+/*    margin-bottom: 16px;*/
+}
+
+.details__item:last-child{
+ margin-top: 16px;
+}
+/*----------------*/
+
+
+.summary{
+   max-width: 158px;
+   color: var(--black);
+}
+
+.summary_display{
+  display: block;  /*согласно рекомендации MDN чтобы убрать стрелочки*/
+}
+
+.paragraph{
+  margin: 0;
+  max-width: 649px;
+  color: var(--grey-4);
+}
