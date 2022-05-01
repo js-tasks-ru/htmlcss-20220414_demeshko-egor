@@ -1,0 +1,5 @@
+.page{
+  max-width: 1440px;
+  background-color: var(--white);
+  margin: 0 auto;
+}
