@@ -1,29 +1,44 @@
 .calendar{
-  padding: 0 24px 0 26px;
+  padding: 0 28px 0 26px;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
   display: grid;
-  grid-template: 1fr 3fr / 1fr;
+  /*строим основную сетку в одну колонку, колонку разбиваем на строки
+  первая строка заменяет верхний паддинг 20px,
+  вторая строка для месяца и года*/
+  grid-template: 6.17% 12.35% 17.29% 1fr 9.88% / 1fr;
   /* align-content: center; */
   width: 100%;
   height: 100%;
   box-sizing: border-box;
 }
 
-.calendar__top{
+.calendar__title{
+  grid-row: 2;
   align-self: center;
   text-align: center;
-}
-
-.calendar__title{
   margin: 0;
   font-family: 'Inter', sans-serif;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 20px;
   line-height: 24px;
   color: var(--calendar-grey);
 }
 
-.calendar__bottom{
-  padding-bottom: 30px;
+.calendar__weeks{
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(30px, auto));
+  align-items: center;
+  justify-items: center;
+}
+
+.calendar__week-day-name{
+  --grey-6: #90A0B7;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 87.5%;
+  color: var(--grey-6);
 }
