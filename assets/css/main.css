@@ -24,8 +24,6 @@
     --secondary: var(--purple);
     --secondary-hover: var(--purple-2);
 
-    --histogram-bar: var(--blue-3);
-
     --card-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 }
 
