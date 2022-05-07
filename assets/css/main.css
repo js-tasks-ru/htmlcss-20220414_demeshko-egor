@@ -10,6 +10,7 @@
     --blue-2: #2342C0;
     --blue-3: #4263EB;
     --red: #F03D3E;
+    --grey-0: #F9FAFC;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
@@ -24,6 +25,8 @@
     --secondary-hover: var(--purple-2);
 
     --histogram-bar: var(--blue-3);
+
+    --card-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 }
 
 body {
