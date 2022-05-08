@@ -34,11 +34,9 @@
     padding: 39px 5px 0 2px;
     height: 50px;
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
     flex-grow: 2;
     gap: 1px;
-
 }
 
 .histogram__bar{
