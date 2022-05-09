@@ -1,7 +1,28 @@
 .card{
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: 2fr 1fr;
   width: 350px;
   height: 367px;
   background: var(--blue);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
+}
+
+.card__component{
+  grid-row: 1;
+  background-color: green;
+  border-radius: 12px 12px 0 0;
+}
+
+.card__description{
+  border-radius: 0 0 12px 12px;
+  background-color: red;
+  grid-row: 2;
+}
+
+@media screen and (max-width:480px){
+  .card{
+    max-width: 100%;
+  }
 }
