@@ -2,8 +2,7 @@
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-rows: 2fr 1fr;
-  width: 350px;
-  height: 367px;
+  max-width: 350px;
   background: var(--blue);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
@@ -11,13 +10,13 @@
 
 .card__component{
   grid-row: 1;
-  background-color: green;
+  background-color: green; /*удалить при добавлении элемента*/
   border-radius: 12px 12px 0 0;
 }
 
 .card__description{
   border-radius: 0 0 12px 12px;
-  background-color: red;
+  background-color: red; /*удалить при добавлении элемента*/
   grid-row: 2;
 }
 

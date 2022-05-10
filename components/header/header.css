@@ -1,13 +1,54 @@
 .header{
   background-color: var(--white);
-  padding: 96px 0 160px;
+  padding: 1.5rem 0 2.31rem;
 }
 
 .header__title{
+    margin: 0;
     font-family: 'Inter', sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 500;
     line-height: 64px;
     color: var(--black);
-    margin: 0;
+    padding: 2.5rem 0;
+}
+
+.header__logo-and-toogles{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header__logo-box{
+  justify-self: left;
+}
+
+.header__logo{
+  color: var(--black);
+}
+
+.header__toogles{
+  display: flex;
+  flex-flow: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+@media (max-width: 480px){
+
+  .header__title{
+    font-size: 1.75rem;
+    padding: 3.063rem 0 2rem;
+  }
+
+  .header__toogles{
+    display: none;
+  }
+
+  .header__logo-and-toogles{
+    grid-template-columns: 1fr;
+  }
+
+  .header__logo-box{
+    justify-self: center;
+  }
 }
