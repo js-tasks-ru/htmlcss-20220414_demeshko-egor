@@ -1,0 +1,71 @@
+
+.calendar{
+  padding: 0 8.88% 0 8.55%;
+  border: 1px solid var(--grey-3);
+  border-radius: 8px;
+  display: grid;
+  /*строим основную сетку в одну колонку, колонку разбиваем на строки
+  первая строка заменяет верхний паддинг 20px,
+  вторая строка для месяца и года*/
+  grid-template: 8.64% 7.407% 18.518% auto 9.88% / 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.calendar__title{
+  grid-row: 2;
+  align-self: center;
+  text-align: center;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--calendar-grey);
+}
+
+.calendar__week{
+  padding: 0 0 0 4px;
+  grid-row: 3;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(30px, auto));
+  align-items: center;
+  justify-items: center;
+}
+
+.calendar__week-day-name{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--grey-6);
+}
+
+.calendar__days{
+   grid-row: 4;
+   display: grid;
+   grid-template-columns: repeat(7, minmax(2.25rem, auto));
+   grid-auto-rows: minmax(2.25rem, auto);
+   font-family: 'Source Sans Pro', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+}
+
+.calendar__day{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+.calendar_day-selected{
+   background-color: var(--purple-3);
+   color: var(--white);
+}
+
+.calendar_day-between{
+  background-color: var(--purple-4);
+}
