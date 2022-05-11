@@ -1,8 +1,4 @@
 .modal{
-  position: relative;
-}
-
-.modal__pop-up{
   display: none;
   text-align: left;
   position: absolute;
