@@ -32,3 +32,8 @@
   margin: 16px 0 0 0;
   color: var(--grey-4);
 }
+
+.accordion__icon{
+  color: black;
+  width: 30px;
+}
