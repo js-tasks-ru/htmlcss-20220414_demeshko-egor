@@ -1,13 +1,13 @@
 
 .calendar{
-  padding: 0 8.88% 0 8.55%;
+  padding: 0 1.625rem 0 1.6875rem;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
   display: grid;
   /*строим основную сетку в одну колонку, колонку разбиваем на строки
   первая строка заменяет верхний паддинг 20px,
   вторая строка для месяца и года*/
-  grid-template: 8.64% 7.407% 18.518% auto 9.88% / 100%;
+  grid-template: 1.125rem 1.5rem 3.6875rem 1fr 2rem / 1fr;
   height: 100%;
   box-sizing: border-box;
 }
@@ -19,8 +19,8 @@
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: var(--calendar-grey);
 }
 
@@ -28,7 +28,7 @@
   padding: 0 0 0 4px;
   grid-row: 3;
   display: grid;
-  grid-template-columns: repeat(7, minmax(30px, auto));
+  grid-template-columns: repeat(7, minmax(30px, 1fr));
   align-items: center;
   justify-items: center;
 }
@@ -38,21 +38,21 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   color: var(--grey-6);
 }
 
 .calendar__days{
    grid-row: 4;
    display: grid;
-   grid-template-columns: repeat(7, minmax(2.25rem, auto));
+   grid-template-columns: repeat(7, minmax(2.25rem, 1fr));
    grid-auto-rows: minmax(2.25rem, auto);
    font-family: 'Source Sans Pro', sans-serif;
    font-style: normal;
    font-weight: 400;
-   font-size: 16px;
-   line-height: 20px;
+   font-size: 1rem;
+   line-height: 1.25rem;
 }
 
 .calendar__day{
@@ -61,11 +61,11 @@
   justify-content: center;
 }
 
-.calendar_day-selected{
+.calendar_day_selected{
    background-color: var(--purple-3);
    color: var(--white);
 }
 
-.calendar_day-between{
+.calendar_day_between{
   background-color: var(--purple-4);
 }
