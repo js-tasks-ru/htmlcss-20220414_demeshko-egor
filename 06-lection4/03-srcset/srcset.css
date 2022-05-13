@@ -1,0 +1,4 @@
+.image__element{
+   /* object-fit: fill; почему-то не работает с любыми значениями*/
+ max-width: 100%;
+}
