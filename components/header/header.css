@@ -11,3 +11,12 @@
     color: var(--black);
     margin: 0;
 }
+
+.header_template{
+  /* max-width: 1110px; */
+  grid-row: 1;
+  grid-column: aside / end;
+  align-self: end;
+  background-color: var(--grey-0);
+  /* height: 7.96vh; */
+}

@@ -2,23 +2,38 @@
 <html lang="ru" dir="ltr">
   <head>
     <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="./template.css">
+    <link rel="stylesheet" href="../components/container/container.css">
+    <link rel="stylesheet" href="../components/page/page.css">
     <link rel="stylesheet" href="../components/header/header.css">
+    <link rel="stylesheet" href="../components/footer/footer.css">
+    <link rel="stylesheet" href="../components/preview/preview.css">
+    <link rel="stylesheet" href="../components/card/card.css">
+    <link rel="stylesheet" href="./template.css">
     <meta charset="utf-8">
-    <title></title>
+    <title>Component page</title>
   </head>
-  <body style="margin: 0 auto">
-    <div class="template">
-     <header class="template__header">
-       <svg class="template__icon" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-       <rect y="1" width="30" height="30" fill="currentColor"/>
-       <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
-       <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
-</svg>
+
+
+  <body>
+    <div class="page">
+     <header class="header">
+       <div class="container">
+         <section class="header__top-bar">
+           <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+           <rect y="1" width="30" height="30" fill="currentColor"/>
+           <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
+           <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
+         </svg>
+         <div class="header__toogles">
+
+         </div>
+         </section>
+       </div>
      </header>
 
-       <section class="template__main">
 
+       <section class="template__main">
+         <div class="container">
          <aside class="template__aside">
             <h4 class="template__aside-title">Components</h4>
             <nav class="template__nav">
@@ -32,10 +47,10 @@
               <a href="#" class="template__nav-item">Main page</a>
             </nav>
          </aside>
-         <main class="template__preview">
+         <main class="preview">
 
          </main>
-
+       </div>
       </section>
 
      <footer class="template__footer">

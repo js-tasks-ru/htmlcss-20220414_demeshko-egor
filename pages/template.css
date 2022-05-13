@@ -1,23 +1,10 @@
 .template{
   /* height: 100vh; */
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: grid;
-  width: 100vw;
-  grid-auto-rows: 3.5rem auto 8.125rem;
-  grid-template-columns: [start] 11.46% [aside] 1fr [end] 11.46%;
-  align-content: center;
-  background-color: var(--grey-0);
+
 }
 
 .template__header{
-  /* max-width: 1110px; */
-  grid-row: 1;
-  grid-column: aside / end;
-  align-self: end;
-  background-color: var(--grey-0);
-  /* height: 7.96vh; */
+
 }
 
 .template__main{

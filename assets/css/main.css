@@ -28,6 +28,8 @@
   --secondary: var(--purple);
   --secondary-hover: var(--purple-2);
 
+  --global-background: var(--grey-0);
+
 
   --card-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
 
