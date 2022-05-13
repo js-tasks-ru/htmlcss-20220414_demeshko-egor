@@ -8,53 +8,61 @@
     <link rel="stylesheet" href="../components/footer/footer.css">
     <link rel="stylesheet" href="../components/preview/preview.css">
     <link rel="stylesheet" href="../components/card/card.css">
+    <link rel="stylesheet" href="../components/center/center.css">
+    <link rel="stylesheet" href="../components/aside/aside.css">
     <link rel="stylesheet" href="./template.css">
     <meta charset="utf-8">
     <title>Component page</title>
   </head>
 
 
-  <body>
+  <body style="margin: 0;">
     <div class="page">
+      <div class="container">
      <header class="header">
-       <div class="container">
          <section class="header__top-bar">
-           <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- я добавлю спрайт -->   <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
            <rect y="1" width="30" height="30" fill="currentColor"/>
            <rect x="38" width="32" height="32" rx="16" fill="currentColor"/>
            <path d="M78 0L110 32H78V0Z" fill="currentColor"/>
          </svg>
          <div class="header__toogles">
 
+
+
          </div>
-         </section>
+        </section>
        </div>
      </header>
 
 
-       <section class="template__main">
+       <section class="center">
          <div class="container">
-         <aside class="template__aside">
-            <h4 class="template__aside-title">Components</h4>
-            <nav class="template__nav">
-              <a href="#" class="template__nav-item">Modal</a>
-              <a href="#" class="template__nav-item">Tooltip</a>
-              <a href="#" class="template__nav-item">Avatar</a>
-              <a href="#" class="template__nav-item">Calendar</a>
-              <a href="#" class="template__nav-item">Histogram</a>
-              <a href="#" class="template__nav-item">Custom form elements</a>
-              <a href="#" class="template__nav-item  template__nav-item_empty"></a>
-              <a href="#" class="template__nav-item">Main page</a>
+          <div class="center__inner">
+          <aside class="aside center_aside">
+            <h4 class="aside__title">Components</h4>
+            <nav class="aside__navigation">
+              <a href="#" class="aside__nav-item">Modal</a>
+              <a href="#" class="aside__nav-item">Tooltip</a>
+              <a href="#" class="aside__nav-item">Avatar</a>
+              <a href="#" class="aside__nav-item">Calendar</a>
+              <a href="#" class="aside__nav-item">Histogram</a>
+              <a href="#" class="aside__nav-item">Custom form elements</a>
+              <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
+              <a href="#" class="aside__nav-item">Main page</a>
             </nav>
-         </aside>
+          </aside>
          <main class="preview">
 
          </main>
        </div>
+       </div>
       </section>
 
-     <footer class="template__footer">
-       <h5 class="template__footer-text">REUSABLE COMPONENT LIBRARY</h5>
+     <footer class="footer">
+       <div class="container">
+       <h5 class="footer__text">REUSABLE COMPONENT LIBRARY</h5>
+      </div>
      </footer>
 
     </div>

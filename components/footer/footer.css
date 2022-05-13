@@ -1,15 +1,20 @@
 .footer{
-  background-color: var(--white);
-  padding: 71px 0 136px;
+  background-color: inherit;
+  padding: 56px 0;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+.footer_white{
+  background-color: var(--white)
 }
 
 .footer__title{
-  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 38px;
   line-height: 48px;
-  color: #212429;
+  color: var(--black);
   margin: 0 auto;
   text-align: center;
   margin-bottom: 32px;
@@ -17,10 +22,17 @@
 
 .footer__description{
   max-width: 640px;
-  font-family: 'Inter',sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   margin: 0 auto;
   text-align: center;
+}
+
+.footer__text{
+  margin: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--grey-3);
 }

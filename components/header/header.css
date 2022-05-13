@@ -1,6 +1,13 @@
 .header{
-  background-color: var(--white);
-  padding: 96px 0 160px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  /* width: 100%; */
+}
+
+.header_main-page{
+    background-color: var(--white);
+    border-bottom: var(--center-border);
 }
 
 .header__title{
@@ -12,11 +19,9 @@
     margin: 0;
 }
 
-.header_template{
-  /* max-width: 1110px; */
-  grid-row: 1;
-  grid-column: aside / end;
-  align-self: end;
-  background-color: var(--grey-0);
-  /* height: 7.96vh; */
+.header__top-bar{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
 }

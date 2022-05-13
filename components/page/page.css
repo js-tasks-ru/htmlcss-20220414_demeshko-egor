@@ -1,14 +1,5 @@
 .page{
+  padding: 1.5rem 0 0 0;
   background-color: var(--global-background);
-  display: grid;
-  grid-auto-rows: auto 1fr auto;
-  grid-template-columns: 1fr 3fr;
-}
-
-.page_template{
-
-
-
-  align-content: center;
-  background-color: var(--grey-0);
+  display: block;
 }
