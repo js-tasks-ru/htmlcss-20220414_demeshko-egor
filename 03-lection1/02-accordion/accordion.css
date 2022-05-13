@@ -1,14 +1,14 @@
 /* Стилизация аккордеона */
 .accordion{
     font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 400;
     max-width: 730px;
 }
 
 .accordion__item{
-  padding: 24px 32px;
+  padding: 1.5rem 2rem;
   background-color: var(--white);
   border: 1px solid var(--grey-3);
   border-radius: 8px;
@@ -20,20 +20,30 @@
 }
 
 .accordion__item[open]{
-   padding: 24px 47px 32px 32px;
+   padding: 1.5rem 2rem 2rem;
 }
+
+
 
 .accordion__content{
    color: var(--black);
-   display: block;
+   display: flex;
+   flex-flow: row;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.accordion__icon{
+  width: 1.125rem;
+  height: 0.625rem;
+  transition: transform 200ms;
+}
+
+.accordion__item[open] .accordion__icon{
+  transform: rotate(0.5turn);
 }
 
 .accordion__text{
   margin: 16px 0 0 0;
   color: var(--grey-4);
-}
-
-.accordion__icon{
-  color: black;
-  width: 30px;
 }
