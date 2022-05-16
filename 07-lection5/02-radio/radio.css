@@ -1,65 +1,50 @@
 .radio{
-
-}
-
-.radio__content{
-  position: relative;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  width: 102px;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
 }
 
 .radio__element{
   position: absolute;
+  left: 0;
   clip-path: circle(0);
+  margin: 0;
 }
 
 .radio__visual{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 28px;
+  height: 28px;
   border: 1px solid var(--grey-2);
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
-  margin: 1px;
-}
-
-.radio__visual::after{
-  position: absolute;
-  right: 0;
-  content: "Default";
-  color: var(--grey-4);
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
+  margin-right: 12px;
 }
 
 .radio__inner-circle{
   display: none;
   border-radius: 50%;
   background-color: var(--purple-3);
-  width: 18px;
+  flex: 0 0 18px;
   height: 18px;
 }
 
-.radio__label{
-  /* color: var(--grey-4);
+.radio__label::after{
+  content: "Default";
+  color: var(--grey-4);
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px; */
+  line-height: 24px;
 }
 
 .radio__element:checked ~ .radio__visual{
   border: 2px solid var(--purple-3);
-  margin: 0;
+  margin-right: 11px;
 }
 
-.radio__element:checked ~ .radio__visual::after{
+.radio__element:checked ~ .radio__label::after{
    content: "Selected";
 }
 
@@ -71,6 +56,6 @@
   background-color: var(--grey-2);
 }
 
-.radio__element:disabled ~ .radio__visual::after{
+.radio__element:disabled ~ .radio__label::after{
   content: "Disabled";
 }
