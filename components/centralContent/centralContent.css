@@ -1,19 +1,19 @@
-.main{
+.centralContent{
    background-color: var(--global-background);
    padding: 62px 0 0 0;
 }
 
-.main__inner{
+.centralContent__inner{
   display: grid;
   grid-template-columns: [start] 1fr [aside] 3fr [end];
   grid-template-rows: 1fr;
   gap: 56px;
 }
 
-.main_aside{
+.centralContent_aside{
   grid-column: start / aside;
 }
 
-.main_preview{
+.centralContent_preview{
   grid-column: aside / end;
 }
