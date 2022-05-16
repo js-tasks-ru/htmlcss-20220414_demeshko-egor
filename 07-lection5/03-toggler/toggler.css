@@ -1,0 +1,28 @@
+.toggler{
+  display: flex;
+}
+
+.toggler__element{
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+.toggler__visual{
+  box-sizing: border-box;
+  padding: 0 2px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 52px;
+  height: 28px;
+  background-color: var(--white);
+  border: 1px solid var(--grey-2);
+  border-radius: 17px;
+}
+
+.toggler__switcher{
+  flex: 0 0 24px;
+  height: 24px;
+  background-color: var(--grey-2);
+  border-radius: 16px;
+}
