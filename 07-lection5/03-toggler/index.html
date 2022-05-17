@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="./toggler.css">
     </head>
     <body style="padding: 50px 0 0 0; margin: 0 auto; width: 500px; display: grid; grid-template-columns: 1fr;
-    grid-auto-rows: auto auto auto;">
+    grid-auto-rows: auto auto auto; gap: 12px;">
       <h5 style="font-family: 'Inter', sans-serif;
       color: var(--grey-3); font-size: 12px;">Toggle button</h5>
 
@@ -16,7 +16,16 @@
            <div class="toggler__switcher">
            </div>
         </div>
-        <span class="toogler__label"></span>
+        <span class="toggler__label"></span>
+      </label>
+
+      <label class="toggler">
+        <input class="toggler__element" type="checkbox" disabled>
+        <div class="toggler__visual">
+           <div class="toggler__switcher">
+           </div>
+        </div>
+        <span class="toggler__label"></span>
       </label>
 
     </body>

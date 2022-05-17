@@ -1,5 +1,9 @@
+/*общая стилизация элемента (неактивного состояния)*/
 .toggler{
   display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
 }
 
 .toggler__element{
@@ -9,7 +13,7 @@
 
 .toggler__visual{
   box-sizing: border-box;
-  padding: 0 2px;
+  padding: 2px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -21,8 +25,61 @@
 }
 
 .toggler__switcher{
-  flex: 0 0 24px;
-  height: 24px;
+  flex: 0 0 23px;
+  height: 23px;
   background-color: var(--grey-2);
   border-radius: 16px;
+}
+
+.toggler__label::after{
+   content: "Off";
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 24px;
+   color: var(--grey-4);
+}
+
+
+/*визуализацию активного состояния переключателя*/
+.toggler__element:focus ~ .toggler__visual{
+  box-shadow: inset 0 0 5px 1px var(--purple-3);
+}
+
+.toggler__element:focus ~ .toggler__label::after{
+  text-decoration: underline;
+}
+
+.toggler__element:checked ~ .toggler__visual{
+  justify-content: flex-end;
+  background-color: var(--purple-3);
+  border: 1px solid var(--purple-3);
+}
+
+.toggler__element:checked ~ .toggler__visual .toggler__switcher{
+  background-color: var(--white);
+}
+
+.toggler__element:checked ~ .toggler__label::after{
+  content: "On";
+}
+
+.toggler__element:active ~ .toggler__label::after{
+  text-decoration: underline;
+}
+
+.toggler__element:disabled ~ .toggler__visual{
+  background-color: var(--grey-2);
+}
+
+.toggler__element:disabled ~ .toggler__visual .toggler__switcher{
+  background-color: var(--grey-3);
+}
+
+.toggler__element:disabled ~ .toggler__label::after{
+  content: "Disabled";
+}
+
+.toggler__element:disabled:active ~ .toggler__label::after{
+  text-decoration: none;
 }
