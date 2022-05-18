@@ -15,29 +15,32 @@
   width: 100%;
 }
 
-.input__typing_invalid{
-  outline: 1px solid var(--red);
-}
-
 .input__icon{
   position: absolute;
   top: 1.125em;
   right: 1.125rem;
 }
 
-.input__icon_success{
-  color: var(--blue);
-}
 
-.input__icon_invalid{
-  color: var(--red);
-}
-
-
+/*описание молекулярного элемента с модификаторами*/
 .input__dataInArea{
   position: relative;
   width: 100%;
 }
+
+.input__dataInArea_invalid .input__typing{
+  outline: 1px solid var(--red);
+}
+
+.input__dataInArea_invalid .input__icon{
+  color: var(--red);
+}
+
+.input__dataInArea_success .input__icon{
+  color: var(--blue);
+}
+/*-----------------------------------------------*/
+
 
 .input{
   font-family: 'Inter', sans-serif;
