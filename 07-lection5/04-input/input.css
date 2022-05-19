@@ -25,11 +25,10 @@
 /*описание молекулярного элемента с модификаторами*/
 .input__dataInArea{
   position: relative;
-  width: 100%;
 }
 
 .input__dataInArea_invalid .input__typing{
-  outline: 1px solid var(--red);
+  border: 1px solid var(--red);
 }
 
 .input__dataInArea_invalid .input__icon{
@@ -48,8 +47,13 @@
   flex-direction: column;
 }
 
+
 /*реализация состояний*/
 .input__typing:focus{
    box-shadow: var(--input-shadow);
    outline: 1px solid var(--purple-3);
+}
+
+.input__typing:disabled{
+  background-color: var(--grey-1);
 }
