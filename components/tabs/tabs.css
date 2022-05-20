@@ -3,8 +3,8 @@
 }
 
 .tabs__radio-input{
-  position: absolute;
-  clip: rect(0,0,0,0);
+  /* position: absolute; */
+  /* clip: rect(0,0,0,0); */
 }
 
 .tabs__scroller{
@@ -13,14 +13,15 @@
   gap: 2.5rem;
 }
 
-/* .tabs__label{ */
-  /* padding-bottom: 8px;
-} */
-
-.tabs__radio-input:checked ~ .tabs__scroller .tabs__label::after{
+.tabs__label{
   display: block;
-  content: " ";
-  height: 5px;
-  background-color: var(--black);
-  margin-top: 8px;
+  padding-bottom: 13px;
+}
+
+.tabs__label:hover{
+  border-bottom: 5px solid var(--black);
+}
+
+.tabs__label:checked{
+  border-bottom: 5px solid var(--black);
 }
