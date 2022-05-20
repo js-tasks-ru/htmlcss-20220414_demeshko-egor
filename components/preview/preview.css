@@ -1,7 +1,8 @@
 .preview{
-  height: 1036px;
-  background-color: var(--grey-0);
+  background-color: var(--white);
   padding: 67px 0 204px;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
 }
 
 .preview__inner{

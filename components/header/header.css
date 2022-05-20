@@ -1,6 +1,13 @@
 .header{
-  background-color: var(--white);
-  padding: 96px 0 160px;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  /* width: 100%; */
+}
+
+.header_main-page{
+    background-color: var(--white);
+    border-bottom: var(--center-border);
 }
 
 .header__title{
@@ -10,4 +17,11 @@
     line-height: 64px;
     color: var(--black);
     margin: 0;
+}
+
+.header__top-bar{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
 }
