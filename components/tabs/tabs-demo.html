@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../assets/css/normolize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../container/container.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="./tabs.css">
+    <title>пробная реализация табов</title>
+  </head>
+  <body>
+    <div class="header">
+
+    </div>
+    <div class="tabs">
+     <input class="tabs__radio-input" type="radio" id="#all-tab" name="tabs" checked>
+     <input class="tabs__radio-input" type="radio" id="#atoms-tab" name="tabs">
+     <input class="tabs__radio-input" type="radio" id="#simple-tab" name="tabs">
+
+   <div class="tabs__scroller">
+       <label class="tabs__label" for="#all-tab">All components</label>
+       <label class="tabs__label" for="#complex-tab">Complex</label>
+       <label class="tabs__label" for="#simple-tab">Simple</label>
+   </div>
+
+   <div class="tabs__content tabs__content_complex">
+       <!-- Сложные компоненты -->
+   </div>
+   <div class="tabs__content tabs__content_simple">
+       <!-- Простые компоненты -->
+   </div>
+</div>
+  </body>
+</html>

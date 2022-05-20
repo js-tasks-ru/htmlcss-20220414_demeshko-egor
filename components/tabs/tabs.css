@@ -1,0 +1,26 @@
+.tabs{
+  position: relative;
+}
+
+.tabs__radio-input{
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+.tabs__scroller{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+/* .tabs__label{ */
+  /* padding-bottom: 8px;
+} */
+
+.tabs__radio-input:checked ~ .tabs__scroller .tabs__label::after{
+  display: block;
+  content: " ";
+  height: 5px;
+  background-color: var(--black);
+  margin-top: 8px;
+}
