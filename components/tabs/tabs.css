@@ -3,8 +3,8 @@
 }
 
 .tabs__radio-input{
-  /* position: absolute; */
-  /* clip: rect(0,0,0,0); */
+  position: absolute;
+  clip: rect(0,0,0,0);
 }
 
 .tabs__scroller{
@@ -19,9 +19,17 @@
 }
 
 .tabs__label:hover{
-  border-bottom: 5px solid var(--black);
+  border-bottom: var(--tabs-bottom);
 }
 
-.tabs__label:checked{
-  border-bottom: 5px solid var(--black);
+#all-tab:checked ~ .tabs__scroller label[for="all-tab"]{
+  border-bottom: var(--tabs-bottom);
+}
+
+#complex-tab:checked ~ .tabs__scroller label[for="complex-tab"]{
+  border-bottom: var(--tabs-bottom);
+}
+
+#simple-tab:checked ~ .tabs__scroller label[for="simple-tab"]{
+  border-bottom: var(--tabs-bottom);
 }

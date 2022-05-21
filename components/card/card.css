@@ -1,7 +1,13 @@
 .card{
-  width: 350px;
-  height: 367px;
-  background: var(--blue);
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  max-width: 21.875rem;
+  background: var(--white);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
 }
