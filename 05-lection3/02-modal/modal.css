@@ -11,7 +11,7 @@
 
 .modal__window{
   position: absolute;
-  padding: 30px 40px 33px;
+  padding: 1.875em 2.5rem 2.0625em;
   max-width: 428px;
   top: 50%;
   left: 50%;
@@ -19,6 +19,31 @@
   background: var(--white);
   border-radius: 8px;
 }
+
+/*модификаторвдля отображения на главной странице*/
+.modal_preview{
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.modal__window_preview{
+  padding: 0;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+/*****************************/
 
 .modal__close{
   width: 1rem;

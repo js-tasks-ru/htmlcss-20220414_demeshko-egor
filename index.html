@@ -11,11 +11,13 @@
         <link rel="stylesheet" href="./components/preview/preview.css">
         <link rel="stylesheet" href="./components/card/card.css">
         <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
-
+        <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
+        <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
     </head>
+
     <body>
       <div class="page">
-        <header class="header">
+        <header class="header header_main-page">
           <div class="container">
 
             <div class="header__top">
@@ -47,7 +49,7 @@
 
               <div class="card">
                 <div class="card__component">
-                  <div class="calendar">
+                  <div class="calendar calendar_font-size-11">
                        <h4 class="calendar__title">October 2019</h4>
                        <div class="calendar__week">
                          <p class="calendar__week-day-name">
@@ -112,23 +114,47 @@
                   </div>
                 </div>
                 <div class="card__description">
-                  <p class="card__title">Card-Title</p>
-                  <p class="card__mini-title">Element-descr</p>
+                  <p class="card__title">Calendar</p>
+                  <p class="card__mini-title">Element</p>
                 </div>
                </div>
 
               <div class="card">
                 <div class="card__component">
+                  <div class="tooltip">
+                     <div class="tooltip__icon">
+                       <svg width="24" height="24" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                        <use href="../../assets/icons.svg#help"></use>
+                       </svg>
+                     </div>
+                     <div class="tooltip__bubble">Helper Text</div>
+                  </div>
 
                 </div>
                 <div class="card__description">
-                  <p class="card__title">Card-Title</p>
-                  <p class="card__mini-title">Element-descr</p>
+                  <p class="card__title">Tooltip</p>
+                  <p class="card__mini-title">Element</p>
                 </div>
                </div>
-              <div class="card">
-                <div class="card__component">
 
+              <div class="card">
+                <div class="card__component card__component_full-height">
+                  <section class="modal modal_preview" id="modal">
+                    <div class="modal__window modal__window_preview">
+                      <svg class="modal__close" id="modal-close" width="16" height="16"
+                      viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <use href="../../assets/icons.svg#close"></use>
+                      </svg>
+                        <div class="modal__text-box">
+                        <h3 class="modal__title">Modal title</h3>
+                        <p class="modal__text">Amet minim mollit non deserunt ullamco
+                          est sit aliqua dolor do amet sint. Velit officia consequat
+                          duis enim velit mollit.</p>
+                        </div>
+
+                     </div>
+                  </section>
                 </div>
                 <div class="card__description">
                   <p class="card__title">Card-Title</p>
