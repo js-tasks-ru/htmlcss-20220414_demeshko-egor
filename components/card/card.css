@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 2px;
-  max-width: 21.875rem;
+  width: 21.875rem;
   background: var(--white);
   border-radius: 12px;
   box-shadow: var(--card-shadow);

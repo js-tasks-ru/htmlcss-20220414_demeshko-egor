@@ -1,5 +1,6 @@
 .tabs{
   position: relative;
+  width: 100%;
 }
 
 .tabs__radio-input{
@@ -16,20 +17,38 @@
 .tabs__label{
   display: block;
   padding-bottom: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-3);
+  transition: border 200ms, color 200ms;
+}
+
+.tabs__content{
+  display: none;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.875rem;
 }
 
 .tabs__label:hover{
   border-bottom: var(--tabs-bottom);
 }
 
-#all-tab:checked ~ .tabs__scroller label[for="all-tab"]{
-  border-bottom: var(--tabs-bottom);
+
+/*стилизация состояний активных табов*/
+#all-tab:checked  ~  .tabs__scroller  label[for="all-tab"],
+#complex-tab:checked  ~  .tabs__scroller  label[for="complex-tab"],
+#simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"]{
+    border-bottom: var(--tabs-bottom);
+    color: var(--black);
 }
 
-#complex-tab:checked ~ .tabs__scroller label[for="complex-tab"]{
-  border-bottom: var(--tabs-bottom);
+#all-tab:checked  ~  .tabs__content,
+#complex-tab:checked  ~  .tabs__content_complex,
+#simple-tab:checked  ~  .tabs__content_simple{
+    display: flex;
 }
-
-#simple-tab:checked ~ .tabs__scroller label[for="simple-tab"]{
-  border-bottom: var(--tabs-bottom);
-}
+/**************************************/
