@@ -1,0 +1,59 @@
+.input__label{
+  color: var(--grey-3);
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+}
+
+.input__typing{
+  box-sizing: border-box;
+  border: 1px solid var(--grey-2);
+  border-radius: 8px;
+  font-size: 1.25rem;
+  line-height: 1.625rem;
+  color: var(--grey-2);
+  padding: 0.65em 0 0.65em 1.5rem;
+  width: 100%;
+}
+
+.input__icon{
+  position: absolute;
+  top: 1.125em;
+  right: 1.125rem;
+}
+
+
+/*описание молекулярного элемента с модификаторами*/
+.input__dataInArea{
+  position: relative;
+}
+
+.input__dataInArea_invalid .input__typing{
+  border: 1px solid var(--red);
+}
+
+.input__dataInArea_invalid .input__icon{
+  color: var(--red);
+}
+
+.input__dataInArea_success .input__icon{
+  color: var(--blue);
+}
+/*-----------------------------------------------*/
+
+
+.input{
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*реализация состояний*/
+.input__typing:focus{
+   box-shadow: var(--input-shadow);
+   outline: 1px solid var(--purple-3);
+}
+
+.input__typing:disabled{
+  background-color: var(--grey-1);
+}
