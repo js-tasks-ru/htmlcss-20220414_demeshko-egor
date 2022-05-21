@@ -20,7 +20,7 @@
     padding: 2.5rem 0;
 }
 
-.header__logo-and-toogles{
+.header__top{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
