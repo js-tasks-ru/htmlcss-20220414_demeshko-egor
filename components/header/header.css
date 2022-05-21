@@ -1,9 +1,6 @@
 .header{
   padding: 1.5rem 0 0 0;
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  /* width: 100%; */
+  display: block;
 }
 
 .header_main-page{
@@ -21,9 +18,10 @@
     padding: 2.5rem 0;
 }
 
-.header__top{
+.header__top-bar{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
 }
 
 .header__logo-box{
@@ -39,9 +37,19 @@
   flex-flow: row;
   flex-grow: 1;
   justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.header__ancor{
+  text-decoration: none;
+  color: var(--grey-3);
 }
 
 @media (max-width: 480px){
+
+  .header{
+    padding: 1rem 0 0 0;
+  }
 
   .header__title{
     font-size: 1.75rem;
@@ -52,7 +60,7 @@
     display: none;
   }
 
-  .header__logo-and-toogles{
+  .header__top-bar{
     grid-template-columns: 1fr;
   }
 
@@ -61,9 +69,8 @@
   }
 }
 
-.header__top-bar{
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-
+/*стилизация состояний*/
+.header__ancor:hover{
+   color: var(--black);
 }
+/**********************/

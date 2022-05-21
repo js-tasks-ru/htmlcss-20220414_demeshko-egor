@@ -13,6 +13,10 @@
   box-shadow: var(--card-shadow);
 }
 
+.card_justify-streched{
+  justify-items: stretch;
+}
+
 .card__component{
   border-radius: 12px 12px 0 0;
   grid-row: 1 / 2;
@@ -46,6 +50,14 @@
 
 @media screen and (max-width:480px){
   .card{
-    max-width: 100%;
+    font-size: 0.68rem;
+    padding: 0;
+    width: auto;
+    height: auto;
   }
+
+  .card__description{
+    padding: 8px 0;
+  }
+
 }

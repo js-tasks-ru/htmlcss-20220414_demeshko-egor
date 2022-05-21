@@ -1,5 +1,4 @@
 .calendar{
-  font-size: 1rem;
   padding: 0 1.625em 0 1.6875em;
   border: 1px solid var(--grey-3);
   border-radius: 8px;
@@ -12,8 +11,8 @@
   box-sizing: border-box;
 }
 
-.calendar_font-size-11{
-  font-size: 11px;
+.calendar_font-size-small{
+  font-size: 0.68rem;
 }
 
 .calendar__title{
@@ -72,4 +71,13 @@
 
 .calendar_day_between{
   background-color: var(--purple-4);
+}
+
+@media screen and (max-width:480px){
+  .calendar{
+    /* font-size: 9px; */
+    border: none;
+    padding: 0;
+    grid-template: 1.625em 2.1em 4.1875em 1fr 0 / 1fr;
+  }
 }

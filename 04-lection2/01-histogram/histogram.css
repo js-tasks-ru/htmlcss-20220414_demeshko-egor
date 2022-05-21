@@ -1,5 +1,4 @@
 .histogram{
-  max-width: 354px;
   padding: 16px 24px 24px;
   display: flex;
   flex-direction: column;
@@ -10,8 +9,8 @@
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1em;
+  line-height: 1.5em;
 }
 
 .histogram__header{
@@ -26,13 +25,13 @@
 
 .histogram__total{
   padding-top: 6px;
-  font-size: 20px;
-  line-height: 26px;
+  font-size: 1.15em;
+  line-height: 1.625em;
 }
 
 .histogram__chart-box {
-    padding: 39px 5px 0 2px;
-    height: 50px;
+    padding: 2.437em 0.3125em 0 0.125em;
+    height: 3.125em;
     display: flex;
     align-items: flex-end;
     flex-grow: 2;
