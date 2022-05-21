@@ -1,0 +1,19 @@
+.central-content{
+   background-color: var(--global-background);
+   padding: 62px 0 0 0;
+}
+
+.central-content__inner{
+  display: grid;
+  grid-template-columns: [start] 1fr [aside] 3fr [end];
+  grid-template-rows: 1fr;
+  gap: 56px;
+}
+
+.central-content__aside{
+  grid-column: start / aside;
+}
+
+.central-content__preview{
+  grid-column: aside / end;
+}

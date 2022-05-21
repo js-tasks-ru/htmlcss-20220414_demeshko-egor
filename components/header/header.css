@@ -1,6 +1,13 @@
 .header{
-  background-color: var(--white);
-  padding: 1.5rem 0 2.31rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  /* width: 100%; */
+}
+
+.header_main-page{
+    background-color: var(--white);
+    border-bottom: var(--center-border);
 }
 
 .header__title{
@@ -51,4 +58,11 @@
   .header__logo-box{
     justify-self: center;
   }
+}
+
+.header__top-bar{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
 }

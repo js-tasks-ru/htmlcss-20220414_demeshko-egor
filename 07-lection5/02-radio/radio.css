@@ -1,0 +1,63 @@
+.radio{
+   position: relative;
+   display: flex;
+   align-items: center;
+   /* justify-content: flex-start; */
+   gap: 0.75rem;
+}
+
+.radio__element{
+  position: absolute;
+  left: 0;
+  clip-path: circle(0);
+  margin: 0;
+}
+
+.radio__visual{
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 28px;
+  height: 28px;
+  border: 1px solid var(--grey-2);
+  border-radius: 50%;
+  /* margin-right: 12px; */
+}
+
+.radio__inner-circle{
+  display: none;
+  border-radius: 50%;
+  background-color: var(--purple-3);
+  flex: 0 0 18px;
+  height: 18px;
+}
+
+.radio__label::after{
+  content: "Default";
+  color: var(--grey-4);
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.radio__element:checked ~ .radio__visual{
+  border: 2px solid var(--purple-3);
+}
+
+.radio__element:checked ~ .radio__label::after{
+   content: "Selected";
+}
+
+.radio__element:checked ~ .radio__visual .radio__inner-circle{
+  display: block;
+}
+
+.radio__element:disabled ~ .radio__visual{
+  background-color: var(--grey-2);
+}
+
+.radio__element:disabled ~ .radio__label::after{
+  content: "Disabled";
+}

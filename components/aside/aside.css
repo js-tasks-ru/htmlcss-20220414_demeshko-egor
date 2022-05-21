@@ -1,0 +1,31 @@
+.aside__title{
+    margin: 0;
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 1rem;
+  }
+
+.aside__navigation{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+  }
+
+.aside__nav-item{
+    text-decoration: none;
+    color: var(--black);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+.aside__nav-item:focus{
+    color: var(--orange-0);
+  }
+
+.aside__nav-item_empty{
+    height: 22px;
+  }
+}
