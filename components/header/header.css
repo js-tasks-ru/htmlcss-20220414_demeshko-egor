@@ -54,6 +54,7 @@
   .header__title{
     font-size: 1.75rem;
     padding: 3.063rem 0 2rem;
+    line-height: 2.375rem;
   }
 
   .header__toogles{

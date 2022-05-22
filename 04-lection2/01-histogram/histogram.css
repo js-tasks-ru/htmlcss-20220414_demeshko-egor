@@ -30,7 +30,7 @@
 }
 
 .histogram__chart-box {
-    padding: 2.437em 0.3125em 0 0.125em;
+    padding: 2.437em 0.3125rem 0 0.125rem;
     height: 3.125em;
     display: flex;
     align-items: flex-end;
@@ -41,4 +41,18 @@
 .histogram__bar{
     flex: 1 1 9px;
     background-color: var(--histogram-bar);
+}
+
+@media screen and (max-width: 480px){
+   .histogram{
+     padding: 1em;
+   }
+
+   .histogram__title{
+     font-size: 0.8em;
+   }
+
+   .histogram__chart-box{
+      padding: 1.5em 0.3125rem 0 0.125rem;
+   }
 }

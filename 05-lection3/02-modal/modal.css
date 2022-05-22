@@ -75,3 +75,24 @@
   font-weight: 400;
   color: var(--grey-4);
 }
+
+
+@media screen and (max-width: 480px){
+  .modal__title{
+    font-size: 12px;
+  }
+
+  .modal__text{
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .modal__close{
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .modal__text-box{
+    gap: 10px;
+  }
+}

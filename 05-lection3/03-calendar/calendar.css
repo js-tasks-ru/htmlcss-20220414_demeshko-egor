@@ -78,6 +78,14 @@
     /* font-size: 9px; */
     border: none;
     padding: 0;
-    grid-template: 1.625em 2.1em 4.1875em 1fr 0 / 1fr;
+    grid-template: 0 2em 3.5em 1fr 0 / 1fr;
+  }
+
+  .calendar__title{
+    font-size: 1em;
+  }
+
+  .calendar__days{
+    font-size: 0.9em;
   }
 }
