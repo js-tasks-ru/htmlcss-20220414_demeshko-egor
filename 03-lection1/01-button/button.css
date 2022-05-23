@@ -10,6 +10,7 @@
   cursor: pointer;
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out,
   border 200ms ease-in-out, color 200ms ease-in-out;
+  width: 100%;
 }
 
 .button:disabled{
@@ -64,3 +65,7 @@
   color: var(--white);
 }
 /*----------------------*/
+
+.button_flex-grow{
+
+}
