@@ -1,0 +1,55 @@
+.tabs{
+  position: relative;
+  background-color: var(--grey-0);
+  /* width: 100%; */
+}
+
+.tabs__radio-input{
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+.tabs__scroller{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+}
+
+.tabs__label{
+  display: block;
+  padding-bottom: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--grey-3);
+  transition: border 200ms, color 200ms;
+}
+
+.tabs__content{
+  display: none;
+  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.875rem;
+}
+
+.tabs__label:hover{
+  border-bottom: var(--tabs-bottom);
+}
+
+
+/*стилизация состояний активных табов*/
+#all-tab:checked  ~  .tabs__scroller  label[for="all-tab"],
+#complex-tab:checked  ~  .tabs__scroller  label[for="complex-tab"],
+#simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"]{
+    border-bottom: var(--tabs-bottom);
+    color: var(--black);
+}
+
+#all-tab:checked  ~  .tabs__content,
+#complex-tab:checked  ~  .tabs__content_complex,
+#simple-tab:checked  ~  .tabs__content_simple{
+    display: flex;
+}
+/**************************************/

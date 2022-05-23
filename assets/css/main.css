@@ -19,6 +19,7 @@
   --grey-5: #334D6E;
   --grey-6: #90A0B7;
   --grey-7: #C4C4C478;
+  --orange-0: #D84910;
 
   --error: var(--red);
   --success: var(--blue);
@@ -41,10 +42,9 @@
 
   --calendar-grey: var(--grey-5);
 
-<<<<<<< HEAD
-  --max-width: 480px;
-=======
   --orange-0: #D84910;
+=======
+  --tabs-bottom: 5px solid var(--black);
 >>>>>>> master
 }
 
