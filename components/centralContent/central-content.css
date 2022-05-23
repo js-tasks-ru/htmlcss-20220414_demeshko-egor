@@ -17,3 +17,14 @@
 .central-content__preview{
   grid-column: aside / end;
 }
+
+@media screen and (max-width: 480px){
+  .central-content__inner{
+    display: flex;
+    flex-flow: column;
+  }
+
+  .central-content__aside{
+    display: none;
+  }
+}
