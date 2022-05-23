@@ -5,8 +5,8 @@
   display: grid;
   grid-template: 3fr 1fr / 1fr;
   place-items: center;
-  width: 21.875em;
-  height: 22.9375em;
+  width: 350px;
+  height: 367px;
   background: var(--white);
   border-radius: 12px;
   box-shadow: var(--card-shadow);

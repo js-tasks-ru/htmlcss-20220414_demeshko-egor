@@ -30,7 +30,7 @@
 }
 
 .histogram__chart-box {
-    padding: 2.437em 0.3125rem 0 0.125rem;
+    padding: 2.437em 0.3125em 0 0.125em;
     height: 3.125em;
     display: flex;
     align-items: flex-end;
