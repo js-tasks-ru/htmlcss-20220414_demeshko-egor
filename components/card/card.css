@@ -1,13 +1,91 @@
 .card{
+  font-size: 1rem;
   box-sizing: border-box;
-  padding: 2rem;
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2px;
-  width: 21.875rem;
+  padding: 2em 1.5625em;
+  display: grid;
+  grid-template: 3fr 1fr / 1fr;
+  place-items: center;
+  width: 350px;
+  height: 367px;
   background: var(--white);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
+}
+
+.card_justify-streched{
+  justify-items: stretch;
+}
+
+.card__component{
+  border-radius: 12px 12px 0 0;
+  grid-row: 1 / 2;
+}
+
+.card__component_full-height{
+  height: 100%;
+}
+
+.card__description{
+  grid-row: 2 / 3;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  flex-flow: column;
+  justify-content: end;
+  align-items: center;
+  align-self: end;
+  gap: 0.375em;
+}
+
+.card__title{
+  margin: 0;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--black);
+}
+
+.card__mini-title{
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.17rem;
+  color: var(--grey-4);
+}
+
+@media screen and (max-width:480px){
+  .card{
+    font-size: 0.60rem;
+    padding: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .card__component{
+    padding: 1em;
+    border-bottom: 1px solid var(--grey-2);
+    place-self: stretch;
+    display: grid;
+    align-items: center;
+  }
+
+  .card__component_centered{
+    place-items: center;
+  }
+
+  .card__component_no-padding{
+    padding: 0;
+  }
+
+  .card__description{
+    padding: 8px 0;
+  }
+
+  .card__title{
+    font-size: 16px;
+  }
+
+  .card__mini-title{
+    font-size: 14px;
+    line-height: 22px;
+    color: var(--grey-3);
+  }
+
 }

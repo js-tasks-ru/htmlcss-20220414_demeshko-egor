@@ -11,7 +11,7 @@
 
 .modal__window{
   position: absolute;
-  padding: 30px 40px 33px;
+  padding: 1.875em 2.5rem 2.0625em;
   max-width: 428px;
   top: 50%;
   left: 50%;
@@ -19,6 +19,31 @@
   background: var(--white);
   border-radius: 8px;
 }
+
+/*модификаторвдля отображения на главной странице*/
+.modal_preview{
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.modal__window_preview{
+  padding: 0;
+  width: 90%;
+  height: 90%;
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+/*****************************/
 
 .modal__close{
   width: 1rem;
@@ -49,4 +74,25 @@
   margin: 0;
   font-weight: 400;
   color: var(--grey-4);
+}
+
+
+@media screen and (max-width: 480px){
+  .modal__title{
+    font-size: 12px;
+  }
+
+  .modal__text{
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .modal__close{
+    width: 0.8rem;
+    height: 0.8rem;
+  }
+
+  .modal__text-box{
+    gap: 10px;
+  }
 }

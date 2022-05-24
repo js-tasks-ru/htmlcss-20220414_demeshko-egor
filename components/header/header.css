@@ -1,8 +1,6 @@
 .header{
-  display: flex;
-  flex-flow: column;
-  justify-content: flex-start;
-  /* width: 100%; */
+  padding: 1.5rem 0 0 0;
+  display: block;
 }
 
 .header_main-page{
@@ -11,17 +9,69 @@
 }
 
 .header__title{
+    margin: 0;
     font-family: 'Inter', sans-serif;
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 500;
     line-height: 64px;
     color: var(--black);
-    margin: 0;
+    padding: 2.5rem 0;
 }
 
 .header__top-bar{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+
+.header__logo-box{
+  justify-self: left;
+}
+
+.header__logo{
+  color: var(--black);
+}
+
+.header__toogles{
   display: flex;
   flex-flow: row;
-  justify-content: space-between;
-
+  flex-grow: 1;
+  justify-content: flex-end;
+  gap: 1.5rem;
 }
+
+.header__ancor{
+  text-decoration: none;
+  color: var(--grey-3);
+}
+
+@media (max-width: 480px){
+
+  .header{
+    padding: 1rem 0 0 0;
+  }
+
+  .header__title{
+    font-size: 1.75rem;
+    padding: 3.063rem 0 2rem;
+    line-height: 2.375rem;
+  }
+
+  .header__toogles{
+    display: none;
+  }
+
+  .header__top-bar{
+    grid-template-columns: 1fr;
+  }
+
+  .header__logo-box{
+    justify-self: center;
+  }
+}
+
+/*стилизация состояний*/
+.header__ancor:hover{
+   color: var(--black);
+}
+/**********************/
