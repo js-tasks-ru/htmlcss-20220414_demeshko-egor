@@ -13,10 +13,14 @@
         <link rel="stylesheet" href="./components/card/card.css">
         <link rel="stylesheet" href="./components/tabs/tabs.css">
         <link rel="stylesheet" href="./03-lection1/01-button/button.css">
+        <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
+        <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
+        <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
         <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
         <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
         <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
-        <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
+        <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
+        <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
     </head>
 
     <body>
@@ -134,7 +138,7 @@
                    </div>
                    <div class="card__description">
                      <p class="card__title">Calendar</p>
-                     <p class="card__mini-title">Element</p>
+                     <p class="card__mini-title">Component</p>
                    </div>
                   </div>
 
@@ -230,8 +234,8 @@
 
                     </div>
                     <div class="card__description">
-                      <p class="card__title">Calendar</p>
-                      <p class="card__mini-title">Element</p>
+                      <p class="card__title">histogram</p>
+                      <p class="card__mini-title">Component</p>
                     </div>
                   </div>
 
@@ -251,6 +255,106 @@
                     <p class="card__mini-title">Element</p>
                   </div>
                 </div>
+
+                <div class="card">
+                  <div class="card__component card__component_full-height
+                  card__component_no-padding">
+                   <div class="accordion">
+
+                     <details open class="accordion__item">
+                      <summary class="accordion__content">
+                          Accordion item
+                          <svg xmlns="http://www.w3.org/2000/svg" class="accordion__icon">
+                            <use href="../../assets/icons.svg#arrow"></use>
+                          </svg>
+                      </summary>
+                      <p class="accordion__text">
+                          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                           do amet sint. Velit officia consequat duis enim velit mollit.
+                           Exercitation veniam consequat sunt nostrud amet.
+                      </p>
+                    </details>
+                   </div>
+                   </div>
+                   <div class="card__description">
+                    <p class="card__title">Accordion</p>
+                    <p class="card__mini-title">Component</p>
+                   </div>
+                 </div>
+
+                 <div class="card">
+                   <div class="card__component card__component_full-width">
+                     <div class="skeleton">
+                          <div class="skeleton__header">
+                              <div class="skeleton__avatar">
+                              </div>
+                              <div class="skeleton__top">
+                                <div class="skeleton__line  skeleton__line_short">
+                                </div>
+                                <div class="skeleton__line  skeleton__line_medium">
+                                </div>
+                              </div>
+                          </div>
+
+                        <div class="skeleton__bottom">
+                            <div class="skeleton__line">
+                            </div>
+                            <div class="skeleton__line">
+                            </div>
+                        </div>
+                     </div>
+                   </div>
+                   <div class="card__description">
+                     <p class="card__title">Skeleton</p>
+                     <p class="card__mini-title">Component</p>
+                   </div>
+                 </div>
+
+                 <div class="card">
+                   <div class="card__component">
+                     <div class="avatar" aria-label="user\'s avatar">
+                           <img  class="avatar__img" src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="user's avatar">
+                       </div>
+                     </div>
+
+                   <div class="card__description">
+                     <p class="card__title">Avatar</p>
+                     <p class="card__mini-title">Element</p>
+                   </div>
+                 </div>
+
+                 <div class="card">
+                   <div class="card__component card__component_flex-row">
+                     <label class="checkbox">
+                        <div class="checkbox__content">
+                          <input type="checkbox" class="checkbox__input">
+                          <div class="checkbox__visual">
+                            <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <span class="checkbox__title">Default</span>
+                        </div>
+                     </label>
+
+                     <label class="checkbox">
+                        <div class="checkbox__content">
+                          <input type="checkbox" class="checkbox__input" disabled>
+                          <div class="checkbox__visual">
+                            <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                          </div>
+                          <span class="checkbox__title">Disabled</span>
+                        </div>
+                     </label>
+                   </div>
+
+                   <div class="card__description">
+                     <p class="card__title">Avatar</p>
+                     <p class="card__mini-title">Element</p>
+                   </div>
+                 </div>
 
                </section>
 
