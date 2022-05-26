@@ -84,6 +84,10 @@
     padding: 0;
   }
 
+  .card__component_align-start{
+    align-items: start;
+  }
+
   .card__description{
     padding: 8px 0;
   }
