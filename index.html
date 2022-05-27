@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
         <link rel="stylesheet" href="./06-lection4/01-avatar/avatar.css">
         <link rel="stylesheet" href="./07-lection5/01-checkbox/checkbox.css">
+        <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
     </head>
 
     <body>
@@ -64,7 +65,6 @@
 
          <div class="tabs__content tabs__content_all">
            <main class="preview preview_no-box-shadow">
-             <div class="container">
 
                <section class="preview__inner">
 
@@ -257,7 +257,7 @@
                 </div>
 
                 <div class="card">
-                  <div class="card__component card__component_align-start">
+                  <div class="card__component card__component_full-width">
                    <div class="accordion">
 
                      <details open class="accordion__item">
@@ -282,7 +282,7 @@
                  </div>
 
                  <div class="card">
-                   <div class="card__component">
+                   <div class="card__component card__component_full-width">
                      <div class="skeleton">
                           <div class="skeleton__header">
                               <div class="skeleton__avatar">
@@ -323,7 +323,8 @@
                  </div>
 
                  <div class="card">
-                   <div class="card__component card__component_flex-row">
+                   <div class="card__component">
+                    <div class="card__component-inner">
                      <label class="checkbox">
                         <div class="checkbox__content">
                           <input type="checkbox" class="checkbox__input">
@@ -349,15 +350,41 @@
                      </label>
                    </div>
 
+                 <div class="card__component-inner">
+                     <label class="radio">
+                       <!-- <div class="radio__content"> -->
+                         <input class="radio__element" type="radio" name="radio-group">
+                         <div class="radio__visual">
+                           <div class="radio__inner-circle"></div>
+                         </div>
+                         <span class="radio__label"></span>
+                       <!-- </div> -->
+                     </label>
+
+                     <label class="radio">
+                         <input class="radio__element" type="radio" name="radio-group">
+                         <div class="radio__visual">
+                           <div class="radio__inner-circle"></div>
+                         </div>
+                         <span class="radio__label"></span>
+                     </label>
+
+                     <label class="radio">
+                         <input class="radio__element" type="radio" name="radio-group" disabled>
+                         <div class="radio__visual">
+                           <div class="radio__inner-circle"></div>
+                         </div>
+                         <span class="radio__label"></span>
+                     </label>
+                   </div>
+                  </div>
+
                    <div class="card__description">
                      <p class="card__title">Avatar</p>
                      <p class="card__mini-title">Element</p>
                    </div>
                  </div>
-
                </section>
-
-             </div>
            </main>
           </div>
         </div>
