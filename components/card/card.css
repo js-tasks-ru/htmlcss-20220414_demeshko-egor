@@ -44,6 +44,14 @@
   gap: 1.4rem;
 }
 
+.card__component_flex-column{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: flex-start;
+  row-gap: 1.4rem;
+}
+
 .card__description{
   grid-row: 2 / 3;
   border-radius: 0 0 12px 12px;
@@ -86,6 +94,11 @@
     box-sizing: border-box;
   }
 
+  .card__component-inner{
+    column-gap: 3.1rem;
+    justify-content: start;
+  }
+
   .card__component_centered{
     place-items: center;
   }
@@ -96,6 +109,14 @@
 
   .card__component_align-start{
     align-items: start;
+  }
+
+  .card__component_flex-column{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 1rem;
   }
 
   .card__description{
