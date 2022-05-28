@@ -1,6 +1,6 @@
 .preview{
   background-color: var(--grey-0);
-  padding: 67px 0 204px;
+  padding: 1rem 3rem 4rem;
   border-radius: 12px;
   box-shadow: var(--card-shadow);
 }
@@ -10,6 +10,13 @@
   flex-flow: row wrap;
   justify-content: center;
   gap: 30px;
+}
+
+.preview__title{
+  font-family: 'Inter', sans-serif;
+  color: var(--grey-4);
+  font-size: 28px;
+  line-height: 38px;
 }
 
 @media screen and (max-width: 480px){
