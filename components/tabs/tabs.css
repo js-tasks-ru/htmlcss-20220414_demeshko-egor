@@ -74,3 +74,9 @@
 #css:checked  ~  .tabs__css{
     display: flex;
 }
+
+@media screen and (max-width: 480px){
+  .tabs__label{
+    border-bottom: 5px solid var(--white);
+    }
+}

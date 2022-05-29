@@ -13,10 +13,9 @@
     <link rel="stylesheet" href="../centralContent/central-content.css">
     <link rel="stylesheet" href="../aside/aside.css">
     <link rel="stylesheet" href="../tabs/tabs.css">
-    <link rel="stylesheet" href="../../07-lection5/01-checkbox/checkbox.css">
-    <link rel="stylesheet" href="../../07-lection5/02-radio/radio.css">
+    <link rel="stylesheet" href="../../07-lection5/04-input/input.css">
     <meta charset="utf-8">
-    <title>Buttons Element</title>
+    <title>Inputs</title>
   </head>
 
 
@@ -53,9 +52,9 @@
               <a href="#" class="aside__nav-item">Tooltip</a>
               <a href="#" class="aside__nav-item">Buttons</a>
               <a href="#" class="aside__nav-item">Avatar</a>
-              <a href="#" class="aside__nav-item  aside__nav-item_checked">Checkbox / Radio</a>
+              <a href="#" class="aside__nav-item">Checkbox / Radio</a>
               <a href="#" class="aside__nav-item">Toggler</a>
-              <a href="#" class="aside__nav-item">Input</a>
+              <a href="#" class="aside__nav-item  aside__nav-item_checked">Input</a>
               <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
             </nav>
 
@@ -75,60 +74,46 @@
          <main class="preview central-content__preview preview_white">
 
            <div class="preview__element-visual">
-             <h3 class="preview__title">Checkbox and Radiocheck</h3>
-             <label class="checkbox">
-                <div class="checkbox__content">
-                  <input type="checkbox" class="checkbox__input">
-                  <div class="checkbox__visual">
-                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+             <h3 class="preview__title">Inputs</h3>
+             <div class="input">
+                 <label class="input__label" for="input__typing">LABEL</label>
+                  <div class="input__dataInArea">
+                       <input class="input__typing" type="text" placeholder="Placeholder"
+                       id="input__typing">
                   </div>
-                  <span class="checkbox__title">Default</span>
-                </div>
-             </label>
+             </div>
 
-             <label class="checkbox">
-                <div class="checkbox__content">
-                  <input type="checkbox" class="checkbox__input" disabled>
-                  <div class="checkbox__visual">
-                    <svg class="checkbox__icon" width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1.5 7.5L5 11L13 2" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+             <div class="input">
+                 <label class="input__label" for="input__typing">SUCCESS</label>
+                  <div class="input__dataInArea input__dataInArea_success">
+                       <input class="input__typing" type="text" placeholder="Success"
+                       id="input__typing">
+                     <svg class="input__icon" width="20" height="20"
+                      viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                       <use href="../../assets/icons.svg#success"></use>
+                     </svg>
                   </div>
-                  <span class="checkbox__title">Disabled</span>
-                </div>
-             </label>
+             </div>
 
-             <label class="radio">
-               <!-- <div class="radio__content"> -->
-                 <input class="radio__element" type="radio" name="radio-group">
-                 <div class="radio__visual">
-                   <div class="radio__inner-circle"></div>
+             <div class="input">
+                 <label class="input__label" for="input__typing">ERROR</label>
+                 <div class="input__dataInArea input__dataInArea_invalid">
+                      <input class="input__typing" type="text"
+                      placeholder="Error" id="input__typing">
+                    <svg class="input__icon" width="20" height="20"
+                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <use href="../../assets/icons.svg#warning"></use>
+                    </svg>
                  </div>
-                 <span class="radio__label"></span>
-               <!-- </div> -->
-             </label>
+             </div>
 
-             <label class="radio">
-               <!-- <div class="radio__content"> -->
-                 <input class="radio__element" type="radio" name="radio-group">
-                 <div class="radio__visual">
-                   <div class="radio__inner-circle"></div>
+             <div class="input">
+                 <label class="input__label" for="input__typing">DISABLED</label>
+                 <div class="input__dataInArea">
+                      <input class="input__typing" type="text"
+                      placeholder="" id="input__typing" disabled>
                  </div>
-                 <span class="radio__label"></span>
-               <!-- </div> -->
-             </label>
-
-             <label class="radio">
-               <!-- <div class="radio__content"> -->
-                 <input class="radio__element" type="radio" name="radio-group" disabled>
-                 <div class="radio__visual">
-                   <div class="radio__inner-circle"></div>
-                 </div>
-                 <span class="radio__label"></span>
-               <!-- </div> -->
-             </label>
+             </div>
 
            </div>
 
@@ -157,7 +142,6 @@
           </div>
 
          </main>
-
 
        </div>
       </section>
