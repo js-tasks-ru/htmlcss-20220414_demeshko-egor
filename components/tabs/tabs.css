@@ -47,6 +47,11 @@
   gap: 1.875rem;
 }
 
+.tabs__content-max-height{
+  max-height: 400px;
+  overflow: scroll;
+}
+
 .tabs__label:hover{
   border-bottom: var(--tabs-bottom);
 }

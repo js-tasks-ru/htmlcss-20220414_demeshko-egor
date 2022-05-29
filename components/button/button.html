@@ -99,10 +99,89 @@
                   CSS</label>
             </div>
 
-            <div class="tabs__content tabs__html preview__tab-content">
+            <div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(68, 68, 68);">
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_primary"</span>&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Primary</span>&lt;/button&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_primary"</span> disabled&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Primary</span>&lt;/button&gt;
+
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_secondary"</span>&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Secondary</span>&lt;/button&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_secondary"</span> disabled&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Secondary</span>&lt;/button&gt;
+
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_alternate"</span>&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Alternate</span>&lt;/button&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_alternate"</span> disabled&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Alternate</span>&lt;/button&gt;</pre>
+
             </div>
 
-            <div class="tabs__content tabs__css preview__tab-content">
+            <div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(68, 68, 68);"><span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button</span>{
+<span class="hljs-attribute" style="font-weight: 700;">padding</span>:<span class="hljs-number" style="color: rgb(136, 0, 0);">15px</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">15px</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">14px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">border-radius</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">8px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">border</span>: none;
+<span class="hljs-attribute" style="font-weight: 700;">font-family</span>: <span class="hljs-string" style="color: rgb(136, 0, 0);">'Roboto'</span>, sans-serif;
+<span class="hljs-attribute" style="font-weight: 700;">font-style</span>: normal;
+<span class="hljs-attribute" style="font-weight: 700;">font-weight</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">500</span>;
+<span class="hljs-attribute" style="font-weight: 700;">font-size</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">16px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">line-height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">19px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">cursor</span>: pointer;
+<span class="hljs-attribute" style="font-weight: 700;">transition</span>: opacity <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span> ease-in-out, background <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span> ease-in-out,
+border <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span> ease-in-out, color <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span> ease-in-out;
+<span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100%</span>;
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:disabled</span>{
+                 <span class="hljs-attribute" style="font-weight: 700;">opacity</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.5</span>;
+                 <span class="hljs-attribute" style="font-weight: 700;">pointer-events</span>: none;
+              }
+
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*стилизация primary button*/</span>
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_primary</span>{
+                <span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--blue);
+                <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+              }
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_primary</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:hover</span>{
+                <span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--primary-hover);
+              }
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_primary</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:active</span>{
+                  <span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--blue);
+              }
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*----------------*/</span>
+
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*стилизация secondary button*/</span>
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_secondary</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--purple);
+<span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_secondary</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:hover</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--purple-2);
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_secondary</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:active</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--purple);
+}
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*-----------------------*/</span>
+
+
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*стилизация alternate button*/</span>
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_alternate</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+<span class="hljs-attribute" style="font-weight: 700;">border</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1px</span> solid <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--grey-3);
+<span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--grey-4);
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_alternate</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:hover</span>{
+<span class="hljs-attribute" style="font-weight: 700;">border</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1px</span> solid <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--black);
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_alternate</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:active</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--grey-3);
+<span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+}
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*----------------------*/</span>
+</pre>
             </div>
 
            </div>
