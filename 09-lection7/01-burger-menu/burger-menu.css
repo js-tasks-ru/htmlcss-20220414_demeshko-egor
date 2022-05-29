@@ -6,6 +6,7 @@
 @media (max-width: 480px){
 .burger{
   display: block;
+  box-sizing: border-box;
 }
 
 .burger__icon{
@@ -14,10 +15,16 @@
 
 }
 
-.burger__close-icon{
-  width: 16px;
-  height: 16px;
-}
+ .burger__close-icon{
+   width: 16px;
+   height: 16px;
+ }
+
+ .burger__logo{
+   width: 133px;
+   height: 32px;
+   justify-self: center;
+ }
 
 .burger__menu-button{
   border: none;
@@ -45,7 +52,9 @@
 }
 
 .burger__menu{
+  padding: 1rem;
   display: block;
+  box-sizing: border-box;
   opacity: 0;
   position: fixed;
   top: 0;
@@ -62,8 +71,14 @@
   transform: translateX(0);
 }
 
+ .burger__header{
+   display: grid;
+   grid-template-columns: 32px 1fr;
+ }
+
 .burger__window{
-  padding: 1rem;
+  box-sizing: border-box;
+  padding: 1rem 0;
   width: 375px;
   overflow: scroll;
 }
