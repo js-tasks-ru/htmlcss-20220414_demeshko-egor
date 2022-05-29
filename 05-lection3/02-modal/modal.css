@@ -9,6 +9,10 @@
   background: var(--grey-7);
 }
 
+.modal_padding{
+  padding: 1.5rem;
+}
+
 .modal__window{
   position: absolute;
   padding: 1.875em 2.5rem 2.0625em;
@@ -20,8 +24,10 @@
   border-radius: 8px;
 }
 
+
 /*модификаторвдля отображения на главной странице*/
 .modal_preview{
+  box-sizing: border-box;
   display: grid;
   position: relative;
   width: 100%;
@@ -31,8 +37,7 @@
 
 .modal__window_preview{
   padding: 0;
-  width: 90%;
-  height: 90%;
+  /* width: 90%; */
   position: relative;
   top: auto;
   left: auto;
@@ -44,6 +49,12 @@
   justify-content: center;
 }
 /*****************************/
+
+/*добавка для стилизации на странице компонента*/
+.modal__window_padding{
+  padding: 1.875em 2.5rem 2.0625em;
+}
+/***********************************************/
 
 .modal__close{
   width: 1rem;

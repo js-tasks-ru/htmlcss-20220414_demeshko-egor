@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="../../assets/css/normolize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../container/container.css">
+    <link rel="stylesheet" href="../page/page.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../preview/preview.css">
+    <link rel="stylesheet" href="../card/card.css">
+    <link rel="stylesheet" href="../centralContent/central-content.css">
+    <link rel="stylesheet" href="../aside/aside.css">
+    <link rel="stylesheet" href="../tabs/tabs.css">
+    <link rel="stylesheet" href="../../06-lection4/01-avatar/avatar.css">
+    <meta charset="utf-8">
+    <title>Buttons Element</title>
+  </head>
+
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__top-bar">
+            <div class="header__logo-box">
+              <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+               <use href="../../assets/icons.svg#main-logo"></use>
+              </svg>
+            </div>
+            <div class="header__toogles">
+               <a class="header__ancor" href="#">Components</a>
+               <a class="header__ancor" href="#">About</a>
+               <a class="header__ancor" href="#">Contact</a>
+            </div>
+          </div>
+
+          <nav class="header__nav">
+          </nav>
+         </div>
+       </header>
+
+
+       <section class="central-content">
+         <div class="container">
+          <div class="central-content__inner">
+          <aside class="aside central-content__aside">
+            <h4 class="aside__title">Elements</h4>
+            <nav class="aside__navigation">
+              <a href="#" class="aside__nav-item">Tooltip</a>
+              <a href="#" class="aside__nav-item">Buttons</a>
+              <a href="#" class="aside__nav-item  aside__nav-item_checked">Avatar</a>
+              <a href="#" class="aside__nav-item">Checkbox / Radio</a>
+              <a href="#" class="aside__nav-item">Toggler</a>
+              <a href="#" class="aside__nav-item">Input</a>
+              <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
+            </nav>
+
+            <h4 class="aside__title">Components</h4>
+            <nav class="aside__navigation">
+              <a href="#" class="aside__nav-item">Calendar</a>
+              <a href="#" class="aside__nav-item">Modal Window</a>
+              <a href="#" class="aside__nav-item">Histogram</a>
+              <a href="#" class="aside__nav-item">Accordion</a>
+              <a href="#" class="aside__nav-item">Skeleton</a>
+              <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
+              <a href="#" class="aside__nav-item">Main page</a>
+            </nav>
+          </aside>
+
+
+         <main class="preview central-content__preview preview_white">
+
+           <div class="preview__element-visual">
+             <h3 class="preview__title">Avatar</h3>
+               <div class="avatar" aria-label="user\'s avatar">
+                   <img  class="avatar__img" src="../../06-lection4/01-avatar/public/avatar-200.jpg"
+                   alt="user's avatar">
+               </div>
+
+           </div>
+
+
+           <div class="preview__code-example">
+             <div class="tabs">
+              <input class="tabs__radio-input" type="radio" id="html" name="tabs" checked>
+              <input class="tabs__radio-input" type="radio" id="css" name="tabs">
+
+
+            <div class="tabs__scroller tabs__scroller_padding-top tabs__scroller_white
+            preview__tab">
+                <label class="tabs__label tabs__label-padding-small" for="html">
+                  HTML</label>
+                <label class="tabs__label tabs__label-padding-small" for="css">
+                  CSS</label>
+            </div>
+
+            <div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
+            </div>
+
+            <div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
+            </div>
+
+           </div>
+          </div>
+
+         </main>
+
+
+       </div>
+      </section>
+
+     <footer class="footer">
+       <div class="container">
+       <h5 class="footer__text">REUSABLE COMPONENT LIBRARY</h5>
+      </div>
+     </footer>
+
+    </div>
+  </body>
+</html>
