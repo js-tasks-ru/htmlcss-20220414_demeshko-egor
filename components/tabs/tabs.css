@@ -13,6 +13,15 @@
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
+  border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__scroller_padding-top{
+  padding-top: 2rem;
+}
+
+.tabs__scroller_white{
+  background-color: var(--white);
 }
 
 .tabs__label{
@@ -24,6 +33,10 @@
   line-height: 24px;
   color: var(--grey-3);
   transition: border 200ms, color 200ms;
+}
+
+.tabs__label-padding-small{
+  padding-bottom: 8px;
 }
 
 .tabs__content{
@@ -42,14 +55,17 @@
 /*стилизация состояний активных табов*/
 #all-tab:checked  ~  .tabs__scroller  label[for="all-tab"],
 #complex-tab:checked  ~  .tabs__scroller  label[for="complex-tab"],
-#simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"]{
+#simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"],
+#html:checked  ~  .tabs__scroller  label[for="html"],
+#css:checked  ~  .tabs__scroller  label[for="css"]{
     border-bottom: var(--tabs-bottom);
     color: var(--black);
 }
 
 #all-tab:checked  ~  .tabs__content,
 #complex-tab:checked  ~  .tabs__content_complex,
-#simple-tab:checked  ~  .tabs__content_simple{
+#simple-tab:checked  ~  .tabs__content_simple,
+#html:checked  ~  .tabs__html,
+#css:checked  ~  .tabs__css{
     display: flex;
 }
-/**************************************/

@@ -1,8 +1,12 @@
 .preview{
   background-color: var(--grey-0);
-  padding: 1rem 3rem 4rem;
+  padding: 1rem 0 4rem;
   border-radius: 12px;
   box-shadow: var(--card-shadow);
+}
+
+.preview_white{
+  background-color: var(--white);
 }
 
 .preview__inner{
@@ -17,6 +21,12 @@
   color: var(--grey-4);
   font-size: 28px;
   line-height: 38px;
+  font-weight: 400;
+}
+
+.preview__element-visual, .preview__tab, .preview__tab-content{
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 @media screen and (max-width: 480px){
