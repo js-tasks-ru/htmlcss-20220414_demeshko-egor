@@ -30,6 +30,17 @@
   background-color: var(--white);
 }
 
+.preview__groups{
+  display: flex;
+  flex-flow: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.preview__groups:last-child{
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 480px){
   .preview{
     padding: 1.25rem 0 0;

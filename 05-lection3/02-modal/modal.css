@@ -1,5 +1,4 @@
 .modal{
-  display: none;
   text-align: left;
   position: fixed;
   top: 0;
@@ -7,6 +6,10 @@
   width: 100vw;
   height: 100vh;
   background: var(--grey-7);
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 200ms;
 }
 
 .modal_padding{

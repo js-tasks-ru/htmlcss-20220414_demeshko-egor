@@ -9,13 +9,17 @@
   line-height: 19px;
   cursor: pointer;
   transition: opacity 200ms ease-in-out, background 200ms ease-in-out,
-  border 200ms ease-in-out, color 200ms ease-in-out;
+  border 200ms ease-in-out, color 200ms ease-in-out, transform 200ms linear;
   width: 100%;
 }
 
 .button:disabled{
    opacity: 0.5;
    pointer-events: none;
+}
+
+.button:active{
+  transform: translateY(2px);
 }
 
 /*стилизация primary button*/

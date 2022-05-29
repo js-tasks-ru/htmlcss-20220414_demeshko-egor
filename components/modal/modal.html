@@ -2,6 +2,7 @@
 <html lang="ru" dir="ltr">
   <head>
     <meta name="viewport" content="initial-scale=1, width=device-width">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="../../assets/css/normolize.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../container/container.css">
@@ -14,8 +15,11 @@
     <link rel="stylesheet" href="../aside/aside.css">
     <link rel="stylesheet" href="../tabs/tabs.css">
     <link rel="stylesheet" href="../../05-lection3/02-modal/modal.css">
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
+
     <title>Buttons Element</title>
+    <script defer src="../../05-lection3/02-modal/index.js">
+    </script>
   </head>
 
 
@@ -76,22 +80,29 @@
            <div class="preview__element-visual">
              <h3 class="preview__title">Modal</h3>
 
-              <section class="modal modal_preview modal_padding" id="modal">
-               <div class="modal__window modal__window_preview modal__window_padding">
+             <button type="button" name="button" class="button  button_primary"
+             id="modal-open">
+               Open modal</button>
 
-                 <svg class="modal__close" id="modal-close" width="16" height="16"
-                 viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                 <use href="../../assets/icons.svg#close"></use>
-                 </svg>
-              <div class="modal__text-box">
-                <h3 class="modal__title">Modal title</h3>
-                <p class="modal__text">Amet minim mollit non deserunt ullamco
-                est sit aliqua dolor do amet sint. Velit officia consequat
-                duis enim velit mollit.</p>
-              </div>
+             <!-- <div class="modal"> -->
+                 <section class="modal" id="modal">
+                   <div class="modal__window modal__window_padding-0">
+                     <svg class="modal__close" id="modal-close" width="16" height="16"
+                     viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <use href="../../assets/icons.svg#close"></use>
+                     </svg>
 
-              </div>
-             </section>
+
+                       <div class="modal__text-box">
+                       <h3 class="modal__title">Modal title</h3>
+                       <p class="modal__text">Amet minim mollit non deserunt ullamco
+                         est sit aliqua dolor do amet sint. Velit officia consequat
+                         duis enim velit mollit. Exercitation veniam consequat sunt
+                         nostrud amet. </p>
+                       </div>
+
+                    </div>
+                 </section>
 
 
            </div>
