@@ -47,3 +47,32 @@
   margin: 16px 0 0 0;
   color: var(--grey-4);
 }
+
+@media screen and (max-width: 480px) {
+     .accordion{
+       font-size: 0.6rem;
+       line-height: 0.9rem;
+     }
+
+     .accordion__item{
+       padding: 0.4rem 0.8rem;
+     }
+
+     .accordion__item[open]{
+        padding: 0.4rem 0.8rem;
+     }
+
+     .accordion__item[open] .accordion__icon{
+       transform: rotate(0.5turn) scale(0.8);
+     }
+
+     .accordion__item[open] .accordion__text{
+        display: block;
+        height: 100px;
+        overflow: scroll;
+     }
+
+     .accordion__icon{
+       transform: scale(0.8);
+     }
+}

@@ -15,10 +15,19 @@
   width: 100%;
 }
 
+.input__typing_small{
+ padding: 0.35em 0 0.35em 0.75rem;
+}
+
 .input__icon{
   position: absolute;
   top: 1.125em;
   right: 1.125rem;
+}
+
+.input__icon_small{
+  top: 0.75em;
+  right: 0.75rem
 }
 
 
@@ -56,4 +65,19 @@
 
 .input__typing:disabled{
   background-color: var(--grey-1);
+}
+
+
+@media screen and (max-width: 480px){
+  .input__label{
+    color: var(--grey-3);
+    font-size: 0.65rem;
+    line-height: 1rem;
+  }
+
+  .input__typing{
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 0.65em 0 0.65em 1rem;
+  }
 }

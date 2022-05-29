@@ -13,6 +13,12 @@
   width: 100%;
 }
 
+.button_start-page{
+  padding: 10px;
+ font-size: 14px;
+ line-height: 17px;
+}
+
 .button:disabled{
    opacity: 0.5;
    pointer-events: none;
@@ -66,6 +72,10 @@
 }
 /*----------------------*/
 
-.button_flex-grow{
-
+@media screen and (max-width: 480px) {
+   .button{
+     padding: 6px;
+     font-size: 11px;
+     line-height: 14px;
+   }
 }
