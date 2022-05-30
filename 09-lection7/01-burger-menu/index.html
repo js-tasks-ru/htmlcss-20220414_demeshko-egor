@@ -5,25 +5,26 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <link rel="stylesheet" href="../../components/menu-button/menu-button.css">
         <script defer src="./burger-menu.js"></script>
     </head>
     <body style="margin: 0">
 
-      <div class="burger">
-         <button class="burger__menu-button" type="button" name="button" id="burger-menu-open">
-          <svg  class="burger__icon">
+      <!-- <div class="burger"> -->
+         <button class="menu-button" type="button" name="button" id="burger-menu-open">
+          <svg  class="menu-button__icon">
             <use href="../../assets/icons.svg#menu"></use>
           </svg>
          </button>
 
-         <div class="burger__menu" id="burger-menu">
+         <div class="burger" id="burger-menu">
           <header class="burger__header">
             <button class="burger__close-button" type="button" name="button" id="burger-menu-close">
               <svg class="burger__close-icon">
                 <use href="../../assets/icons.svg#close"></use>
               </svg>
             </button>
-        
+
             <svg class="burger__logo">
               <use href="../../assets/icons.svg#logo"></use>
             </svg>
@@ -52,9 +53,8 @@
 
            </div>
 
-
          </div>
-      </div>
+      <!-- </div> -->
 
     </body>
 </html>

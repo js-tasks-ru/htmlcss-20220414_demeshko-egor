@@ -9,12 +9,6 @@
   box-sizing: border-box;
 }
 
-.burger__icon{
-  width: 24px;
-  height: 24px;
-
-}
-
  .burger__close-icon{
    width: 16px;
    height: 16px;
@@ -25,18 +19,6 @@
    height: 32px;
    justify-self: center;
  }
-
-.burger__menu-button{
-  border: none;
-  background: none;
-  padding: 0;
-  width: 32px;
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
 
 .burger__close-button{
   border: none;
@@ -51,7 +33,7 @@
   cursor: pointer;
 }
 
-.burger__menu{
+.burger{
   padding: 1rem;
   display: block;
   box-sizing: border-box;
@@ -66,7 +48,7 @@
   transition: transform 600ms ease-in-out, opacity 600ms ease-in-out;
 }
 
-.burger__menu[data-open]{
+.burger[data-open]{
   opacity: 1;
   transform: translateX(0);
 }
