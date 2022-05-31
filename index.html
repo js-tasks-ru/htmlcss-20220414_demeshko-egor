@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./components/preview/preview.css">
         <link rel="stylesheet" href="./components/card/card.css">
         <link rel="stylesheet" href="./components/tabs/tabs.css">
+        <link rel="stylesheet" href="./components/theme-switcher/theme-switcher.css">
         <link rel="stylesheet" href="./03-lection1/01-button/button.css">
         <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
         <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
@@ -41,6 +42,25 @@
                  <a class="header__ancor" href="#">Components</a>
                  <a class="header__ancor" href="#">About</a>
                  <a class="header__ancor" href="#">Contact</a>
+
+                 <div class="theme-switcher">
+                    <svg class="theme-switcher__icon">
+                      <use href="./assets/icons.svg#sun"></use>
+                    </svg>
+
+                    <label class="toggler">
+                      <input class="toggler__element" type="checkbox">
+                      <div class="toggler__visual">
+                         <div class="toggler__switcher">
+                         </div>
+                      </div>
+                    </label>
+
+                    <svg class="theme-switcher__icon">
+                      <use href="./assets/icons.svg#moon"></use>
+                    </svg>
+                 </div>
+
               </div>
             </div>
 
@@ -895,7 +915,7 @@
               </div>
              </div>
      <!-- *******конец вкладки элементы******* -->
-     
+
         </div>
       </main>
 
