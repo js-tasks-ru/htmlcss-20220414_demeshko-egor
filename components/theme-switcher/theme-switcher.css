@@ -2,11 +2,13 @@
   width: 24px;
   height: 24px;
   transform: scale(0.75);
+  color: var(--white);
 }
 
 .theme-switcher{
   display: flex;
   gap: 14px;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px){
