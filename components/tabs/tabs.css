@@ -67,7 +67,7 @@
     color: var(--black);
 }
 
-#all-tab:checked  ~  .tabs__content,
+#all-tab:checked  ~  .tabs__content_all,
 #complex-tab:checked  ~  .tabs__content_complex,
 #simple-tab:checked  ~  .tabs__content_simple,
 #html:checked  ~  .tabs__html,

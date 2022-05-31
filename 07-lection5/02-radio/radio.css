@@ -62,3 +62,19 @@
 .radio__element:disabled ~ .radio__label::after{
   content: "Disabled";
 }
+
+@media screen and (max-width: 480px){
+  .radio__label::after{
+    font-size: 14px;
+  }
+
+  .radio__visual{
+    flex: 0 0 22px;
+    height: 22px;
+  }
+
+  .radio__inner-circle{
+    flex: 0 0 12px;
+    height: 12px;
+  }
+}

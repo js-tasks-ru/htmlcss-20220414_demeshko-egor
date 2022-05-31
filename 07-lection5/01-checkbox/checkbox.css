@@ -45,3 +45,19 @@
 .checkbox__input:disabled ~ .checkbox__visual .checkbox__icon{
   display: none;
 }
+
+@media screen and (max-width: 480px){
+  .checkbox__title{
+    font-size: 14px;
+  }
+
+  .checkbox__visual{
+    width: 20px;
+    height: 20px;
+  }
+
+  .checkbox__icon{
+    width: 13px;
+    height: 11px;
+  }
+}

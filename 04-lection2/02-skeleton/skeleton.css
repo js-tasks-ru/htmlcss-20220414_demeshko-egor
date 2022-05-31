@@ -47,3 +47,22 @@
   flex-direction: column;
   gap: 8px;
 }
+
+@media screen and (max-width: 480px){
+  .skeleton{
+    padding: 11px 17px 14px 11px;
+    gap: 13px;
+  }
+
+  .skeleton__avatar{
+    padding: 20px;
+  }
+
+  .skeleton__top{
+    padding: 0;
+  }
+
+  .skeleton__line{
+    height: 16px;
+  }
+}
