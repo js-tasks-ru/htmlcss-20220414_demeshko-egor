@@ -25,6 +25,12 @@
         <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
         <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
         <link rel="stylesheet" href="./07-lection5/04-input/input.css">
+        <style>
+            html[data-theme-dark] {
+                background: #000;
+            }
+        </style>
+        <script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
     </head>
 
     <body>
@@ -51,7 +57,7 @@
                     </svg>
 
                     <label class="toggler">
-                      <input class="toggler__element" type="checkbox">
+                      <input class="toggler__element" type="checkbox" id="theme-changer">
                       <div class="toggler__visual">
                          <div class="toggler__switcher">
                          </div>
@@ -89,7 +95,7 @@
 
       <!-- начало вкладки ВСЕХ компонентов и элементов -->
           <div class="tabs__content tabs__content_all">
-           <main class="preview preview_no-box-shadow">
+           <div class="preview preview_no-box-shadow">
 
                <section class="preview__inner">
 
@@ -490,7 +496,7 @@
                  </div>
 
                </section>
-           </main>
+           </div>
           </div>
     <!-- *******конец вкладки ВСЕХ компонентов и элементов******* -->
 

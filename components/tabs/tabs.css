@@ -53,3 +53,15 @@
     display: flex;
 }
 /**************************************/
+
+/*реализация темной темы*/
+html[data-theme-dark] .tabs{
+  background-color: var(--black);
+}
+
+html[data-theme-dark] #all-tab:checked  ~  .tabs__scroller  label[for="all-tab"],
+html[data-theme-dark] #complex-tab:checked  ~  .tabs__scroller  label[for="complex-tab"],
+html[data-theme-dark] #simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"]{
+  color: var(--white);
+  border-bottom: var(--tabs-bottom-white);
+}

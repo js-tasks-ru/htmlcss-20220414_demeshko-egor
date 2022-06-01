@@ -30,6 +30,7 @@
 
 .header__logo{
   color: var(--black);
+  cursor: pointer;
 }
 
 .header__toogles{
@@ -82,3 +83,18 @@
    color: var(--black);
 }
 /**********************/
+
+/*стилизация темной темы*/
+html[data-theme-dark] .header,
+html[data-theme-dark] .header__title{
+  background-color: var(--black);
+}
+
+html[data-theme-dark] .header__title{
+  color: var(--font-dark-theme);
+}
+
+html[data-theme-dark] .header__logo{
+  color: var(--white);
+}
+/************************/

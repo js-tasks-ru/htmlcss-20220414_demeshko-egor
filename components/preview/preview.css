@@ -29,3 +29,8 @@
    gap: 16px;
  }
 }
+
+/*реализация темной темы*/
+html[data-theme-dark] .preview{
+  background-color: var(--grey-4);
+}

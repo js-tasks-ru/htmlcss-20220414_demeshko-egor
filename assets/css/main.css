@@ -44,6 +44,9 @@
 
   --orange-0: #D84910;
   --tabs-bottom: 5px solid var(--black);
+  --tabs-bottom-white: 5px solid var(--white);
+
+  --font-dark-theme: rgba(255, 255, 255, 0.46);
 }
 
 body {

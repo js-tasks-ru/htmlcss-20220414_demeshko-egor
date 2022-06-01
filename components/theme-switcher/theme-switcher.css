@@ -1,8 +1,10 @@
 .theme-switcher__icon{
   width: 24px;
   height: 24px;
-  transform: scale(0.75);
-  color: var(--white);
+  transform: scale(0.85);
+  /* color: var(--white); */
+  fill: rgba(0, 0, 0, 0);
+  color: var(--grey-3);
 }
 
 .theme-switcher{
@@ -15,4 +17,10 @@
   .theme-switcher{
     display: none;
   }
+}
+
+
+/*переключение на темную тему*/
+html[data-theme-dark] .theme-switcher__icon{
+  border: var(--font-dark-theme);
 }
