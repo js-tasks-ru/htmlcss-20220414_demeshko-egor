@@ -65,3 +65,7 @@ html[data-theme-dark] #simple-tab:checked  ~  .tabs__scroller  label[for="simple
   color: var(--white);
   border-bottom: var(--tabs-bottom-white);
 }
+
+html[data-theme-dark] .tabs__content{
+  background-color: var(--grey-4);
+}

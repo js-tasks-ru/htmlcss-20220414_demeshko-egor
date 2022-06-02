@@ -80,21 +80,26 @@
          </header>
 
          <main class="tabs">
-           <div class="container">
+           <!-- <div class="container"> -->
           <input class="tabs__radio-input" type="radio" id="all-tab" name="tabs" checked>
           <input class="tabs__radio-input" type="radio" id="complex-tab" name="tabs">
           <input class="tabs__radio-input" type="radio" id="simple-tab" name="tabs">
 
 
-        <div class="tabs__scroller">
+        <div class="tabs__scroller-outer">
+          <div class="container">
+            <div class="tabs__scroller">
             <label class="tabs__label" for="all-tab">All components</label>
             <label class="tabs__label" for="complex-tab">Complex</label>
             <label class="tabs__label" for="simple-tab">Simple</label>
+           </div>
+          </div>
         </div>
 
 
       <!-- начало вкладки ВСЕХ компонентов и элементов -->
           <div class="tabs__content tabs__content_all">
+           <div class="container">
            <div class="preview preview_no-box-shadow">
 
                <section class="preview__inner">
@@ -498,10 +503,12 @@
                </section>
            </div>
           </div>
+          </div>
     <!-- *******конец вкладки ВСЕХ компонентов и элементов******* -->
 
               <!-- начало вкладки КОМПОНЕНТЫ-->
           <div class="tabs__content tabs__content_complex">
+            <div class="container">
              <div class="preview preview_no-box-shadow">
 
                 <section class="preview__inner">
@@ -720,10 +727,12 @@
                 </section>
             </div>
            </div>
+           </div>
       <!-- *******конец вкладки КОМПОНЕНТЫ******* -->
 
               <!-- начало вкладки элементы -->
           <div class="tabs__content tabs__content_simple">
+            <div class="container">
               <div class="preview preview_no-box-shadow">
 
                   <section class="preview__inner">
@@ -921,10 +930,11 @@
 
                   </section>
               </div>
+            </div>
              </div>
      <!-- *******конец вкладки элементы******* -->
 
-        </div>
+        <!-- </div> -->
       </main>
 
 
