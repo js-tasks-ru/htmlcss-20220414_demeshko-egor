@@ -20,6 +20,10 @@
   justify-content: center;
 }
 
+.checkbox__icon{
+  display: block;
+}
+
 .checkbox__title{
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -59,4 +63,18 @@
     width: 13px;
     height: 11px;
   }
+}
+
+
+/*темная тема*/
+html[data-theme-dark] .checkbox__icon{
+  display: none;
+}
+
+html[data-theme-dark] .checkbox__input:checked ~ .checkbox__visual .checkbox__icon{
+  display: block;
+}
+
+html[data-theme-dark] .checkbox__input:disabled ~ .checkbox__visual{
+  background-color: var(--font-dark-theme);
 }

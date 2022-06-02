@@ -77,3 +77,8 @@
     height: 12px;
   }
 }
+
+/*темная тема*/
+html[data-theme-dark] .radio__element:disabled ~ .radio__visual{
+  background-color: var(--font-dark-theme);
+}

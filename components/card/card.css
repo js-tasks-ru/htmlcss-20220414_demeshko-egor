@@ -134,3 +134,13 @@
   }
 
 }
+
+/*темная тема*/
+html[data-theme-dark] .card{
+  background-color: var(--black);
+}
+
+html[data-theme-dark] .card__title,
+html[data-theme-dark] .card__mini-title{
+  color: var(--font-dark-theme);
+}

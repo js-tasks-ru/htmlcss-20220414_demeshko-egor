@@ -96,3 +96,15 @@
     gap: 10px;
   }
 }
+
+
+/*темная тема*/
+html[data-theme-dark] .modal__window{
+  background-color: var(--black);
+}
+
+html[data-theme-dark] .modal__close,
+html[data-theme-dark] .modal__title,
+html[data-theme-dark] .modal__text{
+  color: var(--font-dark-theme);
+}

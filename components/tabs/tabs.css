@@ -17,7 +17,7 @@
 
 .tabs__label{
   display: block;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -40,9 +40,9 @@
 
 
 /*стилизация состояний активных табов*/
-#all-tab:checked  ~  .tabs__scroller  label[for="all-tab"],
-#complex-tab:checked  ~  .tabs__scroller  label[for="complex-tab"],
-#simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"]{
+#all-tab:checked  ~ .tabs__scroller-outer .tabs__scroller  label[for="all-tab"],
+#complex-tab:checked  ~ .tabs__scroller-outer  .tabs__scroller  label[for="complex-tab"],
+#simple-tab:checked  ~  .tabs__scroller-outer  .tabs__scroller  label[for="simple-tab"]{
     border-bottom: var(--tabs-bottom);
     color: var(--black);
 }
@@ -59,13 +59,14 @@ html[data-theme-dark] .tabs{
   background-color: var(--black);
 }
 
-html[data-theme-dark] #all-tab:checked  ~  .tabs__scroller  label[for="all-tab"],
-html[data-theme-dark] #complex-tab:checked  ~  .tabs__scroller  label[for="complex-tab"],
-html[data-theme-dark] #simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"]{
-  color: var(--white);
-  border-bottom: var(--tabs-bottom-white);
-}
-
 html[data-theme-dark] .tabs__content{
   background-color: var(--grey-4);
+}
+
+html[data-theme-dark] #all-tab:checked ~ .tabs__scroller-outer .tabs__scroller  label[for="all-tab"],
+html[data-theme-dark] #complex-tab:checked ~ .tabs__scroller-outer .tabs__scroller  label[for="complex-tab"],
+html[data-theme-dark] #simple-tab:checked  ~ .tabs__scroller-outer .tabs__scroller  label[for="simple-tab"],
+html[data-theme-dark] .tabs__label:hover{
+  color: var(--white);
+  border-bottom: var(--tabs-bottom-white);
 }

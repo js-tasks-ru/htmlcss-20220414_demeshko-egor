@@ -103,7 +103,7 @@
     }
 
     .calendar__week{
-  
+
       grid-template-columns: repeat(7, minmax(1.4em, 1fr));
     }
 
@@ -111,4 +111,15 @@
       grid-template-columns: repeat(7, minmax(1.7em, 1fr));
     }
 
+}
+
+/*ТЕМНАЯ ТЕМА*/
+html[data-theme-dark] .calendar__title,
+html[data-theme-dark] .calendar__day{
+  color: var(--font-dark-theme);
+}
+
+html[data-theme-dark] .calendar_day_selected,
+html[data-theme-dark] .calendar_day_between{
+  color: var(--white);
 }

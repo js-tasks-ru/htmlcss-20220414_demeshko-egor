@@ -56,3 +56,17 @@
       padding: 1.5em 0.3125rem 0 0.125rem;
    }
 }
+
+/*темная тема*/
+html[data-theme-dark] .histogram{
+  background-color: var(--black);
+}
+
+html[data-theme-dark] .histogram__title,
+html[data-theme-dark] .histogram__views{
+  color: var(--font-dark-theme);
+}
+
+html[data-theme-dark] .histogram__total{
+  color: var(--white);
+}

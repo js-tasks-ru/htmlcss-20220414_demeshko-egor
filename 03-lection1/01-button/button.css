@@ -79,3 +79,16 @@
      line-height: 14px;
    }
 }
+
+
+/*******--темная тема--********/
+html[data-theme-dark] .button_primary,
+html[data-theme-dark] .button_secondary,
+html[data-theme-dark] .button_alternate{
+  opacity: 0.75;
+}
+
+html[data-theme-dark] .button:disabled{
+  opacity: 0.3;
+}
+/******************/

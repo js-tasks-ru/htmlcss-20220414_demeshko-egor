@@ -38,3 +38,8 @@
 .tooltip__icon:hover ~ .tooltip__bubble{
   display: block;
 }
+
+/*Темная тема*/
+html[data-theme-dark] .tooltip__icon{
+  color: var(--blue);
+}

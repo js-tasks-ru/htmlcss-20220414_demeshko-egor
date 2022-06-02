@@ -76,3 +76,13 @@
        transform: scale(0.8);
      }
 }
+
+/*темная тема*/
+html[data-theme-dark] .accordion__item{
+   background-color: var(--black);
+}
+
+html[data-theme-dark] .accordion__content,
+html[data-theme-dark] .accordion__icon{
+  color: var(--font-dark-theme);
+}
