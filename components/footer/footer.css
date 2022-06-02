@@ -50,3 +50,14 @@
     line-height: 18px;
   }
 }
+
+
+/*темная тема*/
+html[data-theme-dark] .footer{
+  background-color: var(--black);
+}
+
+html[data-theme-dark] .footer__title,
+html[data-theme-dark] .footer__description{
+  color: var(--font-dark-theme);
+}

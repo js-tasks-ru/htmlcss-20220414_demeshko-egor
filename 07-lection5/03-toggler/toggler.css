@@ -90,3 +90,16 @@
     line-height: 20px;
   }
 }
+
+/*темная тема*/
+html[data-theme-dark] .toggler__element:disabled ~ .toggler__visual{
+  background-color: var(--font-dark-theme);
+}
+
+html[data-theme-dark] .toggler__switcher{
+  background-color: var(--grey-4);
+}
+
+html[data-theme-dark] .toggler__label::after{
+  color: var(--font-dark-theme);
+}
