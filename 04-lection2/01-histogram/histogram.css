@@ -36,6 +36,7 @@
     align-items: flex-end;
     flex-grow: 2;
     gap: 1px;
+    animation: histogram 1s normal forwards;
 }
 
 .histogram__bar{
@@ -55,4 +56,16 @@
    .histogram__chart-box{
       padding: 1.5em 0.3125rem 0 0.125rem;
    }
+}
+
+@keyframes histogram {
+  0% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+
+  100% {
+    transform: translateY(1);
+    transform-origin: bottom;
+  }
 }

@@ -12,8 +12,9 @@
 }
 
 .toggler__visual{
+  position: relative;
   box-sizing: border-box;
-  padding: 2px;
+  /* padding: 2px; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -22,13 +23,18 @@
   background-color: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 17px;
+  transition: all 300ms ease-in-out;
 }
 
 .toggler__switcher{
-  flex: 0 0 24px;
+  position: absolute;
+  left: 2px;
+  top: 1px;
+  width: 24px;
   height: 24px;
   background-color: var(--grey-2);
   border-radius: 16px;
+  transition: all 200ms linear;
 }
 
 .toggler__label::after{
@@ -58,6 +64,11 @@
 
 .toggler__element:checked ~ .toggler__visual .toggler__switcher{
   background-color: var(--white);
+  animation: position-left 600ms linear normal forwards;
+}
+
+.toggler__element ~ .toggler__visual .toggler__switcher{
+  animation: position-right 600ms ease-in-out normal forwards;
 }
 
 .toggler__element:checked ~ .toggler__label::after{
@@ -89,4 +100,14 @@
     font-size: 14px;
     line-height: 20px;
   }
+}
+
+@keyframes position-left {
+   0% { left: 2px }
+   100% { left: 25px }
+}
+
+@keyframes position-right{
+  0% { left: 25px }
+  100% { left: 2px }
 }

@@ -29,8 +29,7 @@
 }
 
 .checkbox__input:checked ~ .checkbox__visual{
-  border: 1px solid var(--purple-3);
-  background-color: var(--purple-3);
+  animation: checkbox 500ms normal forwards;
 }
 
 .checkbox__input:focus ~ .checkbox__visual{
@@ -58,5 +57,19 @@
   .checkbox__icon{
     width: 13px;
     height: 11px;
+  }
+}
+
+@keyframes checkbox {
+  0%{
+     border: 1px solid var(--grey-2);
+     background-color: none;
+     box-shadow: 0 0 10px 3px var(--purple-2), 0 0 10px 15px var(--grey-2);
+  }
+
+  100%{
+    border: 1px solid var(--purple-3);
+    background-color: var(--purple-3);
+    box-shadow: none;
   }
 }
