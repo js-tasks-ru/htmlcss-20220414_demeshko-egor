@@ -22,6 +22,7 @@
   background-color: var(--white);
   border: 1px solid var(--grey-2);
   border-radius: 17px;
+  transition: all 400ms;
 }
 
 .toggler__switcher{
@@ -29,6 +30,7 @@
   height: 24px;
   background-color: var(--grey-2);
   border-radius: 16px;
+  transition: all 400ms;
 }
 
 .toggler__label::after{

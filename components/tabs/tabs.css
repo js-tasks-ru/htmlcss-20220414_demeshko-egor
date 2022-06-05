@@ -13,6 +13,15 @@
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
+  border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__scroller_padding-top{
+  padding-top: 2rem;
+}
+
+.tabs__scroller_white{
+  background-color: var(--white);
 }
 
 .tabs__label{
@@ -26,12 +35,21 @@
   transition: border 200ms, color 200ms;
 }
 
+.tabs__label-padding-small{
+  padding-bottom: 8px;
+}
+
 .tabs__content{
   display: none;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.875rem;
+}
+
+.tabs__content-max-height{
+  max-height: 400px;
+  overflow: scroll;
 }
 
 .tabs__label:hover{
@@ -42,14 +60,23 @@
 /*стилизация состояний активных табов*/
 #all-tab:checked  ~  .tabs__scroller  label[for="all-tab"],
 #complex-tab:checked  ~  .tabs__scroller  label[for="complex-tab"],
-#simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"]{
+#simple-tab:checked  ~  .tabs__scroller  label[for="simple-tab"],
+#html:checked  ~  .tabs__scroller  label[for="html"],
+#css:checked  ~  .tabs__scroller  label[for="css"]{
     border-bottom: var(--tabs-bottom);
     color: var(--black);
 }
 
 #all-tab:checked  ~  .tabs__content_all,
 #complex-tab:checked  ~  .tabs__content_complex,
-#simple-tab:checked  ~  .tabs__content_simple{
+#simple-tab:checked  ~  .tabs__content_simple,
+#html:checked  ~  .tabs__html,
+#css:checked  ~  .tabs__css{
     display: flex;
 }
-/**************************************/
+
+@media screen and (max-width: 480px){
+  .tabs__label{
+    border-bottom: 5px solid var(--white);
+    }
+}

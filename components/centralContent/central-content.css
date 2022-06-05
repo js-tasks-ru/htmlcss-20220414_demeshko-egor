@@ -19,6 +19,11 @@
 }
 
 @media screen and (max-width: 480px){
+  .central-content{
+    background-color: var(--white);
+    padding: 0;
+  }
+
   .central-content__inner{
     display: flex;
     flex-flow: column;
