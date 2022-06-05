@@ -13,6 +13,12 @@
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.tabs__scroller::-webkit-scrollbar{
+  display: none;
 }
 
 .tabs__label{
@@ -24,6 +30,7 @@
   line-height: 24px;
   color: var(--grey-3);
   transition: border 200ms, color 200ms;
+  border: var(--tabs-bottom-transparent);
 }
 
 .tabs__content{
@@ -53,3 +60,9 @@
     display: flex;
 }
 /**************************************/
+
+@media screen and (max-width: 390px){
+  .tabs__label{
+    font-size: 14px;
+  }
+}

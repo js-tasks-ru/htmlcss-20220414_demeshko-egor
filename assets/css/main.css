@@ -20,6 +20,7 @@
   --grey-6: #90A0B7;
   --grey-7: #C4C4C478;
   --orange-0: #D84910;
+  --tranparent: transparent;
 
   --error: var(--red);
   --success: var(--blue);
@@ -45,6 +46,7 @@
 
   --orange-0: #D84910;
   --tabs-bottom: 5px solid var(--black);
+  --tabs-bottom-transparent: 5px solid var(--transparent);
 }
 
 body {
