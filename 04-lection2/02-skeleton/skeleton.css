@@ -33,8 +33,6 @@
   height: 20px;
   overflow-x: hidden;
   background: var(--grey-2);
-
-  /* animation: skeleton 1s ease-in-out infinite; */
 }
 
 .skeleton__line::before{
@@ -79,34 +77,6 @@
     height: 16px;
   }
 }
-
-/* @keyframes skeleton {
-  0%{
-    background: linear-gradient(92.51deg, #DDE2E5 6.44%,
-      #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
-  }
-
-  20%{
-    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #DDE2E5 38.47%, #E2E6E8 56.48%, #F3F5F5 77.5%, #E3E7EA 102.52%);
-  }
-
-  40%{
-    background: linear-gradient(92.51deg, #E3E7EA 6.44%, #DDE2E5 38.47%, #DDE2E5 56.48%, #E2E6E8 77.5%, #F3F5F5 102.52%);
-  }
-
-  60%{
-    background: linear-gradient(92.51deg, #F3F5F5 6.44%, #E3E7EA 38.47%, #DDE2E5 56.48%, #DDE2E5 77.5%, #E2E6E8 102.52%);
-  }
-
-  80%{
-    background: linear-gradient(92.51deg, #E2E6E8 6.44%, #F3F5F5 38.47%, #E3E7EA 56.48%, #DDE2E5 77.5%, #DDE2E5 102.52%);
-  }
-
-  100%{
-    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
-  }
-
-} */
 
 @keyframes skeleton-margin {
    0%{
