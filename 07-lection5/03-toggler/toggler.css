@@ -14,7 +14,6 @@
 .toggler__visual{
   position: relative;
   box-sizing: border-box;
-  /* padding: 2px; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -34,7 +33,7 @@
   height: 24px;
   background-color: var(--grey-2);
   border-radius: 16px;
-  transition: all 200ms linear;
+  transition: all 400ms ease-in-out;
 }
 
 .toggler__label::after{
@@ -64,11 +63,11 @@
 
 .toggler__element:checked ~ .toggler__visual .toggler__switcher{
   background-color: var(--white);
-  animation: position-left 600ms linear normal forwards;
+  left: 25px;
 }
 
 .toggler__element ~ .toggler__visual .toggler__switcher{
-  animation: position-right 600ms ease-in-out normal forwards;
+  left: 2px;
 }
 
 .toggler__element:checked ~ .toggler__label::after{
@@ -100,14 +99,4 @@
     font-size: 14px;
     line-height: 20px;
   }
-}
-
-@keyframes position-left {
-   0% { left: 2px }
-   100% { left: 25px }
-}
-
-@keyframes position-right{
-  0% { left: 25px }
-  100% { left: 2px }
 }
