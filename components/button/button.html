@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link rel="stylesheet" href="../../assets/css/normolize.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../container/container.css">
+    <link rel="stylesheet" href="../page/page.css">
+    <link rel="stylesheet" href="../header/header.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../preview/preview.css">
+    <link rel="stylesheet" href="../card/card.css">
+    <link rel="stylesheet" href="../centralContent/central-content.css">
+    <link rel="stylesheet" href="../aside/aside.css">
+    <link rel="stylesheet" href="../tabs/tabs.css">
+    <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
+    <meta charset="utf-8">
+    <title>Buttons Element</title>
+  </head>
+
+
+  <body>
+    <div class="page">
+      <header class="header">
+        <div class="container">
+          <div class="header__top-bar">
+            <div class="header__logo-box">
+              <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+               <use href="../../assets/icons.svg#main-logo"></use>
+              </svg>
+            </div>
+            <div class="header__toogles">
+               <a class="header__ancor" href="#">Components</a>
+               <a class="header__ancor" href="#">About</a>
+               <a class="header__ancor" href="#">Contact</a>
+            </div>
+          </div>
+
+          <nav class="header__nav">
+          </nav>
+         </div>
+       </header>
+
+
+       <section class="central-content">
+         <div class="container">
+          <div class="central-content__inner">
+          <aside class="aside central-content__aside">
+            <h4 class="aside__title">Elements</h4>
+            <nav class="aside__navigation">
+              <a href="#" class="aside__nav-item">Tooltip</a>
+              <a href="#" class="aside__nav-item aside__nav-item_checked">Buttons</a>
+              <a href="#" class="aside__nav-item">Avatar</a>
+              <a href="#" class="aside__nav-item">Checkbox / Radio</a>
+              <a href="#" class="aside__nav-item">Toggler</a>
+              <a href="#" class="aside__nav-item">Input</a>
+              <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
+            </nav>
+
+            <h4 class="aside__title">Components</h4>
+            <nav class="aside__navigation">
+              <a href="#" class="aside__nav-item">Calendar</a>
+              <a href="#" class="aside__nav-item">Modal Window</a>
+              <a href="#" class="aside__nav-item">Histogram</a>
+              <a href="#" class="aside__nav-item">Accordion</a>
+              <a href="#" class="aside__nav-item">Skeleton</a>
+              <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
+              <a href="#" class="aside__nav-item">Main page</a>
+            </nav>
+          </aside>
+
+
+         <main class="preview central-content__preview preview_white">
+
+           <div class="preview__element-visual">
+             <h3 class="preview__title">Buttons</h3>
+             <button class="button button_primary">Primary</button>
+             <button class="button button_primary" disabled>Primary</button>
+
+             <button class="button button_secondary">Secondary</button>
+             <button class="button button_secondary" disabled>Secondary</button>
+
+             <button class="button button_alternate">Alternate</button>
+             <button class="button button_alternate" disabled>Alternate</button>
+           </div>
+
+           <div class="preview__code-example">
+             <div class="tabs">
+              <input class="tabs__radio-input" type="radio" id="html" name="tabs" checked>
+              <input class="tabs__radio-input" type="radio" id="css" name="tabs">
+
+
+            <div class="tabs__scroller tabs__scroller_padding-top tabs__scroller_white
+            preview__tab">
+                <label class="tabs__label tabs__label-padding-small" for="html">
+                  HTML</label>
+                <label class="tabs__label tabs__label-padding-small" for="css">
+                  CSS</label>
+            </div>
+
+            <div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(68, 68, 68);">
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_primary"</span>&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Primary</span>&lt;/button&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_primary"</span> disabled&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Primary</span>&lt;/button&gt;
+
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_secondary"</span>&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Secondary</span>&lt;/button&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_secondary"</span> disabled&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Secondary</span>&lt;/button&gt;
+
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_alternate"</span>&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Alternate</span>&lt;/button&gt;
+&lt;button <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"button button_alternate"</span> disabled&gt;<span class="hljs-type" style="color: rgb(136, 0, 0);">Alternate</span>&lt;/button&gt;</pre>
+
+            </div>
+
+            <div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(68, 68, 68);"><span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button</span>{
+<span class="hljs-attribute" style="font-weight: 700;">padding</span>:<span class="hljs-number" style="color: rgb(136, 0, 0);">15px</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">15px</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">14px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">border-radius</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">8px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">border</span>: none;
+<span class="hljs-attribute" style="font-weight: 700;">font-family</span>: <span class="hljs-string" style="color: rgb(136, 0, 0);">'Roboto'</span>, sans-serif;
+<span class="hljs-attribute" style="font-weight: 700;">font-style</span>: normal;
+<span class="hljs-attribute" style="font-weight: 700;">font-weight</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">500</span>;
+<span class="hljs-attribute" style="font-weight: 700;">font-size</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">16px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">line-height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">19px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">cursor</span>: pointer;
+<span class="hljs-attribute" style="font-weight: 700;">transition</span>: opacity <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span> ease-in-out, background <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span> ease-in-out,
+border <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span> ease-in-out, color <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span> ease-in-out;
+<span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100%</span>;
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:disabled</span>{
+                 <span class="hljs-attribute" style="font-weight: 700;">opacity</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.5</span>;
+                 <span class="hljs-attribute" style="font-weight: 700;">pointer-events</span>: none;
+              }
+
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*стилизация primary button*/</span>
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_primary</span>{
+                <span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--blue);
+                <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+              }
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_primary</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:hover</span>{
+                <span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--primary-hover);
+              }
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_primary</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:active</span>{
+                  <span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--blue);
+              }
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*----------------*/</span>
+
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*стилизация secondary button*/</span>
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_secondary</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--purple);
+<span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_secondary</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:hover</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--purple-2);
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_secondary</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:active</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--purple);
+}
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*-----------------------*/</span>
+
+
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*стилизация alternate button*/</span>
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_alternate</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+<span class="hljs-attribute" style="font-weight: 700;">border</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1px</span> solid <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--grey-3);
+<span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--grey-4);
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_alternate</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:hover</span>{
+<span class="hljs-attribute" style="font-weight: 700;">border</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1px</span> solid <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--black);
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.button_alternate</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:active</span>{
+<span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--grey-3);
+<span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+}
+<span class="hljs-comment" style="color: rgb(136, 136, 136);">/*----------------------*/</span>
+</pre>
+            </div>
+
+           </div>
+          </div>
+
+         </main>
+
+
+       </div>
+      </section>
+
+     <footer class="footer">
+       <div class="container">
+       <h5 class="footer__text">REUSABLE COMPONENT LIBRARY</h5>
+      </div>
+     </footer>
+
+    </div>
+  </body>
+</html>
