@@ -13,6 +13,12 @@
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.tabs__scroller::-webkit-scrollbar{
+  display: none;
   border-bottom: 1px solid var(--grey-2);
 }
 
@@ -26,13 +32,14 @@
 
 .tabs__label{
   display: block;
-  padding-bottom: 13px;
+  padding-bottom: 8px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: var(--grey-3);
   transition: border 200ms, color 200ms;
+  border: var(--tabs-bottom-transparent);
 }
 
 .tabs__label-padding-small{
@@ -74,9 +81,10 @@
 #css:checked  ~  .tabs__css{
     display: flex;
 }
+/**************************************/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 390px){
   .tabs__label{
-    border-bottom: 5px solid var(--white);
-    }
+    font-size: 14px;
+  }
 }
