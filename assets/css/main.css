@@ -2,13 +2,18 @@
 
 :root {
   --white: #ffffff;
+  --white-opacity-07: #ffffffBF;
   --black: #212429;
   --pink: #F784AD;
   --purple: #7048E8;
+  --purple-opacity-07: #7048E8BF;
+  --purple-opacity-03: #7048E847;
   --purple-2: #5028C6;
   --purple-3: #4263EB;
   --purple-4: #A0B1F520;
   --blue: #374FC7;
+  --blue-opacity-07: #374FC7BF;
+  --blue-opacity-03: #374FC747;
   --blue-2: #2342C0;
   --red: #F03D3E;
   --grey-0: #F9FAFC;
@@ -25,10 +30,15 @@
   --error: var(--red);
   --success: var(--blue);
 
-  --primary: var(--blue);
-  --primary-hover: var(--blue-2);
-  --secondary: var(--purple);
-  --secondary-hover: var(--purple-2);
+  --elements-primary: var(--blue);
+  --elements-primary-hover: var(--blue-2);
+  --elements-secondary: var(--purple);
+  --elements-secondary-hover: var(--purple-2);
+  --elements-border: var(--grey-3);
+  --elements-border-hover: var(--black);
+  --elements-alternate-font: var(--grey-4);
+  --elements-alternate-background: var(--white);
+  --elements-alternate-background-hover: var(--grey-3);
 
   --global-background: var(--grey-0);
   --center-border: var(--grey-2);     /*стилизация границы на главной странице*/
@@ -54,4 +64,16 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+html[data-theme-dark]{
+  --elements-primary: var(--blue-opacity-07);
+  --elements-primary-hover: var(--blue-opacity-03);
+
+  --elements-secondary: var(--purple-opacity-07);
+  --elements-secondary-hover: var(--purple-opacity-03);
+
+  --elements-alternate-background: var(--white-opacity-07);
+
+  --elements-border-hover: var(--orange-0);
 }
