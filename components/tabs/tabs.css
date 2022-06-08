@@ -13,6 +13,21 @@
   display: flex;
   flex-direction: row;
   gap: 2.5rem;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.tabs__scroller::-webkit-scrollbar{
+  display: none;
+  border-bottom: 1px solid var(--grey-2);
+}
+
+.tabs__scroller_padding-top{
+  padding-top: 2rem;
+}
+
+.tabs__scroller_white{
+  background-color: var(--white);
 }
 
 .tabs__label{
@@ -24,6 +39,11 @@
   line-height: 24px;
   color: var(--grey-3);
   transition: border 200ms, color 200ms;
+  border: var(--tabs-bottom-transparent);
+}
+
+.tabs__label-padding-small{
+  padding-bottom: 8px;
 }
 
 .tabs__content{
@@ -32,6 +52,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.875rem;
+}
+
+.tabs__content-max-height{
+  max-height: 400px;
+  overflow: scroll;
 }
 
 .tabs__label:hover{
@@ -49,7 +74,9 @@
 
 #all-tab:checked  ~  .tabs__content_all,
 #complex-tab:checked  ~  .tabs__content_complex,
-#simple-tab:checked  ~  .tabs__content_simple{
+#simple-tab:checked  ~  .tabs__content_simple,
+#html:checked  ~  .tabs__html,
+#css:checked  ~  .tabs__css{
     display: flex;
 }
 /**************************************/
@@ -70,3 +97,8 @@ html[data-theme-dark] .tabs__label:hover{
   color: var(--white);
   border-bottom: var(--tabs-bottom-white);
 }
+
+@media screen and (max-width: 390px){
+  .tabs__label{
+    font-size: 14px;
+  }

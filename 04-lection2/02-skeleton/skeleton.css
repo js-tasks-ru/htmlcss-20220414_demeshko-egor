@@ -31,7 +31,17 @@
 
 .skeleton__line{
   height: 20px;
+  overflow-x: hidden;
+  background: var(--grey-2);
+}
+
+.skeleton__line::before{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
   background: var(--skeleton-line-background);
+  animation: skeleton-margin 800ms linear normal infinite;
 }
 
 .skeleton__line_short{
@@ -65,4 +75,14 @@
   .skeleton__line{
     height: 16px;
   }
+}
+
+@keyframes skeleton-margin {
+   0%{
+     transform: translateX(-100%);
+   }
+
+   100%{
+     transform: translateX(100%);
+   }
 }

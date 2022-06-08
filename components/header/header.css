@@ -51,12 +51,13 @@
 .header__ancor{
   text-decoration: none;
   color: var(--grey-3);
+  transition: color 300ms ease;
 }
 
 @media (max-width: 480px){
 
   .header{
-    padding: 1rem 0 0 0;
+    padding: 1rem 0;
   }
 
   .header__title{
