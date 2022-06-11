@@ -1,6 +1,6 @@
 .tabs{
   position: relative;
-  background-color: var(--grey-0);
+  background-color: var(--elements-background-inner);
   /* width: 100%; */
 }
 
@@ -19,7 +19,7 @@
 
 .tabs__scroller::-webkit-scrollbar{
   display: none;
-  border-bottom: 1px solid var(--grey-2);
+  border-bottom: 1px solid var(--checkbox-border);
 }
 
 .tabs__scroller_padding-top{
@@ -28,6 +28,10 @@
 
 .tabs__scroller_white{
   background-color: var(--white);
+}
+
+.tabs__scroller-outer{
+  border-bottom: 1px solid var(--checkbox-border);
 }
 
 .tabs__label{
@@ -52,6 +56,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 1.875rem;
+  background-color: var(--global-background-preview);
 }
 
 .tabs__content-max-height{
@@ -69,7 +74,7 @@
 #complex-tab:checked  ~ .tabs__scroller-outer  .tabs__scroller  label[for="complex-tab"],
 #simple-tab:checked  ~  .tabs__scroller-outer  .tabs__scroller  label[for="simple-tab"]{
     border-bottom: var(--tabs-bottom);
-    color: var(--black);
+    color: var(--black-white);
 }
 
 #all-tab:checked  ~  .tabs__content_all,
@@ -80,23 +85,6 @@
     display: flex;
 }
 /**************************************/
-
-/*реализация темной темы*/
-html[data-theme-dark] .tabs{
-  background-color: var(--black);
-}
-
-html[data-theme-dark] .tabs__content{
-  background-color: var(--grey-4);
-}
-
-html[data-theme-dark] #all-tab:checked ~ .tabs__scroller-outer .tabs__scroller  label[for="all-tab"],
-html[data-theme-dark] #complex-tab:checked ~ .tabs__scroller-outer .tabs__scroller  label[for="complex-tab"],
-html[data-theme-dark] #simple-tab:checked  ~ .tabs__scroller-outer .tabs__scroller  label[for="simple-tab"],
-html[data-theme-dark] .tabs__label:hover{
-  color: var(--white);
-  border-bottom: var(--tabs-bottom-white);
-}
 
 @media screen and (max-width: 390px){
   .tabs__label{

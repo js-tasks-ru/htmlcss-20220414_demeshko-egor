@@ -33,6 +33,7 @@
 .tooltip__icon{
   width: 24px;
   height: 24px;
+  color: var(--tooltip-icon);
 }
 
 .tooltip:hover .tooltip__bubble{
@@ -49,9 +50,4 @@
    opacity: 1;
    transform: translate(50%, -7px);
    }
-}
-
-/*Темная тема*/
-html[data-theme-dark] .tooltip__icon{
-  color: var(--blue);
 }

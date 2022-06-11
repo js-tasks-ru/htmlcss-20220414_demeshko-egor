@@ -3,6 +3,7 @@
 :root {
   --white: #ffffff;
   --white-opacity-07: #ffffffBF;
+  --white-opacity-04: rgba(255, 255, 255, 0.46);
   --black: #212429;
   --pink: #F784AD;
   --purple: #7048E8;
@@ -10,6 +11,7 @@
   --purple-opacity-03: #7048E847;
   --purple-2: #5028C6;
   --purple-3: #4263EB;
+  --purple-3-opacity-07: #4263EBBF;
   --purple-4: #A0B1F520;
   --blue: #374FC7;
   --blue-opacity-07: #374FC7BF;
@@ -21,6 +23,7 @@
   --grey-2: #DDE2E5;
   --grey-3: #ACB5BD;
   --grey-4: #495057;
+  --grey-4-opacity-07: #495057BF;
   --grey-5: #334D6E;
   --grey-6: #90A0B7;
   --grey-7: #C4C4C478;
@@ -39,26 +42,59 @@
   --elements-alternate-font: var(--grey-4);
   --elements-alternate-background: var(--white);
   --elements-alternate-background-hover: var(--grey-3);
+  --elements-background-inner: var(--white);
+  --elements-font-color: var(--grey-4);
+  --elements-font-color-secondary: var(--grey-5);
+  --elements-font-color-darker: var(--black);
+  --elements-focus-background: var(--purple-3);
+
+  --font-color-primary: var(--black);
+  --font-color-secondary: rgb(172, 181, 189);
+
+  --histogram-bar: var(--purple-3);
+
+  --tooltip-icon: inherit;
+
+  --modal-background: var(--grey-7);
+
+  --calendar-week-day-font: var(--grey-6);
+  --day-selected-bg: var(--purple-3);
+  --day-selected-font: var(--white);
+  --day-between-bg: var(--purple-4);
+  --day-between-font: var(--black);
+
+  --checkbox-border: var(--grey-2);
+  --checkbox-background: var(--grey-2);
+
+  --switcher-background: var(--grey-2);
+
+  --switching-elements-prime-bg: var(--purple-3);
+  --switching-elements-disabled-bg: var(--grey-2);
+
+  --input-font-color: var(--grey-3);
+  --input-disabled: var(--grey-1);
+  --input-background: var(--white);
+
+  --theme-block-font: var(--grey-3);
 
   --global-background: var(--grey-0);
+  --global-background-preview: var(--grey-0);
   --center-border: var(--grey-2);     /*стилизация границы на главной странице*/
+  --black-white: var(--black);
 
 
   --card-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   --input-shadow: 0px 1px rgba(51, 154, 240, 0.1);
 
-  --histogram-bar: var(--purple-3);
+
   --skeleton-line-background: linear-gradient(92.51deg, #E2E6E8 6.44%,
     #F3F5F5 38.47%, #E3E7EA 56.48%, #DDE2E5 77.5%, #DDE2E5 102.52%);
+  --skeleton-plain: var(--grey-2);
 
 
   --calendar-grey: var(--grey-5);
 
-  --orange-0: #D84910;
   --tabs-bottom: 5px solid var(--black);
-  --tabs-bottom-white: 5px solid var(--white);
-
-  --font-dark-theme: rgba(255, 255, 255, 0.46);
   --tabs-bottom-transparent: 5px solid var(--transparent);
 }
 
@@ -67,13 +103,37 @@ body {
 }
 
 html[data-theme-dark]{
+  --global-background: var(--black);
+  --global-background-preview: var(--grey-4);
+
   --elements-primary: var(--blue-opacity-07);
   --elements-primary-hover: var(--blue-opacity-03);
-
   --elements-secondary: var(--purple-opacity-07);
   --elements-secondary-hover: var(--purple-opacity-03);
-
   --elements-alternate-background: var(--white-opacity-07);
-
   --elements-border-hover: var(--orange-0);
+  --elements-background-inner: var(--black);
+  --elements-font-color: var(--white-opacity-04);
+  --elements-font-color-secondary: var(--white-opacity-07);
+  --elements-font-color-darker: var(--white-opacity-04);
+  --elements-focus-background: var(--orange-0);
+
+  --histogram-bar: var(--purple-3-opacity-07);
+
+  --black-white: var(--white);
+
+  --tooltip-icon: var(--blue);
+
+  --day-between-font: var(--white);
+
+  --checkbox-border: var(--white-opacity-07);
+  --checkbox-background: var(--black);
+
+  --input-disabled: var(--grey-3);
+
+  --input-background: var(--white-opacity-07);
+
+  --tabs-bottom: 5px solid var(--white);
+
+  --theme-block-font: var(--white-opacity-07);
 }

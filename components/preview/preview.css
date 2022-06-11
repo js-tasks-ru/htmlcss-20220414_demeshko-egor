@@ -1,6 +1,6 @@
 .preview{
-  background-color: var(--grey-0);
-  padding: 1rem 0 4rem;
+  background-color: var(--global-background-preview);
+  padding: 4.25rem 0 4rem;
   border-radius: 12px;
   box-shadow: var(--card-shadow);
 }
@@ -18,7 +18,7 @@
 
 .preview__title{
   font-family: 'Inter', sans-serif;
-  color: var(--grey-4);
+  color: var(--elements-font-color);
   font-size: 28px;
   line-height: 38px;
   font-weight: 400;
@@ -58,9 +58,4 @@
    padding-left: 1.5rem;
    padding-right: 1.5rem;
  }
-}
-
-/*реализация темной темы*/
-html[data-theme-dark] .preview{
-  background-color: var(--grey-4);
 }

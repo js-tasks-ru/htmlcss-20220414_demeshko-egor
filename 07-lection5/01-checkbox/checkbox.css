@@ -13,7 +13,7 @@
 .checkbox__visual{
   width: 28px;
   height: 28px;
-  border: 1px solid var(--grey-2);
+  border: 1px solid var(--checkbox-border);
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -22,7 +22,7 @@
 }
 
 .checkbox__icon{
-  display: block;
+  display: none;
 }
 
 .checkbox__title{
@@ -30,19 +30,23 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: var(--grey-4);
+  color: var(--elements-font-color);
 }
 
 .checkbox__input:checked ~ .checkbox__visual{
   animation: checkbox 500ms normal forwards;
 }
 
+.checkbox__input:checked ~ .checkbox__visual .checkbox__icon{
+  display: block;
+}
+
 .checkbox__input:focus ~ .checkbox__visual{
-  box-shadow: inset 0 0 1px 1px var(--purple-3);
+  box-shadow: inset 0 0 1px 1px var(--elements-focus-background);
 }
 
 .checkbox__input:disabled ~ .checkbox__visual{
-  background-color: var(--grey-2);
+  background-color: var(--switching-elements-disabled-bg);
 }
 
 .checkbox__input:disabled ~ .checkbox__visual .checkbox__icon{
@@ -65,20 +69,6 @@
   }
 }
 
-
-/*темная тема*/
-html[data-theme-dark] .checkbox__icon{
-  display: none;
-}
-
-html[data-theme-dark] .checkbox__input:checked ~ .checkbox__visual .checkbox__icon{
-  display: block;
-}
-
-html[data-theme-dark] .checkbox__input:disabled ~ .checkbox__visual{
-  background-color: var(--font-dark-theme);
-}
-
 @keyframes checkbox {
   0%{
      border: 1px solid var(--grey-2);
@@ -87,7 +77,7 @@ html[data-theme-dark] .checkbox__input:disabled ~ .checkbox__visual{
   }
 
   100%{
-    border: 1px solid var(--purple-3);
-    background-color: var(--purple-3);
+    border: 1px solid var(--switching-elements-prime-bg);
+    background-color: var(--switching-elements-prime-bg);
     box-shadow: none;
   }

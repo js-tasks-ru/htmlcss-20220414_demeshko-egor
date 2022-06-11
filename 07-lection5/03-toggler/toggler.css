@@ -19,8 +19,8 @@
   align-items: center;
   width: 52px;
   height: 28px;
-  background-color: var(--white);
-  border: 1px solid var(--grey-2);
+  background-color: var(--elements-background-inner);
+  border: 1px solid var(--checkbox-border);
   border-radius: 17px;
   transition: all 300ms ease-in-out;
 }
@@ -31,7 +31,7 @@
   top: 1px;
   width: 24px;
   height: 24px;
-  background-color: var(--grey-2);
+  background-color: var(--switcher-background);
   border-radius: 16px;
   transition: all 400ms ease-in-out;
 }
@@ -42,13 +42,13 @@
    font-weight: 400;
    font-size: 16px;
    line-height: 24px;
-   color: var(--grey-4);
+   color: var(--elements-font-color);
 }
 
 
 /*визуализацию активного состояния переключателя*/
 .toggler__element:focus ~ .toggler__visual{
-  box-shadow: inset 0 0 5px 1px var(--purple-3);
+  box-shadow: inset 0 0 5px 1px var(--elements-focus-background);
 }
 
 .toggler__element:focus ~ .toggler__label::after{
@@ -57,8 +57,8 @@
 
 .toggler__element:checked ~ .toggler__visual{
   justify-content: flex-end;
-  background-color: var(--purple-3);
-  border: 1px solid var(--purple-3);
+  background-color: var(--switching-elements-prime-bg);
+  border: 1px solid var(--switching-elements-prime-bg);
 }
 
 .toggler__element:checked ~ .toggler__visual .toggler__switcher{
@@ -79,7 +79,7 @@
 }
 
 .toggler__element:disabled ~ .toggler__visual{
-  background-color: var(--grey-2);
+  background-color: var(--switching-elements-disabled-bg);
 }
 
 .toggler__element:disabled ~ .toggler__visual .toggler__switcher{
@@ -99,17 +99,4 @@
     font-size: 14px;
     line-height: 20px;
   }
-}
-
-/*темная тема*/
-html[data-theme-dark] .toggler__element:disabled ~ .toggler__visual{
-  background-color: var(--font-dark-theme);
-}
-
-html[data-theme-dark] .toggler__switcher{
-  background-color: var(--grey-4);
-}
-
-html[data-theme-dark] .toggler__label::after{
-  color: var(--font-dark-theme);
 }

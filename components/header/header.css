@@ -4,7 +4,7 @@
 }
 
 .header_main-page{
-    background-color: var(--white);
+    background-color: var(--elements-background-inner);
     border-bottom: var(--center-border);
 }
 
@@ -14,7 +14,7 @@
     font-size: 3.125rem;
     font-weight: 500;
     line-height: 64px;
-    color: var(--black);
+    color: var(--elements-font-color-darker);
     padding: 2.5rem 0;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .header__logo{
-  color: var(--black);
+  color: var(--black-white);
   cursor: pointer;
 }
 
@@ -81,21 +81,6 @@
 
 /*стилизация состояний*/
 .header__ancor:hover{
-   color: var(--black);
+   color: var(--black-white);
 }
 /**********************/
-
-/*стилизация темной темы*/
-html[data-theme-dark] .header,
-html[data-theme-dark] .header__title{
-  background-color: var(--black);
-}
-
-html[data-theme-dark] .header__title{
-  color: var(--font-dark-theme);
-}
-
-html[data-theme-dark] .header__logo{
-  color: var(--white);
-}
-/************************/
