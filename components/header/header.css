@@ -4,7 +4,7 @@
 }
 
 .header_main-page{
-    background-color: var(--white);
+    background-color: var(--elements-background-inner);
     border-bottom: var(--center-border);
 }
 
@@ -14,7 +14,7 @@
     font-size: 3.125rem;
     font-weight: 500;
     line-height: 64px;
-    color: var(--black);
+    color: var(--elements-font-color-darker);
     padding: 2.5rem 0;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .header__logo{
-  color: var(--black);
+  color: var(--black-white);
   cursor: pointer;
 }
 
@@ -38,6 +38,13 @@
   flex-flow: row;
   flex-grow: 1;
   justify-content: flex-end;
+  align-items: center;
+  gap: 57px;
+}
+
+.header__ancors{
+  display: flex;
+  flex-flow: row;
   gap: 1.5rem;
 }
 
@@ -74,6 +81,6 @@
 
 /*стилизация состояний*/
 .header__ancor:hover{
-   color: var(--black);
+   color: var(--black-white);
 }
 /**********************/

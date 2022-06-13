@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./components/preview/preview.css">
         <link rel="stylesheet" href="./components/card/card.css">
         <link rel="stylesheet" href="./components/tabs/tabs.css">
+        <link rel="stylesheet" href="./components/theme-switcher/theme-switcher.css">
         <link rel="stylesheet" href="./03-lection1/01-button/button.css">
         <link rel="stylesheet" href="./03-lection1/02-accordion/accordion.css">
         <link rel="stylesheet" href="./04-lection2/02-skeleton/skeleton.css">
@@ -24,6 +25,12 @@
         <link rel="stylesheet" href="./07-lection5/02-radio/radio.css">
         <link rel="stylesheet" href="./07-lection5/03-toggler/toggler.css">
         <link rel="stylesheet" href="./07-lection5/04-input/input.css">
+        <style>
+            html[data-theme-dark] {
+                background: #000;
+            }
+        </style>
+        <script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
     </head>
 
     <body>
@@ -38,9 +45,30 @@
                 </svg>
               </div>
               <div class="header__toogles">
-                 <a class="header__ancor" href="#">Components</a>
-                 <a class="header__ancor" href="#">About</a>
-                 <a class="header__ancor" href="#">Contact</a>
+                <div class="header__ancors">
+                  <a class="header__ancor" href="#">Components</a>
+                  <a class="header__ancor" href="#">About</a>
+                  <a class="header__ancor" href="#">Contact</a>
+                </div>
+
+                 <div class="theme-switcher">
+                    <svg class="theme-switcher__icon">
+                      <use href="./assets/icons.svg#sun"></use>
+                    </svg>
+
+                    <label class="toggler">
+                      <input class="toggler__element" type="checkbox" id="theme-changer">
+                      <div class="toggler__visual">
+                         <div class="toggler__switcher">
+                         </div>
+                      </div>
+                    </label>
+
+                    <svg class="theme-switcher__icon">
+                      <use href="./assets/icons.svg#moon"></use>
+                    </svg>
+                 </div>
+
               </div>
             </div>
 
@@ -52,22 +80,27 @@
          </header>
 
          <main class="tabs">
-           <div class="container">
+           <!-- <div class="container"> -->
           <input class="tabs__radio-input" type="radio" id="all-tab" name="tabs" checked>
           <input class="tabs__radio-input" type="radio" id="complex-tab" name="tabs">
           <input class="tabs__radio-input" type="radio" id="simple-tab" name="tabs">
 
 
-        <div class="tabs__scroller">
+        <div class="tabs__scroller-outer">
+          <div class="container">
+            <div class="tabs__scroller">
             <label class="tabs__label" for="all-tab">All components</label>
             <label class="tabs__label" for="complex-tab">Complex</label>
             <label class="tabs__label" for="simple-tab">Simple</label>
+           </div>
+          </div>
         </div>
 
 
       <!-- начало вкладки ВСЕХ компонентов и элементов -->
           <div class="tabs__content tabs__content_all">
-           <main class="preview preview_no-box-shadow">
+           <div class="container">
+           <div class="preview preview_no-box-shadow">
 
                <section class="preview__inner">
 
@@ -237,7 +270,7 @@
 
                     </div>
                     <div class="card__description">
-                      <p class="card__title">histogram</p>
+                      <p class="card__title">Histogram</p>
                       <p class="card__mini-title">Component</p>
                     </div>
                   </div>
@@ -468,12 +501,14 @@
                  </div>
 
                </section>
-           </main>
+           </div>
+          </div>
           </div>
     <!-- *******конец вкладки ВСЕХ компонентов и элементов******* -->
 
               <!-- начало вкладки КОМПОНЕНТЫ-->
           <div class="tabs__content tabs__content_complex">
+            <div class="container">
              <div class="preview preview_no-box-shadow">
 
                 <section class="preview__inner">
@@ -692,10 +727,12 @@
                 </section>
             </div>
            </div>
+           </div>
       <!-- *******конец вкладки КОМПОНЕНТЫ******* -->
 
               <!-- начало вкладки элементы -->
           <div class="tabs__content tabs__content_simple">
+            <div class="container">
               <div class="preview preview_no-box-shadow">
 
                   <section class="preview__inner">
@@ -893,10 +930,11 @@
 
                   </section>
               </div>
+            </div>
              </div>
      <!-- *******конец вкладки элементы******* -->
 
-        </div>
+        <!-- </div> -->
       </main>
 
 

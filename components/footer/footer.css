@@ -6,7 +6,7 @@
 }
 
 .footer_white{
-  background-color: var(--white)
+  background-color: var(--elements-background-inner);
 }
 
 .footer__title{
@@ -14,7 +14,7 @@
   font-weight: 500;
   font-size: 38px;
   line-height: 48px;
-  color: var(--black);
+  color: var(--elements-font-color-darker);
   margin: 0 auto;
   text-align: center;
   margin-bottom: 32px;
@@ -27,6 +27,7 @@
   line-height: 24px;
   text-align: center;
   margin: 0 auto;
+  color: var(--elements-font-color-darker);
 }
 
 .footer__text{

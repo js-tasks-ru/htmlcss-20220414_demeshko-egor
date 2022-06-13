@@ -1,5 +1,5 @@
 .input__label{
-  color: var(--grey-3);
+  color: var(--input-font-color);
   font-size: 0.75rem;
   line-height: 1.125rem;
 }
@@ -10,7 +10,8 @@
   border-radius: 8px;
   font-size: 1.25rem;
   line-height: 1.625rem;
-  color: var(--grey-2);
+  color: var(--grey-4);
+  background-color: var(--input-background);
   padding: 0.65em 0 0.65em 1.5rem;
   width: 100%;
   transition: outline 300ms ease-in-out, border 300ms ease-in-out;
@@ -38,11 +39,11 @@
 }
 
 .input__dataInArea_invalid .input__typing{
-  border: 1px solid var(--red);
+  border: 1px solid var(--error);
 }
 
 .input__dataInArea_invalid .input__icon{
-  color: var(--red);
+  color: var(--error);
 }
 
 .input__dataInArea_success .input__icon{
@@ -61,17 +62,17 @@
 /*реализация состояний*/
 .input__typing:focus{
    box-shadow: var(--input-shadow);
-   outline: 1px solid var(--purple-3);
+   outline: 1px solid var(--elements-focus-background);
 }
 
 .input__typing:disabled{
-  background-color: var(--grey-1);
+  background-color: var(--input-disabled);
+  border-color: transparent;
 }
 
 
 @media screen and (max-width: 480px){
   .input__label{
-    color: var(--grey-3);
     font-size: 0.65rem;
     line-height: 1rem;
   }

@@ -1,6 +1,6 @@
 .calendar{
   padding: 0 1.625em 0 1.6875em;
-  border: 1px solid var(--grey-3);
+  border: 1px solid var(--elements-border);
   border-radius: 8px;
   display: grid;
   /*строим основную сетку в одну колонку, колонку разбиваем на строки
@@ -24,7 +24,7 @@
   font-weight: 600;
   font-size: 1.25em;
   line-height: 1.5em;
-  color: var(--calendar-grey);
+  color: var(--elements-font-color-secondary);
 }
 
 .calendar__week{
@@ -43,7 +43,7 @@
   font-weight: 400;
   font-size: 0.875em;
   line-height: 1.25em;
-  color: var(--grey-6);
+  color: var(--calendar-week-day-font);
 }
 
 .calendar__days{
@@ -62,15 +62,17 @@
   display: grid;
   align-content: center;
   justify-content: center;
+  color: var(--elements-font-color);
 }
 
 .calendar_day_selected{
-   background-color: var(--purple-3);
-   color: var(--white);
+   background-color: var(--day-selected-bg);
+   color: var(--day-selected-font);
 }
 
 .calendar_day_between{
-  background-color: var(--purple-4);
+  background-color: var(--day-between-bg);
+  color: var(--day-between-font);
 }
 
 @media screen and (max-width:480px){
@@ -88,6 +90,7 @@
 
   .calendar__title{
     font-size: 1em;
+    color: var(--elements-font-color);
   }
 
   .calendar__days{
@@ -103,7 +106,7 @@
     }
 
     .calendar__week{
-  
+
       grid-template-columns: repeat(7, minmax(1.4em, 1fr));
     }
 

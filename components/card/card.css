@@ -7,7 +7,7 @@
   place-items: center;
   width: 350px;
   height: 367px;
-  background: var(--white);
+  background: var(--elements-background-inner);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
 }
@@ -67,14 +67,14 @@
   margin: 0;
   font-size: 20px;
   line-height: 24px;
-  color: var(--black);
+  color: var(--elements-font-color-darker);
 }
 
 .card__mini-title{
   margin: 0;
   font-size: 1rem;
   line-height: 1.17rem;
-  color: var(--grey-4);
+  color: var(--elements-font-color);
 }
 
 @media screen and (max-width:480px){
@@ -130,7 +130,5 @@
   .card__mini-title{
     font-size: 14px;
     line-height: 22px;
-    color: var(--grey-3);
   }
-
 }
