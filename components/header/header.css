@@ -71,11 +71,12 @@
   }
 
   .header__top-bar{
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr;
   }
 
   .header__logo-box{
     justify-self: center;
+    transform: translateX(-24px);
   }
 }
 
