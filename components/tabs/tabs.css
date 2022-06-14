@@ -43,7 +43,7 @@
   line-height: 24px;
   color: var(--grey-3);
   transition: border 200ms, color 200ms;
-  border: var(--tabs-bottom-transparent);
+  border-bottom: var(--tabs-bottom-transparent);
 }
 
 .tabs__label-padding-small{
@@ -65,6 +65,10 @@
 }
 
 .tabs__label:hover{
+  border-bottom: var(--tabs-bottom);
+}
+
+.tabs__label:active{
   border-bottom: var(--tabs-bottom);
 }
 
