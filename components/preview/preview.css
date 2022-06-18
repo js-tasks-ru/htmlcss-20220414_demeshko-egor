@@ -5,9 +5,9 @@
   box-shadow: var(--card-shadow);
 }
 
-.preview_white{
-  background-color: var(--white);
-}
+/* .preview_white{
+
+} */
 
 .preview__inner{
   display: flex;
@@ -40,6 +40,10 @@
 
 .preview__groups:last-child{
   margin-bottom: 0;
+}
+
+.preview_no-box-shadow{
+  box-shadow: none;
 }
 
 @media screen and (max-width: 480px){

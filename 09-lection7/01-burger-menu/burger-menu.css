@@ -4,10 +4,6 @@
 
 
 @media (max-width: 480px){
-.burger{
-  display: block;
-  box-sizing: border-box;
-}
 
  .burger__close-icon{
    width: 16px;
@@ -51,6 +47,7 @@
 .burger[data-open]{
   opacity: 1;
   transform: translateX(0);
+  z-index: 100;
 }
 
  .burger__header{
@@ -88,7 +85,7 @@
    color: var(--black);
  }
 
- .burger__reference:focus, .burger__reference:active{
+ .burger__reference:focus, .burger__reference:active, .burger__regerence_selected{
    color: var(--orange-0);
  }
 

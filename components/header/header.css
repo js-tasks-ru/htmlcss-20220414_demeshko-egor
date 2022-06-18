@@ -33,6 +33,10 @@
   cursor: pointer;
 }
 
+.header__logo-elements{
+  color: var(--black);
+}
+
 .header__toogles{
   display: flex;
   flex-flow: row;

@@ -33,10 +33,48 @@
             }
         </style>
         <script defer src="./10-lection8/01-theme-changer/theme-changer.js"></script>
-        <script defer src="./burger-menu.js"></script>
+        <script defer src="./09-lection7/01-burger-menu/burger-menu.js"></script>
     </head>
 
     <body>
+
+      <div class="burger" id="burger-menu">
+       <header class="burger__header">
+         <button class="burger__close-button" type="button" name="button" id="burger-menu-close">
+           <svg class="burger__close-icon">
+             <use href="../../assets/icons.svg#close"></use>
+           </svg>
+         </button>
+
+         <svg class="burger__logo">
+           <use href="../../assets/icons.svg#logo"></use>
+         </svg>
+       </header>
+
+        <div class="burger__window">
+
+            <nav class="burger__navigation-section">
+               <h3 class="burger__title">Elements</h3>
+               <a class="burger__reference" href="./components/tooltip/tooltip.html">Tooltip</a>
+               <a class="burger__reference burger__regerence_selected" href="./components/button/button.html">Buttons</a>
+               <a class="burger__reference" href="#">Avatar</a>
+               <a class="burger__reference" href="#">Checkbox / Radio</a>
+               <a class="burger__reference" href="#">Toggler</a>
+               <a class="burger__reference" href="#">Input</a>
+            </nav>
+
+            <nav class="burger__navigation-section">
+               <h3 class="burger__title">Components</h3>
+               <a class="burger__reference" href="#">Calendar</a>
+               <a class="burger__reference" href="#">Modal Window</a>
+               <a class="burger__reference" href="#">Histogram</a>
+               <a class="burger__reference" href="#">Accordion</a>
+               <a class="burger__reference" href="#">Skeleton</a>
+            </nav>
+
+        </div>
+      </div>
+
       <div class="page">
         <header class="header header_main-page">
           <div class="container">
@@ -47,6 +85,7 @@
                  <use href="../../assets/icons.svg#menu"></use>
                </svg>
               </button>
+
 
               <div class="header__logo-box">
                 <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32"

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <link rel="stylesheet" href="../../assets/css/normolize.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../menu-button/menu-button.css">
+    <link rel="stylesheet" href="../theme-switcher/theme-switcher.css">
     <link rel="stylesheet" href="../container/container.css">
     <link rel="stylesheet" href="../page/page.css">
     <link rel="stylesheet" href="../header/header.css">
@@ -13,32 +16,109 @@
     <link rel="stylesheet" href="../centralContent/central-content.css">
     <link rel="stylesheet" href="../aside/aside.css">
     <link rel="stylesheet" href="../tabs/tabs.css">
+    <link rel="stylesheet" href="../../09-lection7/01-burger-menu/burger-menu.css">
     <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+    <style>
+        html[data-theme-dark] {
+            background: #000;
+        }
+    </style>
+
+    <script defer src="../../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script defer src="../../10-lection8/01-theme-changer/theme-changer.js"></script>
+
     <title>Buttons Element</title>
   </head>
 
 
   <body>
-    <div class="page">
+    <div class="page page_elements">
+
+      <div class="burger" id="burger-menu">
+       <header class="burger__header">
+         <button class="burger__close-button" type="button" name="button" id="burger-menu-close">
+           <svg class="burger__close-icon">
+             <use href="../../assets/icons.svg#close"></use>
+           </svg>
+         </button>
+
+         <svg class="burger__logo">
+           <use href="../../assets/icons.svg#logo"></use>
+         </svg>
+       </header>
+
+        <div class="burger__window">
+
+            <nav class="burger__navigation-section">
+               <h3 class="burger__title">Elements</h3>
+               <a class="burger__reference" href="./components/tooltip/tooltip.html">Tooltip</a>
+               <a class="burger__reference" href="./components/button/button.html">Buttons</a>
+               <a class="burger__reference" href="#">Avatar</a>
+               <a class="burger__reference" href="#">Checkbox / Radio</a>
+               <a class="burger__reference" href="#">Toggler</a>
+               <a class="burger__reference" href="#">Input</a>
+            </nav>
+
+            <nav class="burger__navigation-section">
+               <h3 class="burger__title">Components</h3>
+               <a class="burger__reference" href="#">Calendar</a>
+               <a class="burger__reference" href="#">Modal Window</a>
+               <a class="burger__reference" href="#">Histogram</a>
+               <a class="burger__reference" href="#">Accordion</a>
+               <a class="burger__reference" href="#">Skeleton</a>
+            </nav>
+
+        </div>
+      </div>
+
+
       <header class="header">
         <div class="container">
           <div class="header__top-bar">
+
+            <button class="menu-button" type="button" name="button" id="burger-menu-open">
+             <svg  class="menu-button__icon">
+               <use href="../../assets/icons.svg#menu"></use>
+             </svg>
+            </button>
+
+            <a href="/">
             <div class="header__logo-box">
-              <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32"
+              <svg class="header__logo-elements" width="110" height="32" viewBox="0 0 110 32"
               fill="none" xmlns="http://www.w3.org/2000/svg">
                <use href="../../assets/icons.svg#main-logo"></use>
               </svg>
             </div>
+            </a>
+
             <div class="header__toogles">
-               <a class="header__ancor" href="#">Components</a>
-               <a class="header__ancor" href="#">About</a>
-               <a class="header__ancor" href="#">Contact</a>
+              <div class="header__ancors">
+                <a class="header__ancor" href="#">Components</a>
+                <a class="header__ancor" href="#">About</a>
+                <a class="header__ancor" href="#">Contact</a>
+              </div>
+
+               <div class="theme-switcher">
+                  <svg class="theme-switcher__icon">
+                    <use href="../../assets/icons.svg#sun"></use>
+                  </svg>
+
+                  <label class="toggler">
+                    <input class="toggler__element" type="checkbox" id="theme-changer">
+                    <div class="toggler__visual">
+                       <div class="toggler__switcher">
+                       </div>
+                    </div>
+                  </label>
+
+                  <svg class="theme-switcher__icon">
+                    <use href="../../assets/icons.svg#moon"></use>
+                  </svg>
+               </div>
+
             </div>
           </div>
-
-          <nav class="header__nav">
-          </nav>
          </div>
        </header>
 
@@ -71,7 +151,7 @@
           </aside>
 
 
-         <main class="preview central-content__preview preview_white">
+         <main class="preview central-content__preview">
 
            <div class="preview__element-visual">
              <h3 class="preview__title">Buttons</h3>

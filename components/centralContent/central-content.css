@@ -1,5 +1,5 @@
 .central-content{
-   background-color: var(--global-background);
+   background-color: var(--global-background-preview);
    padding: 62px 0 0 0;
 }
 
@@ -16,6 +16,7 @@
 
 .central-content__preview{
   grid-column: aside / end;
+  background-color: var(--elements-background-inner);
 }
 
 @media screen and (max-width: 480px){
