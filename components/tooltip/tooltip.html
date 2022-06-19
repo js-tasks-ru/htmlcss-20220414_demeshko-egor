@@ -48,7 +48,7 @@
              <use href="../../assets/icons.svg#logo"></use>
            </svg>
          </a>
-         
+
        </header>
 
         <div class="burger__window">
@@ -189,11 +189,76 @@
                   CSS</label>
             </div>
 
-            <div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
-            </div>
+<!--  -->
+<div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
+<pre class="hljs"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"tooltip"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"tooltip__icon"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">svg</span> <span class="hljs-attr">width</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"24"</span> <span class="hljs-attr">height</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"24"</span> <span class="hljs-attr">viewBox</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"0 0 24 24"</span>
+    <span class="hljs-attr">xmlns</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"http://www.w3.org/2000/svg"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"../../assets/icons.svg#help"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">use</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">svg</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"tooltip__bubble"</span>&gt;</span>Helper Text<span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span></span></pre>
+</div>
 
-            <div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
-            </div>
+<!--  -->
+<div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
+  <pre class="hljs" style="color: rgb(68, 68, 68);"><span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.tooltip</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">display</span>: inline-block;
+    <span class="hljs-attribute" style="font-weight: 700;">position</span>: relative;
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.tooltip__bubble</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">display</span>: none;
+    <span class="hljs-attribute" style="font-weight: 700;">max-width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">129px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">13px</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">21px</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">8px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">border-radius</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">10px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">position</span>: absolute;
+    <span class="hljs-attribute" style="font-weight: 700;">bottom</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">right</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">50%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">background</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">#4263EB</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--white);
+    <span class="hljs-attribute" style="font-weight: 700;">white-space</span>: nowrap;
+    <span class="hljs-attribute" style="font-weight: 700;">font-family</span>: <span class="hljs-string" style="color: rgb(136, 0, 0);">'Inter'</span>, sans-serif;
+    <span class="hljs-attribute" style="font-weight: 700;">font-weight</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">400</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">line-height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">24px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">transform</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">translateX</span>(50%);
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.tooltip__bubble</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">::after</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">content</span>: <span class="hljs-string" style="color: rgb(136, 0, 0);">''</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">position</span>: absolute;
+    <span class="hljs-attribute" style="font-weight: 700;">border</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">14px</span> solid transparent;
+    <span class="hljs-attribute" style="font-weight: 700;">border-top</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">6px</span> solid <span class="hljs-number" style="color: rgb(136, 0, 0);">#4263EB</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">top</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">right</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">50%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">transform</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">translate</span>(50%);
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.tooltip__icon</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">24px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">24px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--tooltip-icon);
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.tooltip</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:hover</span> <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.tooltip__bubble</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">display</span>: block;
+    <span class="hljs-attribute" style="font-weight: 700;">animation</span>: tooltip <span class="hljs-number" style="color: rgb(136, 0, 0);">400ms</span> normal forwards;
+  }
+
+  @<span class="hljs-keyword" style="font-weight: 700;">keyframes</span> tooltip {
+     0% { <span class="hljs-attribute" style="font-weight: 700;">opacity</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+     <span class="hljs-attribute" style="font-weight: 700;">transform</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">translate</span>(50%, 0);
+     }
+
+     100% {
+     <span class="hljs-attribute" style="font-weight: 700;">opacity</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1</span>;
+     <span class="hljs-attribute" style="font-weight: 700;">transform</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">translate</span>(50%, -7px);
+     }
+  }
+  </pre>
+</div>
 
            </div>
           </div>

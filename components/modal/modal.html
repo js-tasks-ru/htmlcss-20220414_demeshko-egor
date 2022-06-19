@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="../../09-lection7/01-burger-menu/burger-menu.css">
     <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
     <link rel="stylesheet" href="../../05-lection3/02-modal/modal.css">
+    <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
     <style>
         html[data-theme-dark] {
             background: #000;
@@ -50,7 +51,7 @@
              <use href="../../assets/icons.svg#logo"></use>
            </svg>
          </a>
-         
+
        </header>
 
         <div class="burger__window">
@@ -206,11 +207,148 @@
                   CSS</label>
             </div>
 
-            <div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
-            </div>
+<!--  -->
+<div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
+<pre class="hljs" style="color: rgb(68, 68, 68);">
+&lt;section <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"modal"</span> id=<span class="hljs-string" style="color: rgb(136, 0, 0);">"modal"</span>&gt;
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"modal__window modal__window_padding-0"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">svg</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"modal__close"</span> <span class="hljs-attr">id</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"modal-close"</span> <span class="hljs-attr">width</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"16"</span> <span class="hljs-attr">height</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"16"</span>
+    <span class="hljs-attr">viewBox</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"0 0 16 16"</span> <span class="hljs-attr">fill</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"none"</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"http://www.w3.org/2000/svg"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"../../assets/icons.svg#close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">use</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">svg</span>&gt;</span>
 
-            <div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
-            </div>
+
+<span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"modal__text-box"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"modal__title"</span>&gt;</span>Modal title<span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">h3</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"modal__text"</span>&gt;</span>Amet minim mollit non deserunt ullamco
+  est sit aliqua dolor do amet sint. Velit officia consequat
+  duis enim velit mollit. Exercitation veniam consequat sunt
+  nostrud amet. <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span></span>
+  &lt;<span class="hljs-regexp" style="color: rgb(188, 96, 96);">/section&gt;</span></pre>
+</div>
+
+<!--  -->
+<div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
+  <pre class="hljs" style="color: rgb(68, 68, 68);"><span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">text-align</span>: left;
+    <span class="hljs-attribute" style="font-weight: 700;">position</span>: fixed;
+    <span class="hljs-attribute" style="font-weight: 700;">top</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">left</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100vw</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100vh</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">background</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--modal-background);
+    <span class="hljs-attribute" style="font-weight: 700;">z-index</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">50</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">visibility</span>: hidden;
+    <span class="hljs-attribute" style="font-weight: 700;">opacity</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">transition</span>: all <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span>;
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal_padding</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1.5rem</span>;
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__window</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">position</span>: absolute;
+    <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1.875em</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">2.5rem</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">2.0625em</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">max-width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">428px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">top</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">50%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">left</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">50%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">transform</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">translate</span>(-50%, -50%);
+    <span class="hljs-attribute" style="font-weight: 700;">background</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--elements-background-inner);
+    <span class="hljs-attribute" style="font-weight: 700;">border-radius</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">8px</span>;
+  }
+
+
+  <span class="hljs-comment" style="color: rgb(136, 136, 136);">/*модификаторвдля отображения на главной странице*/</span>
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal_preview</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">box-sizing</span>: border-box;
+    <span class="hljs-attribute" style="font-weight: 700;">display</span>: grid;
+    <span class="hljs-attribute" style="font-weight: 700;">position</span>: relative;
+    <span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">text-align</span>: center;
+    <span class="hljs-attribute" style="font-weight: 700;">visibility</span>: visible;
+    <span class="hljs-attribute" style="font-weight: 700;">opacity</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">border-radius</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">12px</span>;
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__window_preview</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">90%</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">position</span>: relative;
+    <span class="hljs-attribute" style="font-weight: 700;">top</span>: auto;
+    <span class="hljs-attribute" style="font-weight: 700;">left</span>: auto;
+    <span class="hljs-attribute" style="font-weight: 700;">transform</span>: none;
+    <span class="hljs-attribute" style="font-weight: 700;">align-self</span>: center;
+    <span class="hljs-attribute" style="font-weight: 700;">justify-self</span>: center;
+    <span class="hljs-attribute" style="font-weight: 700;">display</span>: grid;
+    <span class="hljs-attribute" style="font-weight: 700;">align-items</span>: center;
+    <span class="hljs-attribute" style="font-weight: 700;">justify-content</span>: center;
+  }
+  <span class="hljs-comment" style="color: rgb(136, 136, 136);">/*****************************/</span>
+
+  <span class="hljs-comment" style="color: rgb(136, 136, 136);">/*добавка для стилизации на странице компонента*/</span>
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__window_padding</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1.875em</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">2.5rem</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">2.0625em</span>;
+  }
+  <span class="hljs-comment" style="color: rgb(136, 136, 136);">/***********************************************/</span>
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__close</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1rem</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1rem</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">position</span>: absolute;
+    <span class="hljs-attribute" style="font-weight: 700;">top</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.96em</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">right</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.96em</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">cursor</span>: pointer;
+    <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--elements-font-color-secondary);
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__text-box</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">display</span>: flex;
+    <span class="hljs-attribute" style="font-weight: 700;">flex-direction</span>: column;
+    <span class="hljs-attribute" style="font-weight: 700;">gap</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">14px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">font-family</span>: <span class="hljs-string" style="color: rgb(136, 0, 0);">'Inter'</span>, sans-serif;
+    <span class="hljs-attribute" style="font-weight: 700;">font-style</span>: normal;
+    <span class="hljs-attribute" style="font-weight: 700;">line-height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">24px</span>;
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__title</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">margin</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">font-weight</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">600</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">font-size</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">20px</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--elements-font-color-secondary);
+  }
+
+  <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__text</span>{
+    <span class="hljs-attribute" style="font-weight: 700;">margin</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">font-weight</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">400</span>;
+    <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--elements-font-color);
+  }
+
+
+  @<span class="hljs-keyword" style="font-weight: 700;">media</span> screen and (max-width: <span class="hljs-number" style="color: rgb(136, 0, 0);">480px</span>){
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__title</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">font-size</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">12px</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__text</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">font-size</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">10px</span>;
+      <span class="hljs-attribute" style="font-weight: 700;">line-height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">14px</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__close</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.8rem</span>;
+      <span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.8rem</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.modal__text-box</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">gap</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">10px</span>;
+    }
+  }</pre>
+</div>
 
            </div>
           </div>

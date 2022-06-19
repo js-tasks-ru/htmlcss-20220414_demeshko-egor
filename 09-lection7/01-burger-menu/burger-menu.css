@@ -15,6 +15,7 @@
  }
 
  .burger__logo{
+   color: var(--black);
    width: 133px;
    height: 32px;
  }

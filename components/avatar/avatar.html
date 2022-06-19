@@ -183,9 +183,44 @@
             </div>
 
             <div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(68, 68, 68);">
+&lt;div <span class="hljs-class"><span class="hljs-keyword" style="font-weight: 700;">class</span></span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"avatar"</span> aria-label=<span class="hljs-string" style="color: rgb(136, 0, 0);">"user\'s avatar"</span>&gt;
+<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">img</span>  <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"avatar__img"</span> <span class="hljs-attr">src</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"./public/avatar-200.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"user's avatar"</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">div</span>&gt;</span></span></pre>
             </div>
 
+
             <div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
+
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(68, 68, 68);"><span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.avatar</span>{
+<span class="hljs-attribute" style="font-weight: 700;">border-radius</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">50%</span>;
+<span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">160px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">160px</span>;
+
+}
+
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.avatar__img</span>{
+<span class="hljs-attribute" style="font-weight: 700;">border-radius</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">50%</span>;
+<span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100%</span>;
+<span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100%</span>;
+<span class="hljs-attribute" style="font-weight: 700;">object-fit</span>: cover;
+}
+
+
+@<span class="hljs-keyword" style="font-weight: 700;">media</span> screen and (max-width: <span class="hljs-number" style="color: rgb(136, 0, 0);">480px</span>){
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.avatar</span>{
+<span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">116px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">116px</span>;
+}
+}
+
+@<span class="hljs-keyword" style="font-weight: 700;">media</span> screen and (max-width: <span class="hljs-number" style="color: rgb(136, 0, 0);">390px</span>){
+<span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.avatar</span>{
+<span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">106px</span>;
+<span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">106px</span>;
+}
+}
+              </pre>
             </div>
 
            </div>
