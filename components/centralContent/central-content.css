@@ -21,7 +21,7 @@
 
 @media screen and (max-width: 480px){
   .central-content{
-    background-color: var(--white);
+    background-color: var(--central-mobile-grey);
     padding: 0;
   }
 

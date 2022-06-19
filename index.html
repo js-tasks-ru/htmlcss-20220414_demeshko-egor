@@ -55,21 +55,32 @@
 
             <nav class="burger__navigation-section">
                <h3 class="burger__title">Elements</h3>
-               <a class="burger__reference" href="./components/tooltip/tooltip.html">Tooltip</a>
-               <a class="burger__reference burger__regerence_selected" href="./components/button/button.html">Buttons</a>
-               <a class="burger__reference" href="#">Avatar</a>
-               <a class="burger__reference" href="#">Checkbox / Radio</a>
-               <a class="burger__reference" href="#">Toggler</a>
-               <a class="burger__reference" href="#">Input</a>
+               <a class="burger__reference"
+               href="./components/tooltip/tooltip.html">Tooltip</a>
+               <a class="burger__reference"
+               href="./components/button/button.html">Buttons</a>
+               <a class="burger__reference"
+               href="./components/avatar/avatar.html">Avatar</a>
+               <a class="burger__reference"
+                href="./components/checkbox-radio/checkbox-radio.html">Checkbox / Radio</a>
+               <a class="burger__reference"
+               href="./components/toggler/toggler.html">Toggler</a>
+               <a class="burger__reference"
+               href="./components/inputs/inputs.html">Input</a>
             </nav>
 
             <nav class="burger__navigation-section">
                <h3 class="burger__title">Components</h3>
-               <a class="burger__reference" href="#">Calendar</a>
-               <a class="burger__reference" href="#">Modal Window</a>
-               <a class="burger__reference" href="#">Histogram</a>
-               <a class="burger__reference" href="#">Accordion</a>
-               <a class="burger__reference" href="#">Skeleton</a>
+               <a class="burger__reference"
+               href="./components/calendar/calendar.html">Calendar</a>
+               <a class="burger__reference"
+               href="./components/modal/modal.html">Modal Window</a>
+               <a class="burger__reference"
+               href="./components/histogram/histogram.html">Histogram</a>
+               <a class="burger__reference"
+               href="./components/accordion/accordion.html">Accordion</a>
+               <a class="burger__reference"
+               href="./components/skeleton/skeleton.html">Skeleton</a>
             </nav>
 
         </div>
@@ -78,6 +89,7 @@
       <div class="page">
         <header class="header header_main-page">
           <div class="container">
+
             <div class="header__top-bar">
 
               <button class="menu-button" type="button" name="button" id="burger-menu-open">
@@ -509,7 +521,7 @@
                                type="text" placeholder="Success"
                                id="input__typing">
 
-                             <svg class="input__icon input__icon_small" width="20" height="20"
+                             <svg class="input__icon" width="20" height="20"
                               viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                <use href="../../assets/icons.svg#success"></use>
                              </svg>
@@ -524,7 +536,7 @@
                               type="text"
                               placeholder="Error" id="input__typing">
 
-                            <svg class="input__icon input__icon_small" width="20" height="20"
+                            <svg class="input__icon" width="20" height="20"
                             viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <use href="../../assets/icons.svg#warning"></use>
                             </svg>
@@ -937,7 +949,7 @@
                                    type="text" placeholder="Success"
                                    id="input__typing">
 
-                                 <svg class="input__icon input__icon_small" width="20" height="20"
+                                 <svg class="input__icon" width="20" height="20"
                                   viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <use href="../../assets/icons.svg#success"></use>
                                  </svg>
@@ -948,11 +960,10 @@
                          <div class="input">
                              <label class="input__label" for="input__typing">ERROR</label>
                              <div class="input__dataInArea input__dataInArea_invalid">
-                                  <input class="input__typing  input__typing_small"
-                                  type="text"
+                                  <input class="input__typing  input__typing_small" type="text"
                                   placeholder="Error" id="input__typing">
 
-                                <svg class="input__icon input__icon_small" width="20" height="20"
+                                <svg class="input__icon" width="20" height="20"
                                 viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <use href="../../assets/icons.svg#warning"></use>
                                 </svg>
@@ -963,8 +974,7 @@
                          <div class="input">
                              <label class="input__label" for="input__typing">DISABLED</label>
                              <div class="input__dataInArea">
-                                  <input class="input__typing  input__typing_small"
-                                  type="text"
+                                  <input class="input__typing" type="text"
                                   placeholder="" id="input__typing" disabled>
                              </div>
                          </div>

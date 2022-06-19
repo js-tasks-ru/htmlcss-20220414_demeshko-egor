@@ -28,7 +28,7 @@
 .preview__element-visual, .preview__tab, .preview__tab-content{
   padding-left: 3rem;
   padding-right: 3rem;
-  background-color: var(--white);
+  background-color: var(--elements-background-inner);
 }
 
 .preview__groups{

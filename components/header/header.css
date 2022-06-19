@@ -80,7 +80,7 @@
 
   .header__logo-box{
     justify-self: center;
-    transform: translateX(-24px);
+    transform: translateX(-16px);
   }
 }
 

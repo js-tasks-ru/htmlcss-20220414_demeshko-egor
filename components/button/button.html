@@ -11,14 +11,14 @@
     <link rel="stylesheet" href="../page/page.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../tabs/tabs.css">
     <link rel="stylesheet" href="../preview/preview.css">
     <link rel="stylesheet" href="../card/card.css">
     <link rel="stylesheet" href="../centralContent/central-content.css">
     <link rel="stylesheet" href="../aside/aside.css">
-    <link rel="stylesheet" href="../tabs/tabs.css">
     <link rel="stylesheet" href="../../09-lection7/01-burger-menu/burger-menu.css">
-    <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
     <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
+    <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
     <style>
         html[data-theme-dark] {
             background: #000;
@@ -43,30 +43,34 @@
            </svg>
          </button>
 
-         <svg class="burger__logo">
-           <use href="../../assets/icons.svg#logo"></use>
-         </svg>
+         <a href="/" class="burger__ancor">
+           <svg class="burger__logo">
+             <use href="../../assets/icons.svg#logo"></use>
+           </svg>
+         </a>
+         
        </header>
 
         <div class="burger__window">
 
             <nav class="burger__navigation-section">
                <h3 class="burger__title">Elements</h3>
-               <a class="burger__reference" href="./components/tooltip/tooltip.html">Tooltip</a>
-               <a class="burger__reference" href="./components/button/button.html">Buttons</a>
-               <a class="burger__reference" href="#">Avatar</a>
-               <a class="burger__reference" href="#">Checkbox / Radio</a>
-               <a class="burger__reference" href="#">Toggler</a>
-               <a class="burger__reference" href="#">Input</a>
+               <a class="burger__reference" href="../tooltip/tooltip.html">Tooltip</a>
+               <a class="burger__reference burger__reference_selected"
+                href="../button/button.html">Buttons</a>
+               <a class="burger__reference" href="../avatar/avatar.html">Avatar</a>
+               <a class="burger__reference" href="../checkbox-radio/checkbox-radio.html">Checkbox / Radio</a>
+               <a class="burger__reference" href="../toggler/toggler.html">Toggler</a>
+               <a class="burger__reference" href="../inputs/inputs.html">Input</a>
             </nav>
 
             <nav class="burger__navigation-section">
                <h3 class="burger__title">Components</h3>
-               <a class="burger__reference" href="#">Calendar</a>
-               <a class="burger__reference" href="#">Modal Window</a>
-               <a class="burger__reference" href="#">Histogram</a>
-               <a class="burger__reference" href="#">Accordion</a>
-               <a class="burger__reference" href="#">Skeleton</a>
+               <a class="burger__reference" href="../calendar/calendar.html">Calendar</a>
+               <a class="burger__reference" href="../modal/modal.html">Modal Window</a>
+               <a class="burger__reference" href="../histogram/histogram.html">Histogram</a>
+               <a class="burger__reference" href="../accordion/accordion.html">Accordion</a>
+               <a class="burger__reference" href="../skeleton/skeleton.html">Skeleton</a>
             </nav>
 
         </div>
@@ -75,6 +79,7 @@
 
       <header class="header">
         <div class="container">
+
           <div class="header__top-bar">
 
             <button class="menu-button" type="button" name="button" id="burger-menu-open">
@@ -83,13 +88,13 @@
              </svg>
             </button>
 
-            <a href="/">
-            <div class="header__logo-box">
+            <a class="header__logo-box" href="/">
+            <!-- <div class=""> -->
               <svg class="header__logo-elements" width="110" height="32" viewBox="0 0 110 32"
               fill="none" xmlns="http://www.w3.org/2000/svg">
                <use href="../../assets/icons.svg#main-logo"></use>
               </svg>
-            </div>
+            <!-- </div> -->
             </a>
 
             <div class="header__toogles">
@@ -119,6 +124,7 @@
 
             </div>
           </div>
+
          </div>
        </header>
 
@@ -129,24 +135,24 @@
           <aside class="aside central-content__aside">
             <h4 class="aside__title">Elements</h4>
             <nav class="aside__navigation">
-              <a href="#" class="aside__nav-item">Tooltip</a>
-              <a href="#" class="aside__nav-item aside__nav-item_checked">Buttons</a>
-              <a href="#" class="aside__nav-item">Avatar</a>
-              <a href="#" class="aside__nav-item">Checkbox / Radio</a>
-              <a href="#" class="aside__nav-item">Toggler</a>
-              <a href="#" class="aside__nav-item">Input</a>
+              <a href="../tooltip/tooltip.html" class="aside__nav-item">Tooltip</a>
+              <a href="../button/button.html" class="aside__nav-item aside__nav-item_checked">Buttons</a>
+              <a href="../avatar/avatar.html" class="aside__nav-item">Avatar</a>
+              <a href="../checkbox-radio/checkbox-radio.html" class="aside__nav-item">Checkbox / Radio</a>
+              <a href="../toggler/toggler.html" class="aside__nav-item">Toggler</a>
+              <a href="../inputs/inputs.html" class="aside__nav-item">Input</a>
               <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
             </nav>
 
             <h4 class="aside__title">Components</h4>
             <nav class="aside__navigation">
-              <a href="#" class="aside__nav-item">Calendar</a>
-              <a href="#" class="aside__nav-item">Modal Window</a>
-              <a href="#" class="aside__nav-item">Histogram</a>
-              <a href="#" class="aside__nav-item">Accordion</a>
-              <a href="#" class="aside__nav-item">Skeleton</a>
+              <a href="../calendar/calendar.html" class="aside__nav-item">Calendar</a>
+              <a href="../modal/modal.html" class="aside__nav-item">Modal Window</a>
+              <a href="../histogram/histogram.html" class="aside__nav-item">Histogram</a>
+              <a href="../accordion/accordion.html" class="aside__nav-item">Accordion</a>
+              <a href="../skeleton/skeleton.html" class="aside__nav-item">Skeleton</a>
               <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
-              <a href="#" class="aside__nav-item">Main page</a>
+              <a href="/" class="aside__nav-item">Main page</a>
             </nav>
           </aside>
 
@@ -171,8 +177,7 @@
               <input class="tabs__radio-input" type="radio" id="css" name="tabs">
 
 
-            <div class="tabs__scroller tabs__scroller_padding-top tabs__scroller_white
-            preview__tab">
+            <div class="tabs__scroller tabs__scroller_padding-top preview__tab">
                 <label class="tabs__label tabs__label-padding-small" for="html">
                   HTML</label>
                 <label class="tabs__label tabs__label-padding-small" for="css">

@@ -10,10 +10,13 @@
    height: 16px;
  }
 
+ .burger__ancor{
+   justify-self: center;
+ }
+
  .burger__logo{
    width: 133px;
    height: 32px;
-   justify-self: center;
  }
 
 .burger__close-button{
@@ -85,7 +88,7 @@
    color: var(--black);
  }
 
- .burger__reference:focus, .burger__reference:active, .burger__regerence_selected{
+ .burger__reference:focus, .burger__reference:active, .burger__reference_selected{
    color: var(--orange-0);
  }
 

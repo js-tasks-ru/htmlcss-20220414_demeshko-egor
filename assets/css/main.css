@@ -47,6 +47,7 @@
   --elements-font-color-secondary: var(--grey-5);
   --elements-font-color-darker: var(--black);
   --elements-focus-background: var(--purple-3);
+  --central-mobile-grey: var(--white);
 
   --font-color-primary: var(--black);
   --font-color-secondary: rgb(172, 181, 189);
@@ -118,6 +119,7 @@ html[data-theme-dark]{
   --elements-font-color-secondary: var(--white-opacity-07);
   --elements-font-color-darker: var(--white-opacity-04);
   --elements-focus-background: var(--orange-0);
+  --central-mobile-grey: var(--grey-4);
 
   --histogram-bar: var(--purple-3-opacity-07);
 
