@@ -113,4 +113,8 @@
   .modal__text-box{
     gap: 10px;
   }
+
+  .modal__window{
+    width: 50vw;
+  }
 }

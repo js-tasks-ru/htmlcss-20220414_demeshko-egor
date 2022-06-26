@@ -10,6 +10,8 @@
   background: var(--elements-background-inner);
   border-radius: 12px;
   box-shadow: var(--card-shadow);
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .card_justify-streched{

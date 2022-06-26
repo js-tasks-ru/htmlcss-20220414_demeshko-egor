@@ -21,8 +21,6 @@
     line-height: 22px;
   }
 
-.aside
-
 .aside__nav-item:focus, .aside__nav-item:hover, .aside__nav-item_checked{
     color: var(--orange-0);
   }

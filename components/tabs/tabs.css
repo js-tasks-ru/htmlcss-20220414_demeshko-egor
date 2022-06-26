@@ -15,6 +15,9 @@
   gap: 2.5rem;
   overflow: scroll;
   scrollbar-width: none;
+}
+
+.tabs__scroller_border-bottom{
   border-bottom: 1px solid var(--checkbox-border);
 }
 
@@ -77,7 +80,9 @@
 /*стилизация состояний активных табов*/
 #all-tab:checked  ~ .tabs__scroller-outer .tabs__scroller  label[for="all-tab"],
 #complex-tab:checked  ~ .tabs__scroller-outer  .tabs__scroller  label[for="complex-tab"],
-#simple-tab:checked  ~  .tabs__scroller-outer  .tabs__scroller  label[for="simple-tab"]{
+#simple-tab:checked  ~  .tabs__scroller-outer  .tabs__scroller  label[for="simple-tab"],
+#html:checked  ~  .tabs__scroller label[for="html"],
+#css:checked  ~  .tabs__scroller label[for="css"]{
     border-bottom: var(--tabs-bottom);
     color: var(--black-white);
 }
@@ -89,6 +94,7 @@
 #css:checked  ~  .tabs__css{
     display: flex;
 }
+
 /**************************************/
 
 @media screen and (max-width: 390px){

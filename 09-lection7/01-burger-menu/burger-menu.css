@@ -57,6 +57,7 @@
  .burger__header{
    display: grid;
    grid-template-columns: 32px 1fr;
+   justify-items: center;
  }
 
 .burger__window{

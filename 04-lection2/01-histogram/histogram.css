@@ -20,14 +20,14 @@
 
 .histogram__title{
   margin: 0;
-  color: var(--font-color-secondary);
+  color: var(--elements-font-color-darker);
 }
 
 .histogram__total{
   padding-top: 6px;
   font-size: 1.15em;
   line-height: 1.625em;
-  color: var(--font-color-primary);
+  color: var(--elements-font-color-darker);
 }
 
 .histogram__chart-box {
@@ -46,8 +46,15 @@
 }
 
 .histogram__views{
-  color: var(--font-color-primary);
+  text-decoration: underline;
+  color: var(--elements-font-color-darker);
   text-decoration-color: var(--font-color-primary);
+  transition: all 500ms;
+}
+
+.histogram__views:hover{
+  color: var(--orange-0);
+  text-decoration: none;
 }
 
 @media screen and (max-width: 480px){
