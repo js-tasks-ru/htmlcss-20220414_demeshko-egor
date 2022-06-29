@@ -23,13 +23,14 @@
 
 .input__icon{
   position: absolute;
-  top: 1.125em;
+  width: 1.25rem;
+  height: 1.25rem;
+  top: 0.75rem;
   right: 1.125rem;
 }
 
-.input__icon_small{
-  top: 0.75em;
-  right: 0.75rem
+.input__icon_bigger-top{
+  top: 18px;
 }
 
 
@@ -75,6 +76,17 @@
   .input__label{
     font-size: 0.65rem;
     line-height: 1rem;
+  }
+
+  .input__icon{
+    width: 1rem;
+    height: 1rem;
+    top: 0.6rem;
+    right: 0.75rem;
+  }
+
+  .input__icon_bigger-top{
+    top: 0.6em;
   }
 
   .input__typing{

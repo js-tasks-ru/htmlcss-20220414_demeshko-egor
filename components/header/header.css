@@ -33,6 +33,10 @@
   cursor: pointer;
 }
 
+.header__logo-elements{
+  color: var(--black);
+}
+
 .header__toogles{
   display: flex;
   flex-flow: row;
@@ -71,11 +75,12 @@
   }
 
   .header__top-bar{
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr;
   }
 
   .header__logo-box{
     justify-self: center;
+    transform: translateX(-16px);
   }
 }
 

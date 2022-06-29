@@ -1,6 +1,6 @@
 .aside__title{
     margin: 0;
-    color: var(--black);
+    color: var(--aside-font);
     font-family: 'Inter', sans-serif;
     font-size: 20px;
     line-height: 26px;
@@ -15,13 +15,11 @@
 
 .aside__nav-item{
     text-decoration: none;
-    color: var(--black);
+    color: var(--aside-font);
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     line-height: 22px;
   }
-
-.aside
 
 .aside__nav-item:focus, .aside__nav-item:hover, .aside__nav-item_checked{
     color: var(--orange-0);

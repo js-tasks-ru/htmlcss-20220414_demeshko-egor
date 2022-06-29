@@ -17,6 +17,10 @@
   scrollbar-width: none;
 }
 
+.tabs__scroller_border-bottom{
+  border-bottom: 1px solid var(--checkbox-border);
+}
+
 .tabs__scroller::-webkit-scrollbar{
   display: none;
   border-bottom: 1px solid var(--checkbox-border);
@@ -26,9 +30,9 @@
   padding-top: 2rem;
 }
 
-.tabs__scroller_white{
+/* .tabs__scroller_white{
   background-color: var(--white);
-}
+} */
 
 .tabs__scroller-outer{
   border-bottom: 1px solid var(--checkbox-border);
@@ -43,7 +47,7 @@
   line-height: 24px;
   color: var(--grey-3);
   transition: border 200ms, color 200ms;
-  border: var(--tabs-bottom-transparent);
+  border-bottom: var(--tabs-bottom-transparent);
 }
 
 .tabs__label-padding-small{
@@ -68,11 +72,17 @@
   border-bottom: var(--tabs-bottom);
 }
 
+.tabs__label:active{
+  border-bottom: var(--tabs-bottom);
+}
+
 
 /*стилизация состояний активных табов*/
 #all-tab:checked  ~ .tabs__scroller-outer .tabs__scroller  label[for="all-tab"],
 #complex-tab:checked  ~ .tabs__scroller-outer  .tabs__scroller  label[for="complex-tab"],
-#simple-tab:checked  ~  .tabs__scroller-outer  .tabs__scroller  label[for="simple-tab"]{
+#simple-tab:checked  ~  .tabs__scroller-outer  .tabs__scroller  label[for="simple-tab"],
+#html:checked  ~  .tabs__scroller label[for="html"],
+#css:checked  ~  .tabs__scroller label[for="css"]{
     border-bottom: var(--tabs-bottom);
     color: var(--black-white);
 }
@@ -84,6 +94,7 @@
 #css:checked  ~  .tabs__css{
     display: flex;
 }
+
 /**************************************/
 
 @media screen and (max-width: 390px){

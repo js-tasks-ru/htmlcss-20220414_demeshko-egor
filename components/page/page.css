@@ -2,3 +2,7 @@
   background-color: var(--global-background);
   display: block;
 }
+
+.page_elements{
+  background-color: var(--global-background-preview);
+}

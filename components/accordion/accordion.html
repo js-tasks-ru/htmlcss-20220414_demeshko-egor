@@ -1,44 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru" dir="ltr">
   <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, width=device-width">
     <link rel="stylesheet" href="../../assets/css/normolize.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../menu-button/menu-button.css">
+    <link rel="stylesheet" href="../theme-switcher/theme-switcher.css">
     <link rel="stylesheet" href="../container/container.css">
     <link rel="stylesheet" href="../page/page.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="../tabs/tabs.css">
     <link rel="stylesheet" href="../preview/preview.css">
     <link rel="stylesheet" href="../card/card.css">
     <link rel="stylesheet" href="../centralContent/central-content.css">
     <link rel="stylesheet" href="../aside/aside.css">
-    <link rel="stylesheet" href="../tabs/tabs.css">
+    <link rel="stylesheet" href="../../09-lection7/01-burger-menu/burger-menu.css">
+    <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
+    <link rel="stylesheet" href="../../07-lection5/03-toggler/toggler.css">
     <link rel="stylesheet" href="../../03-lection1/02-accordion/accordion.css">
-    <meta charset="utf-8">
-    <title>Buttons Element</title>
+
+    <style>
+        html[data-theme-dark] {
+            background: #000;
+        }
+    </style>
+
+    <script defer src="../../09-lection7/01-burger-menu/burger-menu.js"></script>
+    <script defer src="../../10-lection8/01-theme-changer/theme-changer.js"></script>
+
+    <title>Accordion Element</title>
   </head>
 
 
   <body>
-    <div class="page">
+    <div class="page page_elements">
+
+      <div class="burger" id="burger-menu">
+       <header class="burger__header">
+         <button class="burger__close-button" type="button" name="button" id="burger-menu-close">
+           <svg class="burger__close-icon">
+             <use href="../../assets/icons.svg#close"></use>
+           </svg>
+         </button>
+
+         <a href="/" class="burger__ancor">
+           <svg class="burger__logo">
+             <use href="../../assets/icons.svg#logo"></use>
+           </svg>
+         </a>
+
+       </header>
+
+        <div class="burger__window">
+
+            <nav class="burger__navigation-section">
+               <h3 class="burger__title">Elements</h3>
+               <a class="burger__reference" href="../tooltip/tooltip.html">Tooltip</a>
+               <a class="burger__reference" href="../button/button.html">Buttons</a>
+               <a class="burger__reference" href="../avatar/avatar.html">Avatar</a>
+               <a class="burger__reference" href="../checkbox-radio/checkbox-radio.html">Checkbox / Radio</a>
+               <a class="burger__reference" href="../toggler/toggler.html">Toggler</a>
+               <a class="burger__reference" href="../inputs/inputs.html">Input</a>
+            </nav>
+
+            <nav class="burger__navigation-section">
+               <h3 class="burger__title">Components</h3>
+               <a class="burger__reference" href="../calendar/calendar.html">Calendar</a>
+               <a class="burger__reference" href="../modal/modal.html">Modal Window</a>
+               <a class="burger__reference" href="../histogram/histogram.html">Histogram</a>
+               <a class="burger__reference burger__reference_selected" href="../accordion/accordion.html">Accordion</a>
+               <a class="burger__reference" href="../skeleton/skeleton.html">Skeleton</a>
+            </nav>
+
+        </div>
+      </div>
+
       <header class="header">
         <div class="container">
           <div class="header__top-bar">
-            <div class="header__logo-box">
-              <svg class="header__logo" width="110" height="32" viewBox="0 0 110 32"
+
+            <button class="menu-button" type="button" name="button" id="burger-menu-open">
+             <svg  class="menu-button__icon">
+               <use href="../../assets/icons.svg#menu"></use>
+             </svg>
+            </button>
+
+            <a class="header__logo-box" href="/">
+            <!-- <div class=""> -->
+              <svg class="header__logo-elements" width="110" height="32" viewBox="0 0 110 32"
               fill="none" xmlns="http://www.w3.org/2000/svg">
                <use href="../../assets/icons.svg#main-logo"></use>
               </svg>
-            </div>
+            <!-- </div> -->
+            </a>
+
             <div class="header__toogles">
-               <a class="header__ancor" href="#">Components</a>
-               <a class="header__ancor" href="#">About</a>
-               <a class="header__ancor" href="#">Contact</a>
+              <div class="header__ancors">
+                <a class="header__ancor" href="#">Components</a>
+                <a class="header__ancor" href="#">About</a>
+                <a class="header__ancor" href="#">Contact</a>
+              </div>
+
+               <div class="theme-switcher">
+                  <svg class="theme-switcher__icon">
+                    <use href="../../assets/icons.svg#sun"></use>
+                  </svg>
+
+                  <label class="toggler">
+                    <input class="toggler__element" type="checkbox" id="theme-changer">
+                    <div class="toggler__visual">
+                       <div class="toggler__switcher">
+                       </div>
+                    </div>
+                  </label>
+
+                  <svg class="theme-switcher__icon">
+                    <use href="../../assets/icons.svg#moon"></use>
+                  </svg>
+               </div>
+
             </div>
           </div>
 
-          <nav class="header__nav">
-          </nav>
          </div>
        </header>
 
@@ -49,24 +134,24 @@
           <aside class="aside central-content__aside">
             <h4 class="aside__title">Elements</h4>
             <nav class="aside__navigation">
-              <a href="#" class="aside__nav-item">Tooltip</a>
-              <a href="#" class="aside__nav-item">Buttons</a>
-              <a href="#" class="aside__nav-item">Avatar</a>
-              <a href="#" class="aside__nav-item">Checkbox / Radio</a>
-              <a href="#" class="aside__nav-item">Toggler</a>
-              <a href="#" class="aside__nav-item">Input</a>
+              <a href="../tooltip/tooltip.html" class="aside__nav-item">Tooltip</a>
+              <a href="../button/button.html" class="aside__nav-item">Buttons</a>
+              <a href="../avatar/avatar.html" class="aside__nav-item">Avatar</a>
+              <a href="../checkbox-radio/checkbox-radio.html" class="aside__nav-item">Checkbox / Radio</a>
+              <a href="../toggler/toggler.html" class="aside__nav-item">Toggler</a>
+              <a href="../inputs/inputs.html" class="aside__nav-item">Input</a>
               <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
             </nav>
 
             <h4 class="aside__title">Components</h4>
             <nav class="aside__navigation">
-              <a href="#" class="aside__nav-item">Calendar</a>
-              <a href="#" class="aside__nav-item">Modal Window</a>
-              <a href="#" class="aside__nav-item">Histogram</a>
-              <a href="#" class="aside__nav-item aside__nav-item_checked">Accordion</a>
-              <a href="#" class="aside__nav-item">Skeleton</a>
+              <a href="../calendar/calendar.html" class="aside__nav-item">Calendar</a>
+              <a href="../modal/modal.html" class="aside__nav-item">Modal Window</a>
+              <a href="../histogram/histogram.html" class="aside__nav-item">Histogram</a>
+              <a href="../accordion/accordion.html" class="aside__nav-item aside__nav-item_checked">Accordion</a>
+              <a href="../skeleton/skeleton.html" class="aside__nav-item">Skeleton</a>
               <a href="#" class="aside__nav-item  aside__nav-item_empty"></a>
-              <a href="#" class="aside__nav-item">Main page</a>
+              <a href="/" class="aside__nav-item">Main page</a>
             </nav>
           </aside>
 
@@ -129,7 +214,7 @@
 
 
             <div class="tabs__scroller tabs__scroller_padding-top tabs__scroller_white
-            preview__tab">
+            tabs__scroller_border-bottom preview__tab">
                 <label class="tabs__label tabs__label-padding-small" for="html">
                   HTML</label>
                 <label class="tabs__label tabs__label-padding-small" for="css">
@@ -137,11 +222,131 @@
             </div>
 
             <div class="tabs__content tabs__html preview__tab-content tabs__content-max-height">
+<pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(68, 68, 68);"><span class="xml">      <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion"</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">details</span> <span class="hljs-attr">open</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">summary</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__content"</span>&gt;</span>
+        Accordion item 1
+        <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__icon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"../../assets/icons.svg#arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">use</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">summary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__text"</span>&gt;</span>
+       Amet minim mollit non deserunt ullamco est sit aliqua dolor
+       do amet sint. Velit officia consequat duis enim velit mollit.
+       Exercitation veniam consequat sunt nostrud amet.
+    <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">details</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">details</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">summary</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__content"</span>&gt;</span>
+        Accordion item 2
+        <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__icon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"../../assets/icons.svg#arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">use</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">summary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__text"</span>&gt;</span>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        do amet sint. Velit officia consequat duis enim velit mollit.
+        Exercitation veniam consequat sunt nostrud amet.
+    <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">details</span>&gt;</span>
+
+  <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">details</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__item"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">summary</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__content"</span>&gt;</span>
+        Accordion item 3
+        <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">svg</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"http://www.w3.org/2000/svg"</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__icon"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">use</span> <span class="hljs-attr">href</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"../../assets/icons.svg#arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">use</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">svg</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">summary</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name" style="font-weight: 700;">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string" style="color: rgb(136, 0, 0);">"accordion__text"</span>&gt;</span>
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        do amet sint. Velit officia consequat duis enim velit mollit.
+        Exercitation veniam consequat sunt nostrud amet.
+    <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">p</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name" style="font-weight: 700;">details</span>&gt;</span></span></pre>
             </div>
 
-            <div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
-            </div>
+  <div class="tabs__content tabs__css preview__tab-content tabs__content-max-height">
+    <pre class="hljs" style="display: block; overflow-x: auto; padding: 0.5em; color: rgb(68, 68, 68);"><span class="hljs-comment" style="color: rgb(136, 136, 136);">/* Стилизация аккордеона */</span>
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion</span>{
+        <span class="hljs-attribute" style="font-weight: 700;">font-family</span>: <span class="hljs-string" style="color: rgb(136, 0, 0);">'Inter'</span>, sans-serif;
+        <span class="hljs-attribute" style="font-weight: 700;">font-size</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1rem</span>;
+        <span class="hljs-attribute" style="font-weight: 700;">line-height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1.5rem</span>;
+        <span class="hljs-attribute" style="font-weight: 700;">font-weight</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">400</span>;
+        <span class="hljs-attribute" style="font-weight: 700;">max-width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">730px</span>;
+      }
 
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__item</span>{
+        <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1.5rem</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">2rem</span>;
+        <span class="hljs-attribute" style="font-weight: 700;">background-color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--elements-background-inner);
+        <span class="hljs-attribute" style="font-weight: 700;">border</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1px</span> solid <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--elements-border);
+        <span class="hljs-attribute" style="font-weight: 700;">border-radius</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">8px</span>;
+        <span class="hljs-attribute" style="font-weight: 700;">margin-bottom</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">8px</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__item</span><span class="hljs-selector-pseudo" style="color: rgb(188, 96, 96);">:last-child</span> {
+      <span class="hljs-attribute" style="font-weight: 700;">margin-bottom</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__item</span><span class="hljs-selector-attr" style="color: rgb(188, 96, 96);">[open]</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1.5rem</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">2rem</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">2rem</span>;
+    }
+
+
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__content</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--elements-font-color);
+      <span class="hljs-attribute" style="font-weight: 700;">display</span>: flex;
+      <span class="hljs-attribute" style="font-weight: 700;">flex-flow</span>: row;
+      <span class="hljs-attribute" style="font-weight: 700;">align-items</span>: center;
+      <span class="hljs-attribute" style="font-weight: 700;">justify-content</span>: space-between;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__icon</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">width</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">1.125rem</span>;
+      <span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.625rem</span>;
+      <span class="hljs-attribute" style="font-weight: 700;">transition</span>: transform <span class="hljs-number" style="color: rgb(136, 0, 0);">200ms</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__item</span><span class="hljs-selector-attr" style="color: rgb(188, 96, 96);">[open]</span> <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__icon</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">transform</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">rotate</span>(0.5turn);
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__text</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">margin</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">16px</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0</span>;
+      <span class="hljs-attribute" style="font-weight: 700;">color</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">var</span>(--elements-font-color);
+    }
+
+    @<span class="hljs-keyword" style="font-weight: 700;">media</span> screen and (max-width: <span class="hljs-number" style="color: rgb(136, 0, 0);">480px</span>) {
+      <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">font-size</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.6rem</span>;
+      <span class="hljs-attribute" style="font-weight: 700;">line-height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.9rem</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__item</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.4rem</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0.8rem</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__item</span><span class="hljs-selector-attr" style="color: rgb(188, 96, 96);">[open]</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">padding</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">0.4rem</span> <span class="hljs-number" style="color: rgb(136, 0, 0);">0.8rem</span>;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__item</span><span class="hljs-selector-attr" style="color: rgb(188, 96, 96);">[open]</span> <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__icon</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">transform</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">rotate</span>(0.5turn) <span class="hljs-built_in" style="color: rgb(57, 115, 0);">scale</span>(0.8);
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__item</span><span class="hljs-selector-attr" style="color: rgb(188, 96, 96);">[open]</span> <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__text</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">display</span>: block;
+      <span class="hljs-attribute" style="font-weight: 700;">height</span>: <span class="hljs-number" style="color: rgb(136, 0, 0);">100px</span>;
+      <span class="hljs-attribute" style="font-weight: 700;">overflow</span>: scroll;
+    }
+
+    <span class="hljs-selector-class" style="color: rgb(136, 0, 0);">.accordion__icon</span>{
+      <span class="hljs-attribute" style="font-weight: 700;">transform</span>: <span class="hljs-built_in" style="color: rgb(57, 115, 0);">scale</span>(0.8);
+    }
+  }</pre>
+            </div>
            </div>
           </div>
 

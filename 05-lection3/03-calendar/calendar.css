@@ -113,5 +113,4 @@
     .calendar__days{
       grid-template-columns: repeat(7, minmax(1.7em, 1fr));
     }
-
 }

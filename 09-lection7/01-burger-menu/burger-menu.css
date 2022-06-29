@@ -4,20 +4,20 @@
 
 
 @media (max-width: 480px){
-.burger{
-  display: block;
-  box-sizing: border-box;
-}
 
  .burger__close-icon{
    width: 16px;
    height: 16px;
  }
 
+ .burger__ancor{
+   justify-self: center;
+ }
+
  .burger__logo{
+   color: var(--black);
    width: 133px;
    height: 32px;
-   justify-self: center;
  }
 
 .burger__close-button{
@@ -51,11 +51,13 @@
 .burger[data-open]{
   opacity: 1;
   transform: translateX(0);
+  z-index: 100;
 }
 
  .burger__header{
    display: grid;
    grid-template-columns: 32px 1fr;
+   justify-items: center;
  }
 
 .burger__window{
@@ -88,7 +90,7 @@
    color: var(--black);
  }
 
- .burger__reference:focus, .burger__reference:active{
+ .burger__reference:focus, .burger__reference:active, .burger__reference_selected{
    color: var(--orange-0);
  }
 

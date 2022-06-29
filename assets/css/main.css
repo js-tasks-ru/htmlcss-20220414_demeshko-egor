@@ -28,7 +28,7 @@
   --grey-6: #90A0B7;
   --grey-7: #C4C4C478;
   --orange-0: #D84910;
-  --tranparent: transparent;
+  --transparent: transparent;
 
   --error: var(--red);
   --success: var(--blue);
@@ -47,6 +47,7 @@
   --elements-font-color-secondary: var(--grey-5);
   --elements-font-color-darker: var(--black);
   --elements-focus-background: var(--purple-3);
+  --central-mobile-grey: var(--white);
 
   --font-color-primary: var(--black);
   --font-color-secondary: rgb(172, 181, 189);
@@ -62,11 +63,16 @@
   --day-selected-font: var(--white);
   --day-between-bg: var(--purple-4);
   --day-between-font: var(--black);
+  --calendar-grey: var(--grey-5);
 
   --checkbox-border: var(--grey-2);
   --checkbox-background: var(--grey-2);
 
   --switcher-background: var(--grey-2);
+
+  --skeleton-line-background: linear-gradient(92.51deg, #E2E6E8 6.44%,
+    #F3F5F5 38.47%, #E3E7EA 56.48%, #DDE2E5 77.5%, #DDE2E5 102.52%);
+  --skeleton-plain: var(--grey-2);
 
   --switching-elements-prime-bg: var(--purple-3);
   --switching-elements-disabled-bg: var(--grey-2);
@@ -86,16 +92,12 @@
   --card-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
   --input-shadow: 0px 1px rgba(51, 154, 240, 0.1);
 
-
-  --skeleton-line-background: linear-gradient(92.51deg, #E2E6E8 6.44%,
-    #F3F5F5 38.47%, #E3E7EA 56.48%, #DDE2E5 77.5%, #DDE2E5 102.52%);
-  --skeleton-plain: var(--grey-2);
-
-
-  --calendar-grey: var(--grey-5);
-
   --tabs-bottom: 5px solid var(--black);
   --tabs-bottom-transparent: 5px solid var(--transparent);
+
+  --aside-font: var(--black);
+
+
 }
 
 body {
@@ -117,6 +119,7 @@ html[data-theme-dark]{
   --elements-font-color-secondary: var(--white-opacity-07);
   --elements-font-color-darker: var(--white-opacity-04);
   --elements-focus-background: var(--orange-0);
+  --central-mobile-grey: var(--grey-4);
 
   --histogram-bar: var(--purple-3-opacity-07);
 
@@ -134,6 +137,8 @@ html[data-theme-dark]{
   --input-background: var(--white-opacity-07);
 
   --tabs-bottom: 5px solid var(--white);
+
+  --aside-font: var(--white-opacity-04);
 
   --theme-block-font: var(--white-opacity-07);
 }
